@@ -1,0 +1,47 @@
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 22px 100px;
+  z-index: 100;
+  background-color: $light;
+
+  &-flex {
+    display: flex;
+    align-items: center;
+
+    max-width: 1720px;
+    margin: 0 auto;
+    .menu-brand {
+      img {
+        width: 276px;
+        height: 44px;
+      }
+    }
+
+    .menu-details {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      &-items {
+        color: $dark;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:focus {
+          color: $primary;
+        }
+      }
+
+      .menu-bars {
+        display: inline-block;
+        img {
+          width: 50px;
+          height: 30px;
+          object-fit: contain;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

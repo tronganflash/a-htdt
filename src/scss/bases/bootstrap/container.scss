@@ -1,0 +1,11 @@
+.container {
+  max-width: $extra_large;
+  margin: 0 auto;
+}
+
+@each $type, $value in $layouts_size {
+  .container-#{$type} {
+    max-width: $value;
+    margin: 0 auto;
+  }
+}

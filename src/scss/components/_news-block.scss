@@ -1,0 +1,25 @@
+.news-block {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-title {
+    font-size: 28px;
+  }
+
+  &-line {
+    display: inline-block;
+    height: 3px;
+    width: 100px;
+    background-color: $primary;
+  }
+
+  &-detail {
+    display: inline-block;
+    margin-top: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $dark;
+  }
+}

@@ -1,0 +1,32 @@
+@each $var in $cols {
+  .col-#{$var} {
+    flex: 0 0 ($var * $column_size);
+    max-width: $var * $column_size;
+    padding: 0 $spacing_size + 2px;
+  }
+}
+
+@each $type,
+  $value
+    in ("xs" $small, "sm" $small, "md" $medium, "lg" $large, "xl" $extra_large)
+{
+  @each $size in $cols {
+    @if $type == "xs" {
+      @media (max-width: $value) {
+        .col-#{$type}-#{$size} {
+          flex: 0 0 ($size * $column_size);
+          max-width: $size * $column_size;
+          padding: 0 $spacing_size + 2px;
+        }
+      }
+    } @else {
+      @media (min-width: $value) {
+        .col-#{$type}-#{$size} {
+          flex: 0 0 ($size * $column_size);
+          max-width: $size * $column_size;
+          padding: 0 $spacing_size + 2px;
+        }
+      }
+    }
+  }
+}

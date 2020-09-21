@@ -1,0 +1,17 @@
+// Base
+@import "../../dist/font/utm-banque/utm-banque.css";
+@import "./bases/variables";
+@import "./bases/reset";
+@import "./helpers/mixin";
+@import "./bases/bootstrap";
+
+// components
+@import "./components/news-block";
+@import "./components/news-inline";
+@import "./components/sliders";
+
+// layouts
+@import "./layouts/menu";
+
+// pages
+@import "./pages/home"

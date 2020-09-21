@@ -1,0 +1,5 @@
+@each $type, $color in $list-colors {
+    .text-#{$type} {
+        color: $color!important;
+    }
+}

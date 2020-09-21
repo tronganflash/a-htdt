@@ -1,0 +1,39 @@
+//--- responsive size ---
+
+$extra_large: 1440px;
+$large: 992px;
+$medium: 768px;
+$small: 576px; // < -> extra
+
+//--- colors ---
+$dark: #333333!default;
+$light: #ffffff!default;
+$primary: #bf9372!default;
+$success: #5cbf76!default;
+$info: #5cbfdb!default;
+$warn: #ffba00!default;
+$danger: #e65555!default;
+$secondary: #aaa!default;
+
+$list-colors: (
+  "dark" $dark,
+  "light" $light,
+  "primary" $primary,
+  "success" $success,
+  "info" $info,
+  "warn" $warn,
+  "danger" $danger,
+  "secondary" $secondary
+);
+
+$column_size: 8.3333%;
+
+$spacing_size: 4px;
+
+$cols: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+
+$spacings: (auto, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+$cols_name: ("xs", "sm", "md", "lg", "xl");
+
+$layouts_size: ("sm" $small, "md" $medium, "lg" $large);

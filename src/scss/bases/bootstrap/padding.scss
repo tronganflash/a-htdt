@@ -1,0 +1,64 @@
+@each $size in $spacings {
+  @if ($size != "auto") {
+    .p {
+      &-#{$size} {
+        padding: $size * $spacing_size!important;
+      }
+
+      &t-#{$size} {
+        padding-top: $size * $spacing_size!important;
+      }
+
+      &b-#{$size} {
+        padding-bottom: $size * $spacing_size!important;
+      }
+
+      &l-#{$size} {
+        padding-left: $size * $spacing_size!important;
+      }
+
+      &r-#{$size} {
+        padding-right: $size * $spacing_size!important;
+      }
+
+      &x-#{$size} {
+        padding: auto $size * $spacing_size!important;
+      }
+
+      &y-#{$size} {
+        padding: $size * $spacing_size auto!important;
+      }
+    }
+  } @else {
+    // all auto
+    .p {
+      &-#{$size} {
+        padding: $size!important;
+      }
+
+      &t-#{$size} {
+        padding-top: $size!important;
+      }
+
+      &b-#{$size} {
+        padding-bottom: $size!important;
+      }
+
+      &l-#{$size} {
+        padding-left: $size!important;
+      }
+
+      &r-#{$size} {
+        padding-right: $size!important;
+      }
+
+      &x-#{$size} {
+        padding: auto $size!important;
+      }
+
+      &y-#{$size} {
+        padding: $size auto!important;
+      }
+    }
+  }
+}
