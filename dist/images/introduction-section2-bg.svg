@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920.6 981.1" style="enable-background:new 0 0 1920.6 981.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#C09473;}
+	.st2{opacity:0.3;fill:#C09473;}
+	.st3{opacity:8.000000e-02;fill:url(#SVGID_1_);}
+</style>
+<pattern  x="0.3" y="2940" width="150" height="150" patternUnits="userSpaceOnUse" id="Geometric_Pattern_2" viewBox="0 -150 150 150" style="overflow:visible;">
+	<g>
+		<rect y="-150" class="st0" width="150" height="150"/>
+		<path class="st1" d="M149.3,0v-23.2L126.1,0h-2.1l-23.2-23.2V0h-1.5v-25v-48.2L75.8-49.7V0h-1.5v-49.7L50.8-73.2V-25V0h-1.5v-23.2
+			L26.1,0h-2.1L0.8-23.2V0H0v-150h0.8v23.2L23.9-150h2.1l23.2,23.2V-150h1.5v25v48.2l23.5-23.5V-150h1.5v49.7l23.5,23.5V-125v-25
+			h1.5v23.2l23.2-23.2h2.1l23.2,23.2V-150h0.8V0H149.3z M1.1-125L25-101.1L48.9-125L25-148.9L1.1-125z M0.8-26.8l23.5-23.5v-49.4
+			L0.8-123.2V-26.8z M48.9-25L25-48.9L1.1-25L25-1.1L48.9-25z M49.3-123.2L25.8-99.7v49.4l23.5,23.5V-75V-123.2z M98.9-75L75-98.9
+			L51.1-75L75-51.1L98.9-75z M101.1-125l23.9,23.9l23.9-23.9L125-148.9L101.1-125z M100.8-26.8l23.5-23.5v-49.4l-23.5-23.5V-75
+			V-26.8z M148.9-25L125-48.9L101.1-25L125-1.1L148.9-25z M149.3-26.8v-96.4l-23.5,23.5v49.4L149.3-26.8z"/>
+	</g>
+</pattern>
+<rect class="st2" width="1920.3" height="981.1"/>
+<pattern  id="SVGID_1_" xlink:href="#Geometric_Pattern_2" patternTransform="matrix(1 0 0 1 450.255 2.0001)">
+</pattern>
+<rect x="0.3" class="st3" width="1920.3" height="981.1"/>
+</svg>
