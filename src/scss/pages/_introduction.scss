@@ -140,7 +140,7 @@
         background-image: url('/dist/images/core-bg.svg');
         & > .row1{
             display: flex;
-            flex: 0 0 30%;
+            flex: 0 0 20%;
             align-items: center;
             & > h1{
                 width: 100%;
@@ -164,8 +164,17 @@
                 display: flex;
                 flex: 1;
                 flex-direction: column;
-                text-align: center;
                 align-items: center;
+                padding: 8% 4%;
+                & h3{
+                    color: $primary;
+                }
+                & h3, & h2{
+                    margin: 0;
+                }
+                & > p{
+                    text-align: left;
+                }
             }
         }
         & > .row2{
@@ -195,6 +204,57 @@
                     background-image: url('/dist/images/introduction-section6-3.jpg');
                 }
             }
+        }
+    }
+    & > .section7{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
+        background-color: white;
+        & .tag{
+            position: relative;
+            display: flex;
+            flex: .4;
+            height: 60%;
+            background-color: white;
+            & > div:nth-child(1){
+                display: flex;
+                position: relative;
+                width: 40%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #eeeeee;
+                padding: 5%;
+                & > img{
+                    width: 100%;
+                }
+            }
+            & > div:nth-child(2){
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 4%;
+                & > p{
+                    text-align: left;
+                }
+            }
+        }
+        & > .row1{
+            flex: .25;
+            &:nth-child(1){
+                width: 100%;
+                text-align: center;
+            }
+        }
+        & > .row2{
+            flex: 1;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 0 12%;
         }
     }
 }

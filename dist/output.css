@@ -2315,7 +2315,7 @@ select.form-control {
 }
 .introduction > .section6 > .row1 {
   display: flex;
-  flex: 0 0 30%;
+  flex: 0 0 20%;
   align-items: center;
 }
 .introduction > .section6 > .row1 > h1 {
@@ -2340,8 +2340,17 @@ select.form-control {
   display: flex;
   flex: 1;
   flex-direction: column;
-  text-align: center;
   align-items: center;
+  padding: 8% 4%;
+}
+.introduction > .section6 .tag > div:nth-child(2) h3 {
+  color: #bf9372;
+}
+.introduction > .section6 .tag > div:nth-child(2) h3, .introduction > .section6 .tag > div:nth-child(2) h2 {
+  margin: 0;
+}
+.introduction > .section6 .tag > div:nth-child(2) > p {
+  text-align: left;
 }
 .introduction > .section6 > .row2 {
   position: relative;
@@ -2364,6 +2373,57 @@ select.form-control {
 }
 .introduction > .section6 > .row3 .tag:nth-child(2) > div:nth-child(1) {
   background-image: url("/dist/images/introduction-section6-3.jpg");
+}
+.introduction > .section7 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 92px - 36px);
+  background-color: white;
+}
+.introduction > .section7 .tag {
+  position: relative;
+  display: flex;
+  flex: 0.4;
+  height: 60%;
+  background-color: white;
+}
+.introduction > .section7 .tag > div:nth-child(1) {
+  display: flex;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eeeeee;
+  padding: 5%;
+}
+.introduction > .section7 .tag > div:nth-child(1) > img {
+  width: 100%;
+}
+.introduction > .section7 .tag > div:nth-child(2) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4%;
+}
+.introduction > .section7 .tag > div:nth-child(2) > p {
+  text-align: left;
+}
+.introduction > .section7 > .row1 {
+  flex: 0.25;
+}
+.introduction > .section7 > .row1:nth-child(1) {
+  width: 100%;
+  text-align: center;
+}
+.introduction > .section7 > .row2 {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0 12%;
 }
 
 .project-page .project-completed-slider {
