@@ -45,9 +45,23 @@
     }
   }
 
-  position: relative;
-  color: #b7886a;
-  &:hover {
-    font-weight: 700;
+  .view-on-map {
+    display: inline-block;
+    position: relative;
+    color: $primary;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $primary;
+      bottom: 20px;
+      right: -30px;
+      width: 30px;
+      height: 2px;
+    }
   }
 }
