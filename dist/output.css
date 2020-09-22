@@ -1711,6 +1711,7 @@ select.form-control {
 }
 
 .menu-sub {
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;
