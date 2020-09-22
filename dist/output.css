@@ -1495,6 +1495,102 @@ select.form-control {
   cursor: pointer;
 }
 
+.footer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #252531;
+  padding: 2% 8%;
+}
+.footer-col1 {
+  position: relative;
+  display: flex;
+  flex: 0.2;
+  padding: 0 2%;
+  align-items: center;
+}
+.footer-col2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 4%;
+}
+.footer-col2-row1 {
+  flex: 0.28;
+}
+.footer-col2-row2 {
+  display: flex;
+  flex: 1;
+}
+.footer-header {
+  font-family: "UTMBANQUEBOLD";
+  padding: 2%;
+}
+.footer-header h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 20px;
+}
+.footer-header h1 {
+  font-size: 28px;
+  margin: 0;
+  color: #b7886a;
+}
+.footer-logo {
+  width: 100%;
+  min-width: 160px;
+}
+.footer-location {
+  flex: 1;
+  color: #ffffff;
+  padding: 0 2%;
+}
+.footer-location h3 {
+  color: #b7886a;
+}
+.footer-location-row {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.footer-location-row i {
+  margin: 0 4%;
+}
+.footer-social-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #252531;
+}
+.footer-social-media hr {
+  background-color: #ffffff;
+  flex: 1;
+}
+.footer-social-media i {
+  min-width: 48px;
+  min-height: 48px;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  padding: 12px;
+  padding-top: 16px;
+  font-size: 16px;
+  margin: 8px;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #252531;
+  font-size: 14px;
+}
+
 .home {
   /* Custom swiper */
 }
