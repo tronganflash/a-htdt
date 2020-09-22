@@ -1,0 +1,15 @@
+input.form-control, select.form-control{
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid $primary;
+    padding: 18px 15px;
+
+    &:focus {
+        box-shadow: 0 0 2px $primary;
+    }
+}
+
+select.form-control {
+    padding: 1% 1%;
+}

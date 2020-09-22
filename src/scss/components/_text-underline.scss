@@ -1,0 +1,21 @@
+.text-underline {
+  display: flex;
+  width: 24%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2% 0;
+
+  &-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: $primary;
+    border: 1px solid $primary;
+  }
+
+  &-text {
+    color: #b7886a;
+    margin: 0 4%;
+    font-size: 20px;
+  }
+}

@@ -6,10 +6,13 @@
 @import "./bases/bootstrap";
 
 // components
+@import "./components/form-control";
+@import "./components/text-underline";
 @import "./components/news-block";
 @import "./components/news-inline";
 @import "./components/sliders";
 @import "./components/project-popular";
+@import "./components/contact-form";
 
 // layouts
 @import "./layouts/menu";
