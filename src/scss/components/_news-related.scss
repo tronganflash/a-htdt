@@ -1,0 +1,16 @@
+.news-related {
+    position: relative;
+    flex: 0.25;
+    padding: 0 1%;
+    img {
+      width: 100%;
+    }
+    &-description {
+      padding-top: 4%;
+    }
+    &:hover {
+      transition-duration: 0.25s;
+      color: #b7886a;
+    }
+  }
+  

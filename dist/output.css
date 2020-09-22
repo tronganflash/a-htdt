@@ -1460,6 +1460,22 @@ select.form-control {
   margin: 0 auto 30px;
 }
 
+.news-related {
+  position: relative;
+  flex: 0.25;
+  padding: 0 1%;
+}
+.news-related img {
+  width: 100%;
+}
+.news-related-description {
+  padding-top: 4%;
+}
+.news-related:hover {
+  transition-duration: 0.25s;
+  color: #b7886a;
+}
+
 .menu {
   position: sticky;
   top: 0;
@@ -1571,29 +1587,29 @@ select.form-control {
 
 .menu-sub {
   display: flex;
-  position: relative;
-  width: 100%;
-  height: 36px;
-  padding: 0 24%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  height: 36px;
   background-color: #f8f8f8;
 }
 .menu-sub a {
   cursor: pointer;
   margin: 0;
-  flex: 1;
   text-align: center;
   white-space: nowrap;
   transition-duration: 0.25s;
   font-size: 16px;
   font-weight: bold;
+  margin: 0 20px;
 }
 .menu-sub a:hover {
   color: #bf9372;
 }
 .menu-sub-active {
   color: #bf9372;
+  font-weight: bold;
 }
 
 .footer {
@@ -1975,48 +1991,52 @@ select.form-control {
     border-bottom: 0;
   }
 }
-.content {
-  display: flex;
-  flex-direction: column;
+.contact {
+  background: #ffffff url("/dist/images/core-bg.svg");
   position: relative;
-  margin: 0 8%;
-  height: calc(100% - 64px-36px);
-}
-.content-row1 {
-  display: flex;
-  position: relative;
-  flex: 1;
-}
-.content-row2 {
-  display: flex;
-  flex: 1;
-}
-.content-row2__news-bottom {
-  display: flex;
-  width: 100%;
-  padding: 2% 0;
-}
-
-.artical {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.bottom-news {
-  position: relative;
-  flex: 0.25;
-  padding: 0 1%;
-}
-.bottom-news img {
-  width: 100%;
-}
-.bottom-news-description {
-  padding-top: 4%;
-}
-.bottom-news:hover {
-  transition-duration: 0.25s;
   color: #b7886a;
+}
+.contact-title {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 70px 0 30px;
+}
+.contact-location {
+  position: relative;
+  padding: 0 1%;
+  margin-bottom: 100px;
+}
+.contact-location-title {
+  position: relative;
+  color: #bf9372;
+  font-size: 24px;
+}
+.contact-location-title::after {
+  content: "";
+  position: absolute;
+  background-color: #bf9372;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+}
+.contact-location-row {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.contact-location-row i {
+  color: #bf9372;
+  margin: 0 4% 0 0;
+}
+.contact-location iframe {
+  margin-top: 4%;
+  width: 100%;
+  height: 300px;
+}
+.contact:hover {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=output.css.map */
