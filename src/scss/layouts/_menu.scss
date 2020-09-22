@@ -70,15 +70,18 @@
     transition: transform 300ms linear;
 
     .menu-details {
-      display: block;
+      display: flex;
+      align-items: center;
       margin-left: auto;
       margin-bottom: 140px;
       text-align: right;
 
       &-items {
+        font-family: "UTM Banque";
         color: $dark;
         text-transform: uppercase;
         text-decoration: none;
+        font-size: 15px !important;
 
         &:focus {
           color: $primary;

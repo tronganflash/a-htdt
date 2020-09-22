@@ -1,257 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Liên hệ</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../dist/output.css" />
-  <title>Liên hệ</title>
-</head>
+  <body>
+    <!-- menu -->
+    <div class="menu">
+      <div class="menu-flex">
+        <!-- brand / logo -->
+        <div class="menu-brand">
+          <a href="/">
+            <img src="../dist/images/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <!-- end: brand / logo -->
 
-<body>
-  <!-- menu -->
-  <div class="menu">
-    <div class="menu-flex">
-      <!-- brand / logo -->
-      <div class="menu-brand">
-        <a href="/">
-          <img src="../dist/images/logo.svg" alt="Logo" />
-        </a>
+        <!-- detail -->
+        <div class="menu-details">
+          <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+          <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+          <div class="menu-bars">
+            <img src="../dist/images/bars.svg" alt="bars" />
+          </div>
+        </div>
+        <!-- end:detail -->
       </div>
-      <!-- end: brand / logo -->
+      <!-- menu-list -->
+      <div class="menu-list">
+        <div class="menu-details">
+          <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+          <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+          <div class="menu-bars">
+            <div class="x">
+              <div></div>
+              <div></div>
+            </div>
+            <!-- <img src="../dist/images/bars.svg" alt="bars" /> -->
+          </div>
+        </div>
 
-      <!-- detail -->
-      <div class="menu-details">
-        <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
-        <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
-        <div class="menu-bars">
-          <img src="../dist/images/bars.svg" alt="bars" />
+        <div class="menu-list-item menu-list-active">
+          <a href="/">Trang chủ</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="/">Giới thiệu</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="/pages/project.html">Dự án</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="/pages/news.html">Tin tức</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Cơ hội nghề nghiệp</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="/pages/contact.html">Liên hệ</a>
         </div>
       </div>
-      <!-- end:detail -->
-    </div>
 
-    <!-- menu-list -->
-    <div class="menu-list">
-      <div class="menu-details">
-        <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
-        <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
-        <div class="menu-bars">
-          <img src="../dist/images/bars.svg" alt="bars" />
-        </div>
-      </div>
-
-      <div class="menu-list-item menu-list-active">
-        <a href="/">Trang chủ</a>
-      </div>
-
-      <div class="menu-list-item">
-        <a href="/">Giới thiệu</a>
-      </div>
-
-      <div class="menu-list-item">
-        <a href="/pages/project.html">Dự án</a>
-      </div>
-
-      <div class="menu-list-item">
-        <a href="/pages/news.html">Tin tức</a>
-      </div>
-
-      <div class="menu-list-item">
-        <a href="#">Cơ hội nghề nghiệp</a>
-      </div>
-
-      <div class="menu-list-item">
-        <a href="/pages/contact.html">Liên hệ</a>
-      </div>
-    </div>
-
-    <script>
-      let activeListItem = false;
-      document.querySelectorAll(".menu-bars").forEach((bar) => {
-        bar.addEventListener("click", () => {
-          activeListItem = !activeListItem;
-
-          document.querySelector(
-            ".menu-list"
-          ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
+      <script>
+        let activeListItem = false;
+        document.querySelectorAll(".menu-bars").forEach((bar) => {
+          bar.addEventListener("click", () => {
+            activeListItem = !activeListItem;
+            document.querySelector(
+              ".menu-list"
+            ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
+          });
         });
-      });
-    </script>
-    <!-- end:menu-list -->
-  </div>
-  <!-- end:menu -->
-
-  <div class="contact">
-    <h1 class="contact-title">thông tin liên hệ</h1>
-
-    <div class="container row">
-      <div class="contact-location col-md-4">
-        <h2 class="contact-location-title">TRỤ SỞ HÀ NỒI</h2>
-        <div class="contact-location-row">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <p>
-            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận Thanh
-            Xuân.
-          </p>
-        </div>
-        <div class="contact-location-row">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <p>Điện thoại: 999 9999 999.</p>
-        </div>
-        <div class="contact-location-row">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          <p>Email: info@hatangdothi.vn</p>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d465.5781681113639!2d105.80848970674592!3d21.00765017619783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2319a74d589ea001!2sSao%20Mai%20Building!5e0!3m2!1sen!2s!4v1600688875424!5m2!1sen!2s"
-          frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="view-on-map">
-          <a href="https://www.google.com/maps?ll=21.007586,105.808506&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=2529236616386355201"
-            class="link"></a>
-          <h3>XEM GOOGLE MAP</h3>
-          <div class="line-thin"></div>
-        </div>
-      </div>
-      <div class="contact-location col-md-4">
-        <h2 class="contact-location-title">VĂN PHÒNG HỒ CHÍ MINH</h2>
-        <div class="contact-location-row">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <p>
-            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận Thanh
-            Xuân.
-          </p>
-        </div>
-        <div class="contact-location-row">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <p>Điện thoại: 999 9999 999.</p>
-        </div>
-        <div class="contact-location-row">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          <p>Email: info@hatangdothi.vn</p>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d490.02304060643405!2d106.73123361226847!3d10.720262034091235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92981aab875989a!2zS2h1IEJp4buHdCBUaOG7sSBN4bu5IEdpYSAx!5e0!3m2!1sen!2s!4v1600688791942!5m2!1sen!2s"
-          frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="view-on-map">
-          <a href="https://www.google.com/maps?ll=10.720293,106.731243&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=660201390625626266"
-            class="link"></a>
-          <h3>XEM GOOGLE MAP</h3>
-          <div class="line-thin"></div>
-        </div>
-      </div>
-      <div class="contact-location col-md-4">
-        <h2 class="contact-location-title">VĂN PHÒNG PHÚ QUỐC</h2>
-        <div class="contact-location-row">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <p>
-            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận Thanh
-            Xuân.
-          </p>
-        </div>
-        <div class="contact-location-row">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <p>Điện thoại: 999 9999 999.</p>
-        </div>
-        <div class="contact-location-row">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          <p>Email: info@hatangdothi.vn</p>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1388.6010334998468!2d103.98146775449263!3d10.135314303552228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90a8fcb49fe17dbb!2sSONASEA%20PARIS%20VILLAS!5e0!3m2!1sen!2s!4v1600689091203!5m2!1sen!2s"
-          frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="view-on-map">
-          <a href="https://www.google.com/maps?ll=10.135165,103.981627&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=10423859190255680955"
-            class="link"></a>
-          <h3>XEM GOOGLE MAP</h3>
-          <div class="line-thin"></div>
-        </div>
-      </div>
+      </script>
+      <!-- end:menu-list -->
     </div>
-  </div>
+    <!-- end:menu -->
 
-  <!-- footer -->
-  <div class="footer">
-    <div class="footer-col1">
-      <img class="footer-logo" src="../dist/images/logo-foot.svg" alt="" />
-    </div>
-    <div class="footer-col2">
-      <div class="footer-col2-row1">
-        <div class="footer-header">
-          <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN</h2>
-          <h1>HẠ TẦNG ĐÔ THỊ CORPORATION</h1>
-        </div>
-      </div>
-      <div class="footer-col2-row2">
-        <div class="footer-location">
-          <h3>TRỤ SỞ CHÍNH HÀ NỘI</h3>
-          <div class="footer-location-row">
+    <div class="contact">
+      <h1 class="contact-title">thông tin liên hệ</h1>
+
+      <div class="container row">
+        <div class="contact-location col-md-4">
+          <h2 class="contact-location-title">TRỤ SỞ HÀ NỒI</h2>
+          <div class="contact-location-row">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <p>
-              Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
-              Thanh Xuân.
+              Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận Thanh
+              Xuân.
             </p>
           </div>
-          <div class="footer-location-row">
+          <div class="contact-location-row">
             <i class="fa fa-phone" aria-hidden="true"></i>
             <p>Điện thoại: 999 9999 999.</p>
           </div>
-          <div class="footer-location-row">
+          <div class="contact-location-row">
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
             <p>Email: info@hatangdothi.vn</p>
           </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d465.5781681113639!2d105.80848970674592!3d21.00765017619783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2319a74d589ea001!2sSao%20Mai%20Building!5e0!3m2!1sen!2s!4v1600688875424!5m2!1sen!2s"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+          <div class="view-on-map">
+            <a
+              href="https://www.google.com/maps?ll=21.007586,105.808506&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=2529236616386355201"
+              class="link"
+            ></a>
+            <h3>XEM GOOGLE MAP</h3>
+            <div class="line-thin"></div>
+          </div>
         </div>
-        <div class="footer-location">
-          <h3>TRỤ SỞ HỒ CHÍ MINH</h3>
-          <div class="footer-location-row">
+        <div class="contact-location col-md-4">
+          <h2 class="contact-location-title">VĂN PHÒNG HỒ CHÍ MINH</h2>
+          <div class="contact-location-row">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <p>
-              Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
-              Thanh Xuân.
+              Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận Thanh
+              Xuân.
             </p>
           </div>
-          <div class="footer-location-row">
+          <div class="contact-location-row">
             <i class="fa fa-phone" aria-hidden="true"></i>
             <p>Điện thoại: 999 9999 999.</p>
           </div>
-          <div class="footer-location-row">
+          <div class="contact-location-row">
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
             <p>Email: info@hatangdothi.vn</p>
           </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d490.02304060643405!2d106.73123361226847!3d10.720262034091235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92981aab875989a!2zS2h1IEJp4buHdCBUaOG7sSBN4bu5IEdpYSAx!5e0!3m2!1sen!2s!4v1600688791942!5m2!1sen!2s"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+          <div class="view-on-map">
+            <a
+              href="https://www.google.com/maps?ll=10.720293,106.731243&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=660201390625626266"
+              class="link"
+            ></a>
+            <h3>XEM GOOGLE MAP</h3>
+            <div class="line-thin"></div>
+          </div>
         </div>
-        <div class="footer-location">
-          <h3>TRỤ SỞ PHÚ QUỐC</h3>
-          <div class="footer-location-row">
+        <div class="contact-location col-md-4">
+          <h2 class="contact-location-title">VĂN PHÒNG PHÚ QUỐC</h2>
+          <div class="contact-location-row">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <p>
-              Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
-              Thanh Xuân.
+              Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận Thanh
+              Xuân.
             </p>
           </div>
-          <div class="footer-location-row">
+          <div class="contact-location-row">
             <i class="fa fa-phone" aria-hidden="true"></i>
             <p>Điện thoại: 999 9999 999.</p>
           </div>
-          <div class="footer-location-row"></div>
+          <div class="contact-location-row">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <p>Email: info@hatangdothi.vn</p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1388.6010334998468!2d103.98146775449263!3d10.135314303552228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90a8fcb49fe17dbb!2sSONASEA%20PARIS%20VILLAS!5e0!3m2!1sen!2s!4v1600689091203!5m2!1sen!2s"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+          <div class="view-on-map">
+            <a
+              href="https://www.google.com/maps?ll=10.135165,103.981627&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=10423859190255680955"
+              class="link"
+            ></a>
+            <h3>XEM GOOGLE MAP</h3>
+            <div class="line-thin"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-social-media">
-    <hr />
-    <a style="color: white" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    <a style="color: white" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-    <a style="color: white" href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-    <hr />
-  </div>
-  <div class="copyright">
-    <p>
-      © 2020, Bản quyền thuộc về HẠ TẦNG ĐÔ THỊ CORPORATION. Made with  by TQ
-      Design.
-    </p>
-  </div>
-  <!-- end:footer -->
-</body>
 
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-col1">
+        <img class="footer-logo" src="../dist/images/logo-foot.svg" alt="" />
+      </div>
+      <div class="footer-col2">
+        <div class="footer-col2-row1">
+          <div class="footer-header">
+            <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN</h2>
+            <h1>HẠ TẦNG ĐÔ THỊ CORPORATION</h1>
+          </div>
+        </div>
+        <div class="footer-col2-row2">
+          <div class="footer-location">
+            <h3>TRỤ SỞ CHÍNH HÀ NỘI</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>Email: info@hatangdothi.vn</p>
+            </div>
+          </div>
+          <div class="footer-location">
+            <h3>TRỤ SỞ HỒ CHÍ MINH</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>Email: info@hatangdothi.vn</p>
+            </div>
+          </div>
+          <div class="footer-location">
+            <h3>TRỤ SỞ PHÚ QUỐC</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social-media">
+      <hr />
+      <a style="color: white" href="#"
+        ><i class="fa fa-facebook" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-youtube-play" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-skype" aria-hidden="true"></i
+      ></a>
+      <hr />
+    </div>
+    <div class="copyright">
+      <p>
+        © 2020, Bản quyền thuộc về HẠ TẦNG ĐÔ THỊ CORPORATION. Made with  by TQ
+        Design.
+      </p>
+    </div>
+    <!-- end:footer -->
+  </body>
 </html>
