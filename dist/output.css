@@ -1442,7 +1442,6 @@ select.form-control {
   background-repeat: no-repeat;
   background-size: bottom;
   overflow: hidden;
-  transition: all 500ms linear;
 }
 .project-pop-list .project-pop-item {
   position: relative;
@@ -2007,11 +2006,9 @@ select.form-control {
 @keyframes scaleAnimation {
   from {
     opacity: 0;
-    background-size: 150%;
   }
   to {
     opacity: 1;
-    background-size: 100%;
   }
 }
 @media screen and (max-width: 990px) {
