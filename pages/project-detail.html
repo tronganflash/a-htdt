@@ -21,7 +21,7 @@
       <div class="menu-flex">
         <!-- brand / logo -->
         <div class="menu-brand">
-          <a href="#">
+          <a href="/">
             <img src="../dist/images/logo.svg" alt="Logo" />
           </a>
         </div>
@@ -37,31 +37,34 @@
         </div>
         <!-- end:detail -->
       </div>
-
       <!-- menu-list -->
       <div class="menu-list">
         <div class="menu-details">
           <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
           <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
           <div class="menu-bars">
-            <img src="../dist/images/bars.svg" alt="bars" />
+            <div class="x">
+              <div></div>
+              <div></div>
+            </div>
+            <!-- <img src="../dist/images/bars.svg" alt="bars" /> -->
           </div>
         </div>
 
         <div class="menu-list-item menu-list-active">
-          <a href="#">Trang chủ</a>
+          <a href="/">Trang chủ</a>
         </div>
 
         <div class="menu-list-item">
-          <a href="#">Giới thiệu</a>
+          <a href="/">Giới thiệu</a>
         </div>
 
         <div class="menu-list-item">
-          <a href="#">Dự án</a>
+          <a href="/pages/project.html">Dự án</a>
         </div>
 
         <div class="menu-list-item">
-          <a href="#">Tin tức</a>
+          <a href="/pages/news.html">Tin tức</a>
         </div>
 
         <div class="menu-list-item">
@@ -69,7 +72,7 @@
         </div>
 
         <div class="menu-list-item">
-          <a href="#">Liên hệ</a>
+          <a href="/pages/contact.html">Liên hệ</a>
         </div>
       </div>
 
@@ -78,7 +81,6 @@
         document.querySelectorAll(".menu-bars").forEach((bar) => {
           bar.addEventListener("click", () => {
             activeListItem = !activeListItem;
-
             document.querySelector(
               ".menu-list"
             ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;

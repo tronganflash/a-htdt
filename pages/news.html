@@ -33,19 +33,17 @@
         </div>
         <!-- end:detail -->
       </div>
-      <div class="menu-sub">
-        <a class="menu-sub-active">SỰ KIỆN NỔI BẬT</a>
-        <a>TIN TỨC</a>
-        <a>HOẠT ĐỘNG CỘNG ĐỒNG</a>
-      </div>
-
       <!-- menu-list -->
       <div class="menu-list">
         <div class="menu-details">
           <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
           <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
           <div class="menu-bars">
-            <img src="../dist/images/bars.svg" alt="bars" />
+            <div class="x">
+              <div></div>
+              <div></div>
+            </div>
+            <!-- <img src="../dist/images/bars.svg" alt="bars" /> -->
           </div>
         </div>
 
@@ -79,7 +77,6 @@
         document.querySelectorAll(".menu-bars").forEach((bar) => {
           bar.addEventListener("click", () => {
             activeListItem = !activeListItem;
-
             document.querySelector(
               ".menu-list"
             ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
@@ -88,10 +85,16 @@
       </script>
       <!-- end:menu-list -->
     </div>
+    <div class="menu-sub">
+      <a class="menu-sub-active">SỰ KIỆN NỔI BẬT</a>
+      <a>TIN TỨC</a>
+      <a>HOẠT ĐỘNG CỘNG ĐỒNG</a>
+    </div>
+
     <!-- end:menu -->
 
     <!-- news -->
-    <div class="news my-10" style="background-image: none;">
+    <div class="news my-10" style="background-image: none">
       <div class="news-main container row">
         <div class="col-6 pl-0 news-block pr-5">
           <img src="../dist/images/slider-bg-4.jpg" alt="" />

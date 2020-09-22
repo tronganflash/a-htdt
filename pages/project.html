@@ -7,7 +7,10 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="/dist/packages/swiper-5.4.5/build/css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="/dist/packages/swiper-5.4.5/build/css/swiper.css"
+    />
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Tin tức chi tiết</title>
   </head>
@@ -34,14 +37,17 @@
         </div>
         <!-- end:detail -->
       </div>
-
       <!-- menu-list -->
       <div class="menu-list">
         <div class="menu-details">
           <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
           <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
           <div class="menu-bars">
-            <img src="../dist/images/bars.svg" alt="bars" />
+            <div class="x">
+              <div></div>
+              <div></div>
+            </div>
+            <!-- <img src="../dist/images/bars.svg" alt="bars" /> -->
           </div>
         </div>
 
@@ -75,7 +81,6 @@
         document.querySelectorAll(".menu-bars").forEach((bar) => {
           bar.addEventListener("click", () => {
             activeListItem = !activeListItem;
-
             document.querySelector(
               ".menu-list"
             ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;

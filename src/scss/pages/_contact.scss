@@ -6,6 +6,7 @@
     text-transform: uppercase;
     text-align: center;
     padding: 70px 0 30px;
+    margin: 0;
   }
 
   &-location {
@@ -17,6 +18,7 @@
       position: relative;
       color: $primary;
       font-size: 24px;
+      
       &::after {
         content: "";
         position: absolute;

@@ -1734,6 +1734,8 @@ select.form-control {
 
 .menu-sub {
   position: sticky;
+  top: 92px;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1741,6 +1743,7 @@ select.form-control {
   text-align: center;
   height: 36px;
   background-color: #f8f8f8;
+  z-index: 100;
 }
 .menu-sub a {
   cursor: pointer;
@@ -2071,6 +2074,7 @@ select.form-control {
   text-transform: uppercase;
   text-align: center;
   padding: 70px 0 30px;
+  margin: 0;
 }
 .contact-location {
   position: relative;
@@ -2124,7 +2128,7 @@ select.form-control {
 }
 
 .introduction .banner {
-  height: calc(100vh - 86px - 36px);
+  height: calc(100vh - 92px - 36px);
   background-image: url("/dist/images/introduction-banner.jpg");
   background-position: center;
 }
