@@ -1,0 +1,112 @@
+.project-detail {
+  .project-production {
+    margin: 70px 0;
+    &-title,
+    &-subtitle {
+      text-align: center;
+      font-size: 24px;
+      color: $primary;
+    }
+
+    & > .row {
+      margin-top: 80px;
+    }
+  }
+
+  .media {
+    &-left,
+    &-right {
+      &-title {
+        color: $primary;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+      }
+
+      .row {
+        .media-card {
+          position: relative;
+
+          &:hover {
+            .media-card-img {
+              img {
+                transform: scale(1.2);
+              }
+              .media-card-view {
+                visibility: visible;
+                transform: translate(0, 0);
+              }
+            }
+          }
+
+          .media-card-img {
+            position: relative;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all 300ms linear;
+            }
+
+            .media-card-view {
+              transform: translate(0, -100%);
+              visibility: hidden;
+              transition: all 300ms linear;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: rgba($color: $dark, $alpha: 0.5);
+
+              div {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 1px solid $light;
+
+                .media-card-icon {
+                  font-size: 20px;
+                  color: $light;
+                }
+              }
+            }
+          }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+          text-align: center;
+          font-size: 16px;
+          margin: 5px 0 10px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .swiper-container {
+  }
+  .swiper-pagination-bullets {
+    transform: translateY(10px);
+  }
+
+  .swiper-pagination-bullet {
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #bf9372;
+  }
+}
