@@ -1459,12 +1459,16 @@ select.form-control {
   top: 0;
   left: 0;
   padding: 22px 100px;
-  z-index: 100;
+  z-index: 9999;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 .menu-flex {
   display: flex;
   align-items: center;
+  z-index: 9999;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 100px);
   max-width: 1720px;
   margin: 0 auto;
 }
@@ -1493,6 +1497,68 @@ select.form-control {
   height: 30px;
   object-fit: contain;
   cursor: pointer;
+}
+.menu-list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 650px;
+  width: 650px;
+  height: 100vh;
+  z-index: 0;
+  opacity: 1;
+  padding-top: 25px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: #ffffff url("/dist/images/core-bg.svg");
+  box-shadow: 0 -1px 2px #bf9372;
+  transform: translateX(100%);
+  transition: transform 300ms linear;
+}
+.menu-list .menu-details {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 140px;
+  text-align: right;
+}
+.menu-list .menu-details-items {
+  color: #333333;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu-list .menu-details-items:focus {
+  color: #bf9372;
+}
+.menu-list .menu-details .menu-bars {
+  display: inline-block;
+}
+.menu-list .menu-details .menu-bars img {
+  width: 50px;
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.menu-list-item {
+  display: block;
+  margin-bottom: 45px;
+}
+.menu-list-item a {
+  margin-left: 80px;
+  text-decoration: none;
+  text-emphasis: none;
+  color: #333333;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.menu-list-active {
+  background-image: url("/dist/images/menu-active.svg");
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #bf9372;
+}
+.menu-list-active a {
+  color: #bf9372;
+  font-weight: bold;
+  margin-left: 90px;
 }
 
 .footer {

@@ -45,6 +45,56 @@
         </div>
         <!-- end:detail -->
       </div>
+
+      <!-- menu-list -->
+      <div class="menu-list">
+        <div class="menu-details">
+          <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+          <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+          <div class="menu-bars">
+            <img src="./dist/images/bars.svg" alt="bars" />
+          </div>
+        </div>
+
+        <div class="menu-list-item menu-list-active">
+          <a href="#">Trang chủ</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Giới thiệu</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Dự án</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Tin tức</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Cơ hội nghề nghiệp</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Liên hệ</a>
+        </div>
+      </div>
+
+      <script>
+        let activeListItem = false;
+        console.log(document.querySelectorAll(".menu-bars"))
+        document.querySelectorAll(".menu-bars").forEach((bar) => {
+          bar.addEventListener("click", () => {
+            activeListItem = !activeListItem;
+
+            document.querySelector(
+              ".menu-list"
+            ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
+          });
+        });
+      </script>
+      <!-- end:menu-list -->
     </div>
     <!-- end:menu -->
 
@@ -664,9 +714,15 @@
     </div>
     <div class="footer-social-media">
       <hr />
-      <a style="color: white;" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a style="color: white;" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-      <a style="color: white;" href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-facebook" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-youtube-play" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-skype" aria-hidden="true"></i
+      ></a>
       <hr />
     </div>
     <div class="copyright">
@@ -677,6 +733,7 @@
     </div>
     <!-- end:footer -->
 
+    <!--------------Script-------------->
     <!-- Sliders -->
     <script>
       let active = 0;
@@ -821,5 +878,6 @@
       });
     </script>
     <!-- Swiper -->
+    <!--------------end:Script-------------->
   </body>
 </html>
