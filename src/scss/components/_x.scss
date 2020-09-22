@@ -1,0 +1,19 @@
+.x{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    & > div{
+        width: 48px;
+        height: 8px;
+        background-color: $primary;
+        position: absolute;
+        top: 50%;
+        border-radius: 8px;
+    }
+    & > div:nth-child(1){
+        transform: translateY(-50%) rotate(45deg);
+    }
+    & > div:nth-child(2){
+        transform: translateY(-50%) rotate(135deg);
+    }
+}

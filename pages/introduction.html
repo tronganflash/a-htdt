@@ -46,7 +46,11 @@
                 <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
                 <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
                 <div class="menu-bars">
-                    <img src="../dist/images/bars.svg" alt="bars" />
+                    <div class="x">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <!-- <img src="../dist/images/bars.svg" alt="bars" /> -->
                 </div>
             </div>
 
@@ -80,7 +84,6 @@
             document.querySelectorAll(".menu-bars").forEach((bar) => {
                 bar.addEventListener("click", () => {
                     activeListItem = !activeListItem;
-
                     document.querySelector(
                         ".menu-list"
                     ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
@@ -120,7 +123,35 @@
             </div>
         </div>
         <div class="section3">
-
+            <div class="row1">
+                <div class="col1"></div>
+                <div class="col2">
+                    <h1>TẦM NHÌN</h1>
+                    <p>Bằng nhiệt huyết và khát vọng vươn lên cùng chiến lược đầu tư – phát triển bền vững, Trần Anh
+                        Group phấn đấu trở thành đơn vị đầu tư và phát triển dự án được sự tín nhiệm của khách hàng,
+                        hướng đến một phong cách hợp tác cởi mở, chia sẻ, đồng hành và chuyên nghiệp.</p>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="col1">
+                    <h1>SỨ MỆNH</h1>
+                    <ul>
+                        <li>
+                            <p>Tối ưu giải pháp tái đầu tư sinh lợi, an toàn và đa tiện ích cho khách hàng</p>
+                        </li>
+                        <li>
+                            <p>Tối đa hoá giá trị gia tăng cho đối tác, nhà đầu tư và cổ đông</p>
+                        </li>
+                        <li>
+                            <p>Mang lại giá trị về nghề nghiệp và sự thịnh vượng cho cán bộ nhân viên công ty</p>
+                        </li>
+                        <li>
+                            <p>Đồng hành cùng sự phát triển chung của cộng đồng xã hội</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col2"></div>
+            </div>
         </div>
         <!-- end banner -->
     </div>
