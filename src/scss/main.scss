@@ -6,6 +6,7 @@
 @import "./bases/bootstrap";
 
 // components
+@import "./components/link";
 @import "./components/form-control";
 @import "./components/text-underline";
 @import "./components/news-block";
@@ -16,7 +17,9 @@
 
 // layouts
 @import "./layouts/menu";
+@import "./layouts/menu-sub";
 @import "./layouts/footer";
 
 // pages
-@import "./pages/home"
+@import "./pages/home";
+@import "./pages/news-detail";

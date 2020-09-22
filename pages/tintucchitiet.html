@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Tin tức chi tiết</title>
+  </head>
+
+  <body>
+    <!-- menu -->
+    <div class="menu">
+      <div class="menu-flex">
+        <!-- brand / logo -->
+        <div class="menu-brand">
+          <a href="#">
+            <img src="../dist/images/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <!-- end: brand / logo -->
+
+        <!-- detail -->
+        <div class="menu-details">
+          <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+          <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+          <div class="menu-bars">
+            <img src="../dist/images/bars.svg" alt="bars" />
+          </div>
+        </div>
+        <!-- end:detail -->
+      </div>
+
+      <!-- menu-list -->
+      <div class="menu-list">
+        <div class="menu-details">
+          <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+          <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+          <div class="menu-bars">
+            <img src="../dist/images/bars.svg" alt="bars" />
+          </div>
+        </div>
+
+        <div class="menu-list-item menu-list-active">
+          <a href="#">Trang chủ</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Giới thiệu</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Dự án</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Tin tức</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Cơ hội nghề nghiệp</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Liên hệ</a>
+        </div>
+      </div>
+
+      <script>
+        let activeListItem = false;
+        document.querySelectorAll(".menu-bars").forEach((bar) => {
+          bar.addEventListener("click", () => {
+            activeListItem = !activeListItem;
+
+            document.querySelector(
+              ".menu-list"
+            ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
+          });
+        });
+      </script>
+      <!-- end:menu-list -->
+    </div>
+    <!-- end:menu -->
+
+    <!----- content ----->
+    <div class="container news-detail">
+      <div class="content-row1">
+        <div class="artical">
+          <h2 style="text-align: center; width: 100%">
+            Sim Island – tiềm năng thúc đẩy kinh tế ban đêm của Phú Quốc
+          </h2>
+          <b
+            >Nhận thấy vai trò quan trọng của kinh tế ban đêm, Sim Island đã
+            được quy hoạch trở thành “thiên đường nhiệt đới không ngủ hàng đầu
+            Việt Nam” nhằm tạo tiền đề cho sự bứt phá của kinh tế ban đêm tại
+            Phú Quốc.</b
+          >
+          <img
+            style="width: 64%; margin: 2% auto"
+            src="../dist/images/main.png"
+            alt=""
+          />
+          <b>Kinh tế ban đêm – Cơ hội cho các quốc gia du lịch</b>
+          <p>
+            Kinh tế ban đêm không phải là một khái niệm mới bởi vì thực tế từ
+            các nước trên thế giới, kinh tế ban đêm đã mang lại những giá trị
+            lớn, thúc đẩy đời sống kinh tế, xã hội; tạo giá trị thặng dư và góp
+            một phần thu hút ngoại tệ. Có thể kể đến Mỹ, Anh, Úc và Châu Á không
+            thể không nhắc đến Nhật Bản, Trung Quốc và cả Thái Lan.
+          </p>
+          <p>
+            Trong đó, thủ đô London được xem là điểm đến hàng đầu thế giới về
+            cuộc sống ban đêm. Theo ghi nhận của NTIA, kinh tế ban đêm có giá
+            trị khoảng 6% GDP nước Anh, tương đương 66 tỷ bảng Anh/năm. Quy mô
+            nền kinh tế ban đêm Sydney hiện ước đạt 27,2 tỷ USD mỗi năm, tạo ra
+            234.000 việc làm. Nền kinh tế ban đêm ở Sydney được xem là yếu tố
+            kinh tế có giá trị nhất tại Australia. Nhật Bản ước tính, quy mô thị
+            trường có thể lên đến 400 tỷ yen (khoảng 3,7 tỷ USD) vào năm 2020
+            nếu mỗi du khách đến Nhật Bản chi tiêu thêm 10.000 yen (khoảng 92
+            USD) mỗi đêm.
+          </p>
+          <p>
+            Quốc gia gần với Việt Nam nhất là Thái Lan được người phương Tây ví
+            Bangkok là thành phố không bao giờ ngơi nghỉ vì các hoạt động vui
+            chơi giải trí diễn ra suốt ngày đêm ở đây. Trung bình, du khách tại
+            Bangkok có thời gian lưu trú là 4,7 đêm và chi tiêu mỗi ngày khoảng
+            173USD. Năm 2018, Thái Lan đã vượt qua các quốc gia và lãnh thổ khác
+            ở châu Á về lợi nhuận từ du lịch khi đạt 57 tỉ USD tiền du khách đổ
+            vào nước này, gần gấp đôi Macau (36 tỉ USD), Nhật Bản (34 tỉ USD),
+            Hồng Kông (33 tỉ USD) và Trung Quốc (33 tỉ USD).
+          </p>
+        </div>
+      </div>
+      <div class="content-row2">
+        <div class="content-row2__news-bottom">
+          <div class="bottom-news">
+            <a class="link" href="#"></a>
+            <img src="../dist/images/bottom-news1.png" alt="" />
+            <div class="bottom-news-title">
+              <h4>Bất động sản nghỉ dưỡng Phú Quốc bước vào cuộc đua mới</h4>
+              <div class="line"></div>
+            </div>
+            <div class="bottom-news-description">
+              Nhần thấy vai trò quan trong của kinh tế ban dệm, Sim Island đã
+              được quy hoạch trở thành "thiên đường nhiệt đới không ngủ hàng đầu
+              Việt Nam..."
+            </div>
+          </div>
+          <div class="bottom-news">
+            <a class="link" href="#"></a>
+            <img src="../dist/images/bottom-news2.png" alt="" />
+            <div class="bottom-news-title">
+              <h4>Bất động sản nghỉ dưỡng Phú Quốc bước vào cuộc đua mới</h4>
+              <div class="line"></div>
+            </div>
+            <div class="bottom-news-description">
+              Nhần thấy vai trò quan trong của kinh tế ban dệm, Sim Island đã
+              được quy hoạch trở thành "thiên đường nhiệt đới không ngủ hàng đầu
+              Việt Nam..."
+            </div>
+          </div>
+          <div class="bottom-news">
+            <a class="link" href="#"></a>
+            <img src="../dist/images/bottom-news3.png" alt="" />
+            <div class="bottom-news-title">
+              <h4>Bất động sản nghỉ dưỡng Phú Quốc bước vào cuộc đua mới</h4>
+              <div class="line"></div>
+            </div>
+            <div class="bottom-news-description">
+              Nhần thấy vai trò quan trong của kinh tế ban dệm, Sim Island đã
+              được quy hoạch trở thành "thiên đường nhiệt đới không ngủ hàng đầu
+              Việt Nam..."
+            </div>
+          </div>
+          <div class="bottom-news">
+            <a class="link" href="#"></a>
+            <img src="../dist/images/bottom-news4.png" alt="" />
+            <div class="bottom-news-title">
+              <h4>Bất động sản nghỉ dưỡng Phú Quốc bước vào cuộc đua mới</h4>
+              <div class="line"></div>
+            </div>
+            <div class="bottom-news-description">
+              Nhần thấy vai trò quan trong của kinh tế ban dệm, Sim Island đã
+              được quy hoạch trở thành "thiên đường nhiệt đới không ngủ hàng đầu
+              Việt Nam..."
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- end: content ----->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-col1">
+        <img class="footer-logo" src="../dist/images/logo-foot.svg" alt="" />
+      </div>
+      <div class="footer-col2">
+        <div class="footer-col2-row1">
+          <div class="footer-header">
+            <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN</h2>
+            <h1>HẠ TẦNG ĐÔ THỊ CORPORATION</h1>
+          </div>
+        </div>
+        <div class="footer-col2-row2">
+          <div class="footer-location">
+            <h3>TRỤ SỞ CHÍNH HÀ NỘI</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>Email: info@hatangdothi.vn</p>
+            </div>
+          </div>
+          <div class="footer-location">
+            <h3>TRỤ SỞ HỒ CHÍ MINH</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>Email: info@hatangdothi.vn</p>
+            </div>
+          </div>
+          <div class="footer-location">
+            <h3>TRỤ SỞ PHÚ QUỐC</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social-media">
+      <hr />
+      <a style="color: white" href="#"
+        ><i class="fa fa-facebook" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-youtube-play" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-skype" aria-hidden="true"></i
+      ></a>
+      <hr />
+    </div>
+    <div class="copyright">
+      <p>
+        © 2020, Bản quyền thuộc về HẠ TẦNG ĐÔ THỊ CORPORATION. Made with  by TQ
+        Design.
+      </p>
+    </div>
+    <!-- end:footer -->
+  </body>
+</html>
