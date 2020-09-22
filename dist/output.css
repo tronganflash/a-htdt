@@ -2103,6 +2103,36 @@ select.form-control {
   height: 2px;
 }
 
+.introduction .banner {
+  height: calc(100vh - 86px - 36px);
+  background-image: url("/dist/images/introduction-banner.jpg");
+  background-position: center;
+}
+.introduction .section2 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 8% 12%;
+  background-image: url("/dist/images/introduction-section2-bg.svg");
+  background-position: center;
+}
+.introduction .section2 > .col1 {
+  position: relative;
+  flex: 0.5;
+  height: 100%;
+  background-image: url("/dist/images/introduction-director.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.introduction .section2 > .col2 {
+  flex: 1;
+  padding-left: 8%;
+}
+.introduction .section2 > .col2 > h2 {
+  color: #bf9372;
+}
+
 .project-page .project-completed-slider {
   padding-top: 50px;
   padding-bottom: 50px;

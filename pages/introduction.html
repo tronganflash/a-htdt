@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Tin tức chi tiết</title>
+</head>
+
+<body>
+    <!-- menu -->
+    <div class="menu">
+        <div class="menu-flex">
+            <!-- brand / logo -->
+            <div class="menu-brand">
+                <a href="#">
+                    <img src="../dist/images/logo.svg" alt="Logo" />
+                </a>
+            </div>
+            <!-- end: brand / logo -->
+
+            <!-- detail -->
+            <div class="menu-details">
+                <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+                <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+                <div class="menu-bars">
+                    <img src="../dist/images/bars.svg" alt="bars" />
+                </div>
+            </div>
+            <!-- end:detail -->
+        </div>
+        <div class="menu-sub">
+            <a class="menu-sub-active">THÔNG DIỆP</a>
+            <a>TẦM NHÌN - SỨ MỆNH</a>
+            <a>GIÁ TRỊ CỐT LÕI</a>
+            <a>VĂN HÓA CÔNG TY</a>
+            <a>BAN LÃNH ĐẠO</a>
+            <a>CÔNG TY THÀNH VIÊN</a>
+        </div>
+
+        <!-- menu-list -->
+        <div class="menu-list">
+            <div class="menu-details">
+                <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+                <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+                <div class="menu-bars">
+                    <img src="../dist/images/bars.svg" alt="bars" />
+                </div>
+            </div>
+
+            <div class="menu-list-item menu-list-active">
+                <a href="#">Trang chủ</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="#">Giới thiệu</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="#">Dự án</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="#">Tin tức</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="#">Cơ hội nghề nghiệp</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="#">Liên hệ</a>
+            </div>
+        </div>
+
+        <script>
+            let activeListItem = false;
+            document.querySelectorAll(".menu-bars").forEach((bar) => {
+                bar.addEventListener("click", () => {
+                    activeListItem = !activeListItem;
+
+                    document.querySelector(
+                        ".menu-list"
+                    ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
+                });
+            });
+        </script>
+        <!-- end:menu-list -->
+    </div>
+    <!-- end:menu -->
+    <div class="container-fluid introduction">
+        <!-- banner -->
+        <div class="banner"></div>
+        <div class="section2">
+            <div class="col1">
+            </div>
+            <div class="col2">
+                <h2>THÔNG ĐIỆP CHỦ TỊCH</h2>
+                <h1>HẠ TẦNG ĐÔ THỊ CORPORATION</h1>
+                <b>Kính thưa Quý khách hàng, Quý đối tác và toàn thể nhân viên!</b>
+                <p>Công ty Cổ Phần Tập Đoàn Hạ tầng Đô Thị Corporation được thành lập theo quyết định số 0103771798 do
+                    Sở Kế Hoạch Đầu Tư TP Hà Nội cấp ngày 29/04/2009, hoạt động trong lĩnh vực xây dựng. Từ một công ty
+                    chủ yếu xây dựng nhà dân dụng và các công trình văn phòng cao ốc trên địa bàn Hà Nội, trải qua 8 năm
+                    hoạt động, công ty đã khẳng định thương hiệu và chất lượng trong lĩnh vực xây dựng các công trình
+                    văn phòng.</p>
+                <p>Với đam mê dành cho ngành xây dựng và khát khao tạo ra những công trình chất lượng, bền vững với thời
+                    gian, chúng tôi đang nỗ lực từng ngày để đem đến cho khách hàng những giá trị tốt nhất. Với chiến
+                    lược phát triển tập trung vào chuỗi gắn kết giá trị trong đó sản phẩm cuối cùng là các công trình
+                    văn phòng cao ốc, các công trình dân dụng, các công trình giao thông hạ tầng, các khách sạn hiện đại
+                    & resort cao cấp, công ty đã không ngừng cải tiến, áp dụng những biện pháp thi công hiện đại, an
+                    toàn, hiệu quả để công trình đạt chất lượng cao nhất.</p>
+                <p>Trong suốt những năm hoạt động trong nghành, chúng tôi luôn thấu hiểu được những yêu cầu, mong muốn
+                    của các chủ đầu tư dành cho công trình của mình, chính vì thế, trong quá trình làm việc, chúng tôi
+                    luôn đặt hết tâm huyết vào tiến độ thi công, chất lượng công trình và an toàn lao động, tạo dựng
+                    niềm tin cho các chủ đầu tư qua năng lực thi công và phong cách chuyên nghiệp.</p>
+                <p>Chúng tôi tin tưởng và tự hào rằng, chúng tôi sẽ cùng Quý khách hàng kiến tạo nên những công trình
+                    bền vững.</p>
+            </div>
+        </div>
+        <div class="section3">
+
+        </div>
+        <!-- end banner -->
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-col1">
+            <img class="footer-logo" src="../dist/images/logo-foot.svg" alt="" />
+        </div>
+        <div class="footer-col2">
+            <div class="footer-col2-row1">
+                <div class="footer-header">
+                    <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN</h2>
+                    <h1>HẠ TẦNG ĐÔ THỊ CORPORATION</h1>
+                </div>
+            </div>
+            <div class="footer-col2-row2">
+                <div class="footer-location">
+                    <h3>TRỤ SỞ CHÍNH HÀ NỘI</h3>
+                    <div class="footer-location-row">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p>
+                            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                            Thanh Xuân.
+                        </p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>Điện thoại: 999 9999 999.</p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <p>Email: info@hatangdothi.vn</p>
+                    </div>
+                </div>
+                <div class="footer-location">
+                    <h3>TRỤ SỞ HỒ CHÍ MINH</h3>
+                    <div class="footer-location-row">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p>
+                            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                            Thanh Xuân.
+                        </p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>Điện thoại: 999 9999 999.</p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <p>Email: info@hatangdothi.vn</p>
+                    </div>
+                </div>
+                <div class="footer-location">
+                    <h3>TRỤ SỞ PHÚ QUỐC</h3>
+                    <div class="footer-location-row">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p>
+                            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                            Thanh Xuân.
+                        </p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>Điện thoại: 999 9999 999.</p>
+                    </div>
+                    <div class="footer-location-row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-social-media">
+        <hr />
+        <a style="color: white" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a style="color: white" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        <a style="color: white" href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+        <hr />
+    </div>
+    <div class="copyright">
+        <p>
+            © 2020, Bản quyền thuộc về HẠ TẦNG ĐÔ THỊ CORPORATION. Made with  by TQ
+            Design.
+        </p>
+    </div>
+    <!-- end:footer -->
+</body>
+
+</html>
