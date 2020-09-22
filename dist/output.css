@@ -2129,7 +2129,7 @@ select.form-control {
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 86px - 36px);
   padding: 8% 12%;
   background-image: url("/dist/images/introduction-section2-bg.svg");
   background-position: center;
@@ -2154,35 +2154,163 @@ select.form-control {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 86px - 36px);
 }
 .introduction .section3 > .row1 {
   position: relative;
   display: flex;
-  flex: 0.5;
+  flex: 1;
 }
 .introduction .section3 > .row1 > .col1 {
-  flex: 0.5;
+  flex: 0 0 50%;
   background-image: url("/dist/images/introduction-section3-1.jpg");
   background-position: center;
   background-size: cover;
 }
 .introduction .section3 > .row1 > .col2 {
-  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 8%;
+}
+.introduction .section3 > .row1 > .col2 > h1::after {
+  content: "";
+  display: block;
+  background: #bf9372;
+  height: 4px;
+  width: 4%;
+  position: absolute;
 }
 .introduction .section3 > .row2 {
   position: relative;
   display: flex;
-  flex: 0.5;
+  flex: 1;
 }
 .introduction .section3 > .row2 > .col1 {
-  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.introduction .section3 > .row2 > .col1 > h1::after {
+  content: "";
+  display: block;
+  background: #bf9372;
+  height: 4px;
+  width: 4%;
+  position: absolute;
 }
 .introduction .section3 > .row2 > .col2 {
-  flex: 0.5;
+  flex: 0 0 50%;
   background-image: url("/dist/images/introduction-section3-2.jpg");
   background-position: center;
   background-size: cover;
+}
+.introduction > .section5 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 86px - 36px);
+}
+.introduction > .section5 > .col:nth-child(1) {
+  flex: 1;
+  height: 100%;
+  background-image: url("/dist/images/introduction-section5-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.introduction > .section5 > .col:nth-child(2) {
+  flex: 1;
+  background-image: url("/dist/images/introduction-section5-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.introduction > .section5 > .col:nth-child(3) {
+  flex: 1;
+  background-image: url("/dist/images/introduction-section5-3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.introduction > .section5 > .col:nth-child(4) {
+  flex: 1;
+  background-image: url("/dist/images/introduction-section5-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.introduction > .section5 > .col:nth-child(5) {
+  flex: 1;
+  background-image: url("/dist/images/introduction-section5-5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.introduction > .section5 > .col:nth-child(6) {
+  flex: 1;
+  background-image: url("/dist/images/introduction-section5-6.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.introduction > .section6 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 86px - 36px);
+  background-image: url("/dist/images/core-bg.svg");
+}
+.introduction > .section6 > .row1 {
+  display: flex;
+  flex: 0 0 30%;
+  align-items: center;
+}
+.introduction > .section6 > .row1 > h1 {
+  width: 100%;
+  text-align: center;
+}
+.introduction > .section6 .tag {
+  position: relative;
+  display: flex;
+  flex: 0.4;
+  height: 100%;
+  background-color: white;
+  margin: 0 0.5%;
+}
+.introduction > .section6 .tag > div:nth-child(1) {
+  width: 40%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.introduction > .section6 .tag > div:nth-child(2) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.introduction > .section6 > .row2 {
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.introduction > .section6 > .row2 .tag:nth-child(1) > div:nth-child(1) {
+  background-image: url("/dist/images/introduction-section6-1.png");
+}
+.introduction > .section6 > .row3 {
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 1%;
+}
+.introduction > .section6 > .row3 .tag:nth-child(1) > div:nth-child(1) {
+  background-image: url("/dist/images/introduction-section6-2.jpg");
+}
+.introduction > .section6 > .row3 .tag:nth-child(2) > div:nth-child(1) {
+  background-image: url("/dist/images/introduction-section6-3.jpg");
 }
 
 .project-page .project-completed-slider {
