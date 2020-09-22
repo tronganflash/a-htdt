@@ -1,0 +1,60 @@
+.project-page {
+  .project-completed {
+    &-slider {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .swiper-wrapper {
+        .swiper-slide {
+          &-title {
+            color: $primary;
+            font-size: 28px;
+          }
+
+          a {
+            text-decoration: none;
+            color: $dark;
+          }
+
+          &:nth-child(even) {
+            padding: 0 50px;
+          }
+
+          &:nth-child(odd) {
+            padding: 0 50px;
+          }
+        }
+      }
+
+      .swiper-button-next {
+        color: $primary;
+      }
+
+      .swiper-button-prev {
+        color: $primary;
+      }
+
+      .project-completed-bg-1 {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        z-index: 0;
+        width: 250px;
+        height: 350px;
+        background-image: url("/dist/images/introduction-svg.svg");
+        background-size: contain;
+      }
+
+      .project-completed-bg-2 {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        z-index: 0;
+        width: 250px;
+        height: 350px;
+        background-image: url("/dist/images/introduction-svg.svg");
+        background-size: contain;
+      }
+    }
+  }
+}

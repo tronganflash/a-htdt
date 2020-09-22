@@ -1421,13 +1421,21 @@ select.form-control {
   background-image: url("/dist/images/core-bg.svg");
   background-repeat: repeat repeat;
   background-size: 100%;
+  padding-top: 90px;
 }
 .project-pop-title {
   margin: 0;
   text-align: center;
-  padding: 90px 0;
+  padding-bottom: 90px;
   text-transform: uppercase;
   font-size: 42px;
+}
+.project-pop-sub-title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #bf9372;
 }
 .project-pop-list {
   background-image: url("/dist/images/slider-bg-2.jpg");
@@ -2092,6 +2100,51 @@ select.form-control {
   right: -30px;
   width: 30px;
   height: 2px;
+}
+
+.project-page .project-completed-slider {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.project-page .project-completed-slider .swiper-wrapper .swiper-slide-title {
+  color: #bf9372;
+  font-size: 28px;
+}
+.project-page .project-completed-slider .swiper-wrapper .swiper-slide a {
+  text-decoration: none;
+  color: #333333;
+}
+.project-page .project-completed-slider .swiper-wrapper .swiper-slide:nth-child(even) {
+  padding: 0 50px;
+}
+.project-page .project-completed-slider .swiper-wrapper .swiper-slide:nth-child(odd) {
+  padding: 0 50px;
+}
+.project-page .project-completed-slider .swiper-button-next {
+  color: #bf9372;
+}
+.project-page .project-completed-slider .swiper-button-prev {
+  color: #bf9372;
+}
+.project-page .project-completed-slider .project-completed-bg-1 {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 0;
+  width: 250px;
+  height: 350px;
+  background-image: url("/dist/images/introduction-svg.svg");
+  background-size: contain;
+}
+.project-page .project-completed-slider .project-completed-bg-2 {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 0;
+  width: 250px;
+  height: 350px;
+  background-image: url("/dist/images/introduction-svg.svg");
+  background-size: contain;
 }
 
 /*# sourceMappingURL=output.css.map */

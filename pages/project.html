@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/packages/swiper-5.4.5/build/css/swiper.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Tin tức chi tiết</title>
+  </head>
+
+  <body>
+    <!-- menu -->
+    <div class="menu">
+      <div class="menu-flex">
+        <!-- brand / logo -->
+        <div class="menu-brand">
+          <a href="#">
+            <img src="../dist/images/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <!-- end: brand / logo -->
+
+        <!-- detail -->
+        <div class="menu-details">
+          <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+          <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+          <div class="menu-bars">
+            <img src="../dist/images/bars.svg" alt="bars" />
+          </div>
+        </div>
+        <!-- end:detail -->
+      </div>
+
+      <!-- menu-list -->
+      <div class="menu-list">
+        <div class="menu-details">
+          <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+          <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+          <div class="menu-bars">
+            <img src="../dist/images/bars.svg" alt="bars" />
+          </div>
+        </div>
+
+        <div class="menu-list-item menu-list-active">
+          <a href="#">Trang chủ</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Giới thiệu</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Dự án</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Tin tức</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Cơ hội nghề nghiệp</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Liên hệ</a>
+        </div>
+      </div>
+
+      <script>
+        let activeListItem = false;
+        document.querySelectorAll(".menu-bars").forEach((bar) => {
+          bar.addEventListener("click", () => {
+            activeListItem = !activeListItem;
+
+            document.querySelector(
+              ".menu-list"
+            ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
+          });
+        });
+      </script>
+      <!-- end:menu-list -->
+    </div>
+    <!-- end:menu -->
+
+    <div class="project-page">
+      <!-- project popular -->
+      <div class="project-pop">
+        <span class="project-pop-sub-title">Các dự án</span>
+        <h1 class="project-pop-title">Đang triển khai</h1>
+
+        <div class="project-pop-list row">
+          <div
+            data-bg="https://www.daechang.co/images/gallery/interior/syswin_008.jpg"
+            class="project-pop-item col-3"
+          >
+            <div class="project-pop-item-content">
+              <span class="project-pop-item-subtitle">Dự án</span>
+              <h1 class="project-pop-item-title">SIM ISLAND Phú quốc</h1>
+            </div>
+
+            <div class="project-pop-item-detail"><a href="#">CHi tiết</a></div>
+          </div>
+          <div
+            data-bg="/dist/images/slider-bg-3.jpg"
+            class="project-pop-item col-3"
+          >
+            <div class="project-pop-item-content">
+              <span class="project-pop-item-subtitle">Dự án</span>
+              <h1 class="project-pop-item-title">SIM ISLAND Phú quốc</h1>
+            </div>
+
+            <div class="project-pop-item-detail"><a href="#">CHi tiết</a></div>
+          </div>
+          <div
+            data-bg="/dist/images/slider-bg-4.jpg"
+            class="project-pop-item col-3"
+          >
+            <div class="project-pop-item-content">
+              <span class="project-pop-item-subtitle">Dự án</span>
+              <h1 class="project-pop-item-title">SIM ISLAND Phú quốc</h1>
+            </div>
+
+            <div class="project-pop-item-detail"><a href="#">CHi tiết</a></div>
+          </div>
+          <div
+            data-bg="/dist/images/slider-bg-2.jpg"
+            class="project-pop-item col-3"
+          >
+            <div class="project-pop-item-content">
+              <span class="project-pop-item-subtitle">Dự án</span>
+              <h1 class="project-pop-item-title">SIM ISLAND Phú quốc</h1>
+            </div>
+
+            <div class="project-pop-item-detail"><a href="#">CHi tiết</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- end: project popular -->
+
+      <!-- project popular -->
+      <div class="project-completed project-pop" style="background-image: none">
+        <span class="project-pop-sub-title">Các dự án</span>
+        <h1 class="project-pop-title">Đang triển khai</h1>
+
+        <!-- project completed -->
+        <div class="project-completed-slider container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="your_link" class="link"></a>
+              <img
+                src="/dist/images/slider-bg-2.jpg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+
+              <h1 class="swiper-slide-title">Dự án SIM ISland Phú Quốc</h1>
+              <a href="#">Chi tiết</a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <div class="project-completed-bg-1"></div>
+          <div class="project-completed-bg-2"></div>
+        </div>
+      </div>
+      <!-- end: project popular -->
+    </div>
+
+    <!-- end: project completed -->
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-col1">
+        <img class="footer-logo" src="../dist/images/logo-foot.svg" alt="" />
+      </div>
+      <div class="footer-col2">
+        <div class="footer-col2-row1">
+          <div class="footer-header">
+            <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN</h2>
+            <h1>HẠ TẦNG ĐÔ THỊ CORPORATION</h1>
+          </div>
+        </div>
+        <div class="footer-col2-row2">
+          <div class="footer-location">
+            <h3>TRỤ SỞ CHÍNH HÀ NỘI</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>Email: info@hatangdothi.vn</p>
+            </div>
+          </div>
+          <div class="footer-location">
+            <h3>TRỤ SỞ HỒ CHÍ MINH</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>Email: info@hatangdothi.vn</p>
+            </div>
+          </div>
+          <div class="footer-location">
+            <h3>TRỤ SỞ PHÚ QUỐC</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social-media">
+      <hr />
+      <a style="color: white" href="#"
+        ><i class="fa fa-facebook" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-youtube-play" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-skype" aria-hidden="true"></i
+      ></a>
+      <hr />
+    </div>
+    <div class="copyright">
+      <p>
+        © 2020, Bản quyền thuộc về HẠ TẦNG ĐÔ THỊ CORPORATION. Made with  by TQ
+        Design.
+      </p>
+    </div>
+    <!-- end:footer -->
+
+    <!-- Project Popular -->
+    <script>
+      document.querySelectorAll(".project-pop-item").forEach((element) => {
+        element.addEventListener("mouseover", () => {
+          document.querySelector(".project-pop-list").style.animation =
+            "scaleAnimation 300ms linear";
+          document.querySelector(
+            ".project-pop-list"
+          ).style.backgroundImage = `url(${element.getAttribute("data-bg")})`;
+        });
+      });
+    </script>
+
+    <!-- Project Popular -->
+    <script src="/packages/swiper-5.4.5/build/js/swiper.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 2,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+        return direction;
+      }
+    </script>
+  </body>
+</html>
