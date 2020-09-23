@@ -1211,17 +1211,19 @@
 
     <script>
       function ToggleDetails(e) {
-          let details = document.getElementById(e.target.getAttribute("dropdown-target"));
-          if (details.classList.contains("details-active")) {
-              details.classList.remove("details-active");
-              e.target.parentNode.classList.remove("primary");
-              e.target.classList.remove("dropdown-active");
-          } else {
-              details.classList.add("details-active");
-              e.target.parentNode.classList.add("primary");
-              e.target.classList.add("dropdown-active");
-          }
+        let details = document.getElementById(
+          e.target.getAttribute("dropdown-target")
+        );
+        if (details.classList.contains("details-active")) {
+          details.classList.remove("details-active");
+          e.target.parentNode.classList.remove("primary");
+          e.target.classList.remove("dropdown-active");
+        } else {
+          details.classList.add("details-active");
+          e.target.parentNode.classList.add("primary");
+          e.target.classList.add("dropdown-active");
+        }
       }
-  </script>
+    </script>
   </body>
 </html>
