@@ -1776,6 +1776,7 @@ select.form-control {
   z-index: 9999;
   background-color: #ffffff;
   overflow-x: hidden;
+  box-shadow: 0 1px 2px rgba(191, 147, 114, 0.2);
 }
 .menu-flex {
   display: flex;
