@@ -32,7 +32,7 @@
   }
 
   &-active {
-    color: $primary;
-    font-weight: bold;
+    color: $primary!important;
+    font-weight: bold!important;
   }
 }
