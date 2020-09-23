@@ -2642,7 +2642,7 @@ select.form-control {
 .recruit-page .recruit-process .recruit-process-content {
   position: relative;
   max-width: 616px;
-  margin-left: 240px;
+  margin: 240px;
   color: #ffffff;
 }
 .recruit-page .recruit-process .recruit-process-content .recruit-process-title {
@@ -2710,6 +2710,45 @@ select.form-control {
   visibility: visible !important;
   opacity: 1 !important;
   transform: translate(0, 0) !important;
+}
+.recruit-page .recruit-term {
+  position: relative;
+  height: calc(100vh - 92px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #252531;
+  background-image: url(/dist/images/recruitment-section1-1.png);
+  background-image: linear-gradient(90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url(/dist/images/recruitment-section1-1.png);
+}
+.recruit-page .recruit-term .recruit-term-content {
+  position: relative;
+  max-width: 616px;
+  margin: 240px;
+  color: #ffffff;
+}
+.recruit-page .recruit-term .recruit-term-content .recruit-term-title {
+  position: relative;
+  color: #bf9372;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin: 0 0 40px 0;
+}
+.recruit-page .recruit-term .recruit-term-content .recruit-term-title::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 80px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.recruit-page .recruit-term .recruit-term-content .recruit-term-texts {
+  font-weight: 500;
+  max-width: 616px;
+}
+.recruit-page .recruit-term .recruit-term-content .recruit-term-texts ul {
+  list-style-type: square;
 }
 
 /*# sourceMappingURL=output.css.map */
