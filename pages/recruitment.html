@@ -7,287 +7,753 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+=======
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+>>>>>>> dd502d86c9765be34f98bab8266dbef39420f2dc
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Tuyển Dụng</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- menu -->
     <div class="menu">
-        <div class="menu-flex">
-            <!-- brand / logo -->
-            <div class="menu-brand">
-                <a href="/">
-                    <img src="./dist/images/logo.svg" alt="Logo" />
-                </a>
-            </div>
-            <!-- end: brand / logo -->
+      <div class="menu-flex">
+        <!-- brand / logo -->
+        <div class="menu-brand">
+          <a href="/">
+            <img src="/dist/images/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <!-- end: brand / logo -->
 
-            <!-- detail -->
-            <div class="menu-details">
-                <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
-                <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
-                <div class="menu-bars">
-                    <img src="./dist/images/bars.svg" alt="bars" />
-                </div>
+        <!-- detail -->
+        <div class="menu-details">
+          <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+          <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+          <div class="menu-bars">
+            <img src="/dist/images/bars.svg" alt="bars" />
+          </div>
+        </div>
+        <!-- end:detail -->
+      </div>
+
+      <!-- menu-list -->
+      <div class="menu-list">
+        <div class="menu-details">
+          <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+          <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+          <div class="menu-bars">
+            <div class="x">
+              <div></div>
+              <div></div>
             </div>
-            <!-- end:detail -->
+          </div>
         </div>
 
-        <!-- menu-list -->
-        <div class="menu-list">
-            <div class="menu-details">
-                <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
-                <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
-                <div class="menu-bars">
-                    <img src="./dist/images/bars.svg" alt="bars" />
-                </div>
-            </div>
-
-            <div class="menu-list-item menu-list-active">
-                <a href="/">Trang chủ</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="/">Giới thiệu</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="/pages/project.html">Dự án</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="/pages/news.html">Tin tức</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="#">Cơ hội nghề nghiệp</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="/pages/contact.html">Liên hệ</a>
-            </div>
+        <div class="menu-list-item menu-list-active">
+          <a href="/">Trang chủ</a>
         </div>
 
-        <script>
-            let activeListItem = false;
-            document.querySelectorAll(".menu-bars").forEach((bar) => {
-                bar.addEventListener("click", () => {
-                    activeListItem = !activeListItem;
+        <div class="menu-list-item">
+          <a href="/pages/introduction.html">Giới thiệu</a>
+        </div>
 
-                    document.querySelector(
-                        ".menu-list"
-                    ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
-                });
-            });
-        </script>
-        <!-- end:menu-list -->
+        <div class="menu-list-item">
+          <a href="/pages/project.html">Dự án</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="/pages/news.html">Tin tức</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="#">Cơ hội nghề nghiệp</a>
+        </div>
+
+        <div class="menu-list-item">
+          <a href="/pages/contact.html">Liên hệ</a>
+        </div>
+      </div>
+
+      <script>
+        let activeListItem = false;
+        document.querySelectorAll(".menu-bars").forEach((bar) => {
+          bar.addEventListener("click", () => {
+            activeListItem = !activeListItem;
+
+            document.querySelector(
+              ".menu-list"
+            ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
+          });
+        });
+      </script>
+      <!-- end:menu-list -->
+    </div>
+    <div class="menu-sub">
+      <a href="#">Quy trình tuyển dụng</a>
+      <a href="#">Chính sách phúc lợi</a>
+      <a href="#">Thông tin tuyển dụng</a>
+      <a href="#">Thông tin liên hệ</a>
     </div>
     <!-- end:menu -->
 
-    <div class="home">
-        <!-- sliders -->
-        <div class="sliders">
-            <!-- 0 -->
-            <div data-index="0" class="sliders-content sliders-overlay">
-                <h1 class="sliders-title">HA TANG DO THI</h1>
-                <h2 class="sliders-sub-title">CORPORATION</h2>
-                <p class="sliders-description">
-                    Cùng Quý khách hàng kiến tạo nên những công trình bền vững.
-                </p>
-            </div>
-            <!-- 0 -->
-
-            <!-- 1 -->
-            <div data-index="1" class="sliders-content">
-                <h1 class="sliders-title">Dự án</h1>
-                <h2 class="sliders-sub-title">SIM ISLAND PHÚ QUỐC</h2>
-                <p class="sliders-description">Thông tin chi tiết _____</p>
-            </div>
-            <!-- 1 -->
-
-            <!-- 2 -->
-            <div data-index="2" class="sliders-content">
-                <h1 class="sliders-title">Dự án</h1>
-                <h2 class="sliders-sub-title">AMON BEACH RESORT</h2>
-                <p class="sliders-description">Thông tin chi tiết _____</p>
-            </div>
-            <!-- 2 -->
-
-            <!-- 3 -->
-            <div data-index="3" class="sliders-content">
-                <h1 class="sliders-title">Dự án</h1>
-                <h2 class="sliders-sub-title">THE RESIDENCE PHÚ QUỐC</h2>
-                <p class="sliders-description">Thông tin chi tiết _____</p>
-            </div>
-            <!-- 3 -->
-
-            <div class="sliders-images">
-                <div class="sliders-overlay">
-                    <!-- 0 -->
-                    <img data-index="0" class="sliders-image-item" src="./dist/images/slider-bg.jpg" width="100%"
-                        height="100%" style="object-fit: cover" alt="" />
-                    <!-- 0 -->
-                </div>
-
-                <!-- 1 -->
-                <img data-index="1" class="sliders-image-item" src="./dist/images/slider-bg-2.jpg" width="100%"
-                    height="100%" style="object-fit: cover" alt="" />
-
-                <!-- 1 -->
-
-                <!-- 2 -->
-                <img data-index="2" class="sliders-image-item" src="./dist/images/slider-bg-3.jpg" width="100%"
-                    height="100%" style="object-fit: cover" alt="" />
-                <!-- 2 -->
-
-                <!-- 3 -->
-                <img data-index="3" class="sliders-image-item" src="./dist/images/slider-bg-4.jpg" width="100%"
-                    height="100%" style="object-fit: cover" alt="" />
-                <!-- 3 -->
-            </div>
-
-            <div class="sliders-dots">
-                <div data-index="0" class="sliders-dot sliders-dot-active"></div>
-                <div data-index="1" class="sliders-dot"></div>
-                <div data-index="2" class="sliders-dot"></div>
-                <div data-index="3" class="sliders-dot"></div>
-            </div>
+    <!-- recruit -->
+    <div class="recruit-page">
+      <div class="introduce">
+        <div class="introduce-box">
+          <img src="/dist/images/recruitment-section1-1.png" alt="" />
         </div>
-        <!-- end:sliders -->
+        <div class="introduce-content">
+          <span class="introduce-subtitle">Gia nhập ngôi nhà</span>
+          <h1 class="introduce-title">Hạ tầng đô thị corporation</h1>
+        </div>
+      </div>
+
+      <!-- process -->
+      <div class="recruit-process">
+        <div class="recruit-process-content">
+          <h1 class="recruit-process-title">Quy trình tuyển dụng</h1>
+
+          <div class="recruit-process-texts">
+            <p>
+              1. Nguyên tắc: Thông tin tuyển dụng công khai – bảo đảm tính công
+              bằng tạo cơ hội bình đẳng cho mọi ứng viên và thực hiện đúng theo
+              quy trình tuyển dụng của công ty.
+            </p>
+            <p>
+              2. Đối tượng tuyển dụng: Doanh nghiệp luôn dành cơ hội cho những
+              tài năng phù hợp với văn hoá (culture fit) và năng lực phù hợp với
+              vị trí tuyển mộ (job fit).
+            </p>
+            <p>
+              3. Phương pháp tuyển dụng: Phỏng vấn trực tiếp (có thể có bài kiểm
+              tra năng lực được thiết kế riêng cho từng vị trí).
+            </p>
+            <p>
+              4. Hình thức tiếp nhận hồ sơ: Nhận trực tiếp hoặc qua Email. Thông
+              tin tuyển dụng được đăng trên website và các đối tác đăng
+            </p>
+            tin tuyển dụng của Hạ Tầng Đô Thị.
+          </div>
+
+          <div class="recruit-process-steps">
+            <a
+              class="btn process-steps"
+              data-steps="1"
+              href="javascript:void(0)"
+              >Bước 1</a
+            >
+            <a
+              class="btn process-steps"
+              data-steps="2"
+              href="javascript:void(0)"
+              >Bước 2</a
+            >
+            <a
+              class="btn process-steps"
+              data-steps="3"
+              href="javascript:void(0)"
+              >Bước 3</a
+            >
+            <a
+              class="btn process-steps"
+              data-steps="4"
+              href="javascript:void(0)"
+              >Bước 4</a
+            >
+            <a
+              class="btn process-steps"
+              data-steps="5"
+              href="javascript:void(0)"
+              >Bước 5</a
+            >
+            <a
+              class="btn process-steps"
+              data-steps="6"
+              href="javascript:void(0)"
+              >Bước 6</a
+            >
+            <a
+              class="btn process-steps"
+              data-steps="7"
+              href="javascript:void(0)"
+              >Bước 7</a
+            >
+
+            <div data-steps="1" class="process-steps-data">
+              <div class="data-steps btn">Bước 1</div>
+              <div class="data-steps-content">
+                <b>ỨNG TUYỂN </b> <br />
+                <p>
+                  Ứng viên có thể ứng tuyển các vị trí tuyển dụng tại Tập đoàn
+                  HTĐT Corp. bằng những cách sau:
+                </p>
+                <b>1. Nộp hồ sơ trực tiếp:</b>  <br />
+                - VP Tập đoàn tại Phú Quốc: [Địa chỉ] <br />
+                - VP Hồ Chí Minh:  [Địa chỉ] <br />
+                - VP Hà Nội: [Địa chỉ] <br />
+                <b>Hồ sơ bao gồm: </b> <br />
+                <p>
+                  Thông tin ứng viên (theo mẫu của Công ty); Download Văn bằng,
+                  chứng chỉ, hộ khẩu, CMND, sơ yếu lý lịch (bản sao có chứng
+                  thực trong vòng 1 năm).
+                </p>
+                <p>
+                  Giấy khám sức khỏe (trong vòng 06 tháng); hình thẻ kích cỡ
+                  3x4cm.
+                </p>
+                <p>
+                  Thư tham chiếu từ công ty gần nhất (tùy theo yêu cầu của vị
+                  trí).
+                </p>
+                <p>
+                  Bản sao quyết định bổ nhiệm/ tuyển dụng/ nghỉ việc tại công ty
+                  gần nhất (nếu có) và các hồ sơ khác theo yêu cầu của vị trí
+                  tuyển dụng.
+                </p>
+                <b>2. Ứng tuyển trực tuyến qua website tuyển dụng của Công ty</b
+                ><br /><br />
+                <b>3. Ứng tuyển trực tuyến tại các website tuyển dụng </b> mà
+                Công ty đăng tin tuyển dụng (Vietnamworks.com, Careerbuilder.vn,
+                Jobstreet.vn…)<br /><br />
+                <b>4. Gửi hồ sơ qua email tuyển dụng của Công ty:</b> <br />
+                <br />
+                Ban Nhân sự: tuyendung@hatangdothi.vn
+              </div>
+              <!-- close -->
+              <!-- close -->
+              <div data-steps="1" class="x process-steps-data-close">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div data-steps="2" class="process-steps-data">
+              <div class="data-steps btn">Bước 2</div>
+              <div class="data-steps-content">
+                <b>ỨNG TUYỂN </b> <br />
+                <p>
+                  Ứng viên có thể ứng tuyển các vị trí tuyển dụng tại Tập đoàn
+                  HTĐT Corp. bằng những cách sau:
+                </p>
+                <b>1. Nộp hồ sơ trực tiếp:</b>  <br />
+                - VP Tập đoàn tại Phú Quốc: [Địa chỉ] <br />
+                - VP Hồ Chí Minh:  [Địa chỉ] <br />
+                - VP Hà Nội: [Địa chỉ] <br />
+                <b>Hồ sơ bao gồm: </b> <br />
+                <p>
+                  Thông tin ứng viên (theo mẫu của Công ty); Download Văn bằng,
+                  chứng chỉ, hộ khẩu, CMND, sơ yếu lý lịch (bản sao có chứng
+                  thực trong vòng 1 năm).
+                </p>
+                <p>
+                  Giấy khám sức khỏe (trong vòng 06 tháng); hình thẻ kích cỡ
+                  3x4cm.
+                </p>
+                <p>
+                  Thư tham chiếu từ công ty gần nhất (tùy theo yêu cầu của vị
+                  trí).
+                </p>
+                <p>
+                  Bản sao quyết định bổ nhiệm/ tuyển dụng/ nghỉ việc tại công ty
+                  gần nhất (nếu có) và các hồ sơ khác theo yêu cầu của vị trí
+                  tuyển dụng.
+                </p>
+                <b>2. Ứng tuyển trực tuyến qua website tuyển dụng của Công ty</b
+                ><br /><br />
+                <b>3. Ứng tuyển trực tuyến tại các website tuyển dụng </b> mà
+                Công ty đăng tin tuyển dụng (Vietnamworks.com, Careerbuilder.vn,
+                Jobstreet.vn…)<br /><br />
+                <b>4. Gửi hồ sơ qua email tuyển dụng của Công ty:</b> <br />
+                <br />
+                Ban Nhân sự: tuyendung@hatangdothi.vn
+              </div>
+              <!-- close -->
+              <div data-steps="2" class="x process-steps-data-close">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div data-steps="3" class="process-steps-data">
+              <div class="data-steps btn">Bước 3</div>
+              <div class="data-steps-content">
+                <b>ỨNG TUYỂN </b> <br />
+                <p>
+                  Ứng viên có thể ứng tuyển các vị trí tuyển dụng tại Tập đoàn
+                  HTĐT Corp. bằng những cách sau:
+                </p>
+                <b>1. Nộp hồ sơ trực tiếp:</b>  <br />
+                - VP Tập đoàn tại Phú Quốc: [Địa chỉ] <br />
+                - VP Hồ Chí Minh:  [Địa chỉ] <br />
+                - VP Hà Nội: [Địa chỉ] <br />
+                <b>Hồ sơ bao gồm: </b> <br />
+                <p>
+                  Thông tin ứng viên (theo mẫu của Công ty); Download Văn bằng,
+                  chứng chỉ, hộ khẩu, CMND, sơ yếu lý lịch (bản sao có chứng
+                  thực trong vòng 1 năm).
+                </p>
+                <p>
+                  Giấy khám sức khỏe (trong vòng 06 tháng); hình thẻ kích cỡ
+                  3x4cm.
+                </p>
+                <p>
+                  Thư tham chiếu từ công ty gần nhất (tùy theo yêu cầu của vị
+                  trí).
+                </p>
+                <p>
+                  Bản sao quyết định bổ nhiệm/ tuyển dụng/ nghỉ việc tại công ty
+                  gần nhất (nếu có) và các hồ sơ khác theo yêu cầu của vị trí
+                  tuyển dụng.
+                </p>
+                <b>2. Ứng tuyển trực tuyến qua website tuyển dụng của Công ty</b
+                ><br /><br />
+                <b>3. Ứng tuyển trực tuyến tại các website tuyển dụng </b> mà
+                Công ty đăng tin tuyển dụng (Vietnamworks.com, Careerbuilder.vn,
+                Jobstreet.vn…)<br /><br />
+                <b>4. Gửi hồ sơ qua email tuyển dụng của Công ty:</b> <br />
+                <br />
+                Ban Nhân sự: tuyendung@hatangdothi.vn
+              </div>
+              <!-- close -->
+              <div data-steps="3" class="x process-steps-data-close">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div data-steps="4" class="process-steps-data">
+              <div class="data-steps btn">Bước 4</div>
+              <div class="data-steps-content">
+                <b>ỨNG TUYỂN </b> <br />
+                <p>
+                  Ứng viên có thể ứng tuyển các vị trí tuyển dụng tại Tập đoàn
+                  HTĐT Corp. bằng những cách sau:
+                </p>
+                <b>1. Nộp hồ sơ trực tiếp:</b>  <br />
+                - VP Tập đoàn tại Phú Quốc: [Địa chỉ] <br />
+                - VP Hồ Chí Minh:  [Địa chỉ] <br />
+                - VP Hà Nội: [Địa chỉ] <br />
+                <b>Hồ sơ bao gồm: </b> <br />
+                <p>
+                  Thông tin ứng viên (theo mẫu của Công ty); Download Văn bằng,
+                  chứng chỉ, hộ khẩu, CMND, sơ yếu lý lịch (bản sao có chứng
+                  thực trong vòng 1 năm).
+                </p>
+                <p>
+                  Giấy khám sức khỏe (trong vòng 06 tháng); hình thẻ kích cỡ
+                  3x4cm.
+                </p>
+                <p>
+                  Thư tham chiếu từ công ty gần nhất (tùy theo yêu cầu của vị
+                  trí).
+                </p>
+                <p>
+                  Bản sao quyết định bổ nhiệm/ tuyển dụng/ nghỉ việc tại công ty
+                  gần nhất (nếu có) và các hồ sơ khác theo yêu cầu của vị trí
+                  tuyển dụng.
+                </p>
+                <b>2. Ứng tuyển trực tuyến qua website tuyển dụng của Công ty</b
+                ><br /><br />
+                <b>3. Ứng tuyển trực tuyến tại các website tuyển dụng </b> mà
+                Công ty đăng tin tuyển dụng (Vietnamworks.com, Careerbuilder.vn,
+                Jobstreet.vn…)<br /><br />
+                <b>4. Gửi hồ sơ qua email tuyển dụng của Công ty:</b> <br />
+                <br />
+                Ban Nhân sự: tuyendung@hatangdothi.vn
+              </div>
+              <!-- close -->
+              <div data-steps="4" class="x process-steps-data-close">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div data-steps="5" class="process-steps-data">
+              <div class="data-steps btn">Bước 5</div>
+              <div class="data-steps-content">
+                <b>ỨNG TUYỂN </b> <br />
+                <p>
+                  Ứng viên có thể ứng tuyển các vị trí tuyển dụng tại Tập đoàn
+                  HTĐT Corp. bằng những cách sau:
+                </p>
+                <b>1. Nộp hồ sơ trực tiếp:</b>  <br />
+                - VP Tập đoàn tại Phú Quốc: [Địa chỉ] <br />
+                - VP Hồ Chí Minh:  [Địa chỉ] <br />
+                - VP Hà Nội: [Địa chỉ] <br />
+                <b>Hồ sơ bao gồm: </b> <br />
+                <p>
+                  Thông tin ứng viên (theo mẫu của Công ty); Download Văn bằng,
+                  chứng chỉ, hộ khẩu, CMND, sơ yếu lý lịch (bản sao có chứng
+                  thực trong vòng 1 năm).
+                </p>
+                <p>
+                  Giấy khám sức khỏe (trong vòng 06 tháng); hình thẻ kích cỡ
+                  3x4cm.
+                </p>
+                <p>
+                  Thư tham chiếu từ công ty gần nhất (tùy theo yêu cầu của vị
+                  trí).
+                </p>
+                <p>
+                  Bản sao quyết định bổ nhiệm/ tuyển dụng/ nghỉ việc tại công ty
+                  gần nhất (nếu có) và các hồ sơ khác theo yêu cầu của vị trí
+                  tuyển dụng.
+                </p>
+                <b>2. Ứng tuyển trực tuyến qua website tuyển dụng của Công ty</b
+                ><br /><br />
+                <b>3. Ứng tuyển trực tuyến tại các website tuyển dụng </b> mà
+                Công ty đăng tin tuyển dụng (Vietnamworks.com, Careerbuilder.vn,
+                Jobstreet.vn…)<br /><br />
+                <b>4. Gửi hồ sơ qua email tuyển dụng của Công ty:</b> <br />
+                <br />
+                Ban Nhân sự: tuyendung@hatangdothi.vn
+              </div>
+              <!-- close -->
+              <div data-steps="5" class="x process-steps-data-close">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div data-steps="6" class="process-steps-data">
+              <div class="data-steps btn">Bước 6</div>
+              <div class="data-steps-content">
+                <b>ỨNG TUYỂN </b> <br />
+                <p>
+                  Ứng viên có thể ứng tuyển các vị trí tuyển dụng tại Tập đoàn
+                  HTĐT Corp. bằng những cách sau:
+                </p>
+                <b>1. Nộp hồ sơ trực tiếp:</b>  <br />
+                - VP Tập đoàn tại Phú Quốc: [Địa chỉ] <br />
+                - VP Hồ Chí Minh:  [Địa chỉ] <br />
+                - VP Hà Nội: [Địa chỉ] <br />
+                <b>Hồ sơ bao gồm: </b> <br />
+                <p>
+                  Thông tin ứng viên (theo mẫu của Công ty); Download Văn bằng,
+                  chứng chỉ, hộ khẩu, CMND, sơ yếu lý lịch (bản sao có chứng
+                  thực trong vòng 1 năm).
+                </p>
+                <p>
+                  Giấy khám sức khỏe (trong vòng 06 tháng); hình thẻ kích cỡ
+                  3x4cm.
+                </p>
+                <p>
+                  Thư tham chiếu từ công ty gần nhất (tùy theo yêu cầu của vị
+                  trí).
+                </p>
+                <p>
+                  Bản sao quyết định bổ nhiệm/ tuyển dụng/ nghỉ việc tại công ty
+                  gần nhất (nếu có) và các hồ sơ khác theo yêu cầu của vị trí
+                  tuyển dụng.
+                </p>
+                <b>2. Ứng tuyển trực tuyến qua website tuyển dụng của Công ty</b
+                ><br /><br />
+                <b>3. Ứng tuyển trực tuyến tại các website tuyển dụng </b> mà
+                Công ty đăng tin tuyển dụng (Vietnamworks.com, Careerbuilder.vn,
+                Jobstreet.vn…)<br /><br />
+                <b>4. Gửi hồ sơ qua email tuyển dụng của Công ty:</b> <br />
+                <br />
+                Ban Nhân sự: tuyendung@hatangdothi.vn
+              </div>
+              <!-- close -->
+              <div data-steps="6" class="x process-steps-data-close">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div data-steps="7" class="process-steps-data">
+              <div class="data-steps btn">Bước 7</div>
+              <div class="data-steps-content">
+                <b>ỨNG TUYỂN </b> <br />
+                <p>
+                  Ứng viên có thể ứng tuyển các vị trí tuyển dụng tại Tập đoàn
+                  HTĐT Corp. bằng những cách sau:
+                </p>
+                <b>1. Nộp hồ sơ trực tiếp:</b>  <br />
+                - VP Tập đoàn tại Phú Quốc: [Địa chỉ] <br />
+                - VP Hồ Chí Minh:  [Địa chỉ] <br />
+                - VP Hà Nội: [Địa chỉ] <br />
+                <b>Hồ sơ bao gồm: </b> <br />
+                <p>
+                  Thông tin ứng viên (theo mẫu của Công ty); Download Văn bằng,
+                  chứng chỉ, hộ khẩu, CMND, sơ yếu lý lịch (bản sao có chứng
+                  thực trong vòng 1 năm).
+                </p>
+                <p>
+                  Giấy khám sức khỏe (trong vòng 06 tháng); hình thẻ kích cỡ
+                  3x4cm.
+                </p>
+                <p>
+                  Thư tham chiếu từ công ty gần nhất (tùy theo yêu cầu của vị
+                  trí).
+                </p>
+                <p>
+                  Bản sao quyết định bổ nhiệm/ tuyển dụng/ nghỉ việc tại công ty
+                  gần nhất (nếu có) và các hồ sơ khác theo yêu cầu của vị trí
+                  tuyển dụng.
+                </p>
+                <b>2. Ứng tuyển trực tuyến qua website tuyển dụng của Công ty</b
+                ><br /><br />
+                <b>3. Ứng tuyển trực tuyến tại các website tuyển dụng </b> mà
+                Công ty đăng tin tuyển dụng (Vietnamworks.com, Careerbuilder.vn,
+                Jobstreet.vn…)<br /><br />
+                <b>4. Gửi hồ sơ qua email tuyển dụng của Công ty:</b> <br />
+                <br />
+                Ban Nhân sự: tuyendung@hatangdothi.vn
+              </div>
+              <!-- close -->
+              <div data-steps="7" class="x process-steps-data-close">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end: process -->
+
+      <!-- term -->
+      <div class="recruit-term">
+        <div class="recruit-term-content">
+          <h1 class="recruit-term-title">Chính sách phúc lợi</h1>
+
+          <div class="recruit-term-texts">
+            <b>LƯƠNG THƯỞNG HẤP DẪN:</b> <br />
+            <ul>
+              <li>
+                Ngoài mức lương cố định, nhân viên được thưởng theo mức độ hoàn
+                thành chỉ tiêu công việc được giao.
+              </li>
+              <li>
+                Chế độ xem xét tăng lương gắn liền với hiệu quả công việc và
+                hiệu quả hoạt động của Công ty.
+              </li>
+            </ul>
+            <b>CHÍNH SÁCH PHÁT TRIỂN NGUỒN NHÂN LỰC:</b><br />
+            <ul>
+              <li>
+                Đào tạo và phát triển nguồn nhân lực là một trong những chính
+                sách mà Ban lãnh đạo Công ty luôn quan tâm và ưu tiên hàng đầu.
+                Với phương châm: Coi đào tạo là nhân tố then chốt trong phát
+                triển nguồn nhân lực, Công ty luôn tạo cơ hội cho các nhân viên
+                ở mọi cấp bậc trong công ty được tham gia vào các khóa đào tạo
+                nhằm nâng cao kỹ năng làm việc và cung cấp cho mỗi nhân viên cơ
+                hội phát triển thông qua công việc.
+              </li>
+              <li>
+                Việc đào tạo và huấn luyện các kỹ năng và chuyên môn cần thiết
+                được thực hiện tại Công ty hoặc đào tạo các khóa học bên ngoài
+                theo kế hoạch đào tạo của Công ty.
+              </li>
+            </ul>
+            <b>PHỤ CẤP KHÁC:  </b><br />
+            <ul>
+              <li>Ăn trưa, phụ cấp điện thoại.</li>
+              <li>
+                Bảo hiểm Xã hội, Y tế, Thất nghiệp theo quy định của nhà nước
+              </li>
+              <li>
+                Thưởng nhân dịp đặc biệt như Quốc Khánh, Ngày 30/4, Sinh nhật,…
+              </li>
+              <li>
+                Các chương trình chăm lo cho con em cán bộ nhân viên như khen
+                thưởng con cán bộ nhân viên có thành tích học tập tốt, tặng quà
+                nhân ngày Quốc tế thiếu nhi 1/6.
+              </li>
+              <li>Các hoạt động tham quan du lịch, teambuilding,…</li>
+              <li>
+                Các chính sách đặc biệt khác dành cho nhân sự có thành tích nổi
+                bật và gắn bó với công ty.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end: term -->
     </div>
     <!-- end:recruit -->
 
     <div class="container">
-        <form action="#" class="contact-form">
-            <h2 class="contact-form-title">LIÊN HỆ</h2>
-            <p class="contact-form-description">
-                Quý khách hàng có nhu cầu quan tâm đến dự án, hãy liên hệ với chúng
-                tôi, Chúng tôi sẽ phản hồi những thắc mắc và tư vấn Quý khách một
-                cách nhanh và chính xác nhất.
-            </p>
+      <form action="#" class="contact-form">
+        <h2 class="contact-form-title">LIÊN HỆ</h2>
+        <p class="contact-form-description">
+          Quý khách hàng có nhu cầu quan tâm đến dự án, hãy liên hệ với chúng
+          tôi, Chúng tôi sẽ phản hồi những thắc mắc và tư vấn Quý khách một cách
+          nhanh và chính xác nhất.
+        </p>
 
-            <!-- Input -->
-            <div class="form-control row">
-                <div class="col-4 pl-0">
-                    <input class="form-control" type="text" name="name" placeholder="Họ & Tên" />
-                </div>
-                <div class="col-4">
-                    <input class="form-control" type="text" name="email" placeholder="Email" />
-                </div>
-                <div class="col-4 pr-0">
-                    <input class="form-control" type="text" name="phonenumber" placeholder="Điện Thoại" />
-                </div>
-            </div>
-
-            <div class="mt-5">
-                <select class="form-control" name="project" id="project">
-                    <option selected disabled value="default">
-                        Quan tâm đến dự án
-                    </option>
-                    <option value="0">Option 0</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                    <option value="4">Option 4</option>
-                </select>
-            </div>
-        </form>
-
-        <div class="text-underline">
-            <hr class="text-underline-line" />
-            <h2 class="text-underline-text">GỬI YÊU CẦU</h2>
-            <hr class="text-underline-line" />
+        <!-- Input -->
+        <div class="form-control row">
+          <div class="col-4 pl-0">
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              placeholder="Họ & Tên"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              class="form-control"
+              type="text"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="col-4 pr-0">
+            <input
+              class="form-control"
+              type="text"
+              name="phonenumber"
+              placeholder="Điện Thoại"
+            />
+          </div>
         </div>
-    </div>
+
+        <div class="mt-5">
+          <select class="form-control" name="project" id="project">
+            <option selected disabled value="default">
+              Quan tâm đến dự án
+            </option>
+            <option value="0">Option 0</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="text-underline">
+        <hr class="text-underline-line" />
+        <h2 class="text-underline-text">GỬI YÊU CẦU</h2>
+        <hr class="text-underline-line" />
+      </div>
     </div>
 
     <!-- footer -->
     <div class="footer">
-        <div class="footer-col1">
-            <img class="footer-logo" src="./dist/images/logo-foot.svg" alt="" />
+      <div class="footer-col1">
+        <img class="footer-logo" src="/dist/images/logo-foot.svg" alt="" />
+      </div>
+      <div class="footer-col2">
+        <div class="footer-col2-row1">
+          <div class="footer-header">
+            <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN</h2>
+            <h1>HẠ TẦNG ĐÔ THỊ CORPORATION</h1>
+          </div>
         </div>
-        <div class="footer-col2">
-            <div class="footer-col2-row1">
-                <div class="footer-header">
-                    <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN</h2>
-                    <h1>HẠ TẦNG ĐÔ THỊ CORPORATION</h1>
-                </div>
+        <div class="footer-col2-row2">
+          <div class="footer-location">
+            <h3>TRỤ SỞ CHÍNH HÀ NỘI</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
             </div>
-            <div class="footer-col2-row2">
-                <div class="footer-location">
-                    <h3>TRỤ SỞ CHÍNH HÀ NỘI</h3>
-                    <div class="footer-location-row">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
-                            Thanh Xuân.
-                        </p>
-                    </div>
-                    <div class="footer-location-row">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <p>Điện thoại: 999 9999 999.</p>
-                    </div>
-                    <div class="footer-location-row">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <p>Email: info@hatangdothi.vn</p>
-                    </div>
-                </div>
-                <div class="footer-location">
-                    <h3>TRỤ SỞ HỒ CHÍ MINH</h3>
-                    <div class="footer-location-row">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
-                            Thanh Xuân.
-                        </p>
-                    </div>
-                    <div class="footer-location-row">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <p>Điện thoại: 999 9999 999.</p>
-                    </div>
-                    <div class="footer-location-row">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <p>Email: info@hatangdothi.vn</p>
-                    </div>
-                </div>
-                <div class="footer-location">
-                    <h3>TRỤ SỞ PHÚ QUỐC</h3>
-                    <div class="footer-location-row">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
-                            Thanh Xuân.
-                        </p>
-                    </div>
-                    <div class="footer-location-row">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <p>Điện thoại: 999 9999 999.</p>
-                    </div>
-                    <div class="footer-location-row"></div>
-                </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
             </div>
+            <div class="footer-location-row">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>Email: info@hatangdothi.vn</p>
+            </div>
+          </div>
+          <div class="footer-location">
+            <h3>TRỤ SỞ HỒ CHÍ MINH</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>Email: info@hatangdothi.vn</p>
+            </div>
+          </div>
+          <div class="footer-location">
+            <h3>TRỤ SỞ PHÚ QUỐC</h3>
+            <div class="footer-location-row">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>
+                Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                Thanh Xuân.
+              </p>
+            </div>
+            <div class="footer-location-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>Điện thoại: 999 9999 999.</p>
+            </div>
+            <div class="footer-location-row"></div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="footer-social-media">
-        <hr />
-        <a style="color: white" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a style="color: white" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-        <a style="color: white" href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-        <hr />
+      <hr />
+      <a style="color: white" href="#"
+        ><i class="fa fa-facebook" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-youtube-play" aria-hidden="true"></i
+      ></a>
+      <a style="color: white" href="#"
+        ><i class="fa fa-skype" aria-hidden="true"></i
+      ></a>
+      <hr />
     </div>
     <div class="copyright">
-        <p>
-            © 2020, Bản quyền thuộc về HẠ TẦNG ĐÔ THỊ CORPORATION. Made with  by TQ
-            Design.
-        </p>
+      <p>
+        © 2020, Bản quyền thuộc về HẠ TẦNG ĐÔ THỊ CORPORATION. Made with  by TQ
+        Design.
+      </p>
     </div>
     <!-- end:footer -->
-</body>
 
+    <!-- Handle steps -->
+    <script>
+      let steps = document.querySelectorAll(".process-steps");
+      let dataSteps = document.querySelectorAll(".process-steps-data");
+      let closes = document.querySelectorAll(".process-steps-data-close");
+
+      steps.forEach((step) => {
+        step.addEventListener("click", () => {
+          let _step = step.getAttribute("data-steps");
+
+          dataSteps.forEach((el) =>
+            el.classList.remove("recruit-process-steps-active")
+          );
+
+          let dataOfStep = [...dataSteps].find(
+            (el) => el.getAttribute("data-steps") === _step
+          );
+
+          dataOfStep.classList.add("recruit-process-steps-active");
+
+          let waitToCloseStep = [...closes].find(
+            (steps_want_close) =>
+              steps_want_close.getAttribute("data-steps") === _step
+          );
+
+          waitToCloseStep.addEventListener("click", () => {
+            dataOfStep.classList.remove("recruit-process-steps-active");
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
