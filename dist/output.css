@@ -1914,8 +1914,8 @@ select.form-control {
   color: #bf9372;
 }
 .menu-sub-active {
-  color: #bf9372;
-  font-weight: bold;
+  color: #bf9372 !important;
+  font-weight: bold !important;
 }
 
 .footer {
