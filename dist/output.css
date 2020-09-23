@@ -1888,6 +1888,9 @@ select.form-control {
   font-size: 16px;
   font-weight: bold;
   margin: 0 20px;
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
 }
 .menu-sub a:hover {
   color: #bf9372;
@@ -2579,6 +2582,76 @@ select.form-control {
 .project-detail .swiper-pagination-bullet-active {
   color: #fff;
   background: #bf9372;
+}
+
+.recruit-page .introduce {
+  position: relative;
+}
+.recruit-page .introduce .introduce-box {
+  background-color: #252531;
+  overflow: hidden;
+}
+.recruit-page .introduce .introduce-box img {
+  width: 100%;
+  height: calc(100vh - 92px);
+  object-fit: cover;
+  opacity: 0.6;
+  transform: scale(1.01);
+}
+.recruit-page .introduce .introduce-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.recruit-page .introduce .introduce-content .introduce-subtitle,
+.recruit-page .introduce .introduce-content .introduce-title {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+}
+.recruit-page .introduce .introduce-content .introduce-subtitle {
+  font-size: 18px;
+}
+.recruit-page .introduce .introduce-content .introduce-title {
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+.recruit-page .recruit-process {
+  position: relative;
+}
+.recruit-page .recruit-process-box {
+  background: linear-gradient(90deg, #252531 0%, rgba(0, 0, 0, 0) 100%);
+  overflow: hidden;
+}
+.recruit-page .recruit-process-box img {
+  width: 100%;
+  height: calc(100vh - 92px);
+  object-fit: cover;
+  opacity: 0.6;
+  transform: scale(1.01);
+}
+.recruit-page .recruit-process .recruit-process-content {
+  position: absolute;
+  top: 50%;
+  left: 240px;
+  color: #ffffff;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-title {
+  position: relative;
+  color: #bf9372;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-title::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 80px;
+  height: 2px;
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=output.css.map */
