@@ -1,0 +1,6 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
+}

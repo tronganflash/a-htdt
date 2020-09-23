@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../dist/packages/swiper-5.4.5/package/src/components/effect-coverflow/effect-coverflow.scss"
+    ],
+    "names": [],
+    "file": "effect-coverflow.css"
+}
