@@ -1103,6 +1103,15 @@ code {
   color: #aaa !important;
 }
 
+.btn {
+  padding: 11px 37px;
+  display: inline-block;
+  text-decoration: none;
+  color: #bf9372;
+  border: 1px solid #bf9372;
+  border-radius: 10px;
+}
+
 .link {
   position: absolute;
   width: 100%;
@@ -2620,22 +2629,20 @@ select.form-control {
 }
 .recruit-page .recruit-process {
   position: relative;
-}
-.recruit-page .recruit-process-box {
-  background: linear-gradient(90deg, #252531 0%, rgba(0, 0, 0, 0) 100%);
-  overflow: hidden;
-}
-.recruit-page .recruit-process-box img {
-  width: 100%;
   height: calc(100vh - 92px);
-  object-fit: cover;
-  opacity: 0.6;
-  transform: scale(1.01);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #252531;
+  background-image: url("/dist/images/recruitment-section1-1.png");
+  /* fallback */
+  background-image: linear-gradient(90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section1-1.png");
+  /* W3C */
 }
 .recruit-page .recruit-process .recruit-process-content {
-  position: absolute;
-  top: 50%;
-  left: 240px;
+  position: relative;
+  max-width: 616px;
+  margin-left: 240px;
   color: #ffffff;
 }
 .recruit-page .recruit-process .recruit-process-content .recruit-process-title {
@@ -2643,6 +2650,7 @@ select.form-control {
   color: #bf9372;
   text-transform: uppercase;
   font-size: 42px;
+  margin: 0 0 40px 0;
 }
 .recruit-page .recruit-process .recruit-process-content .recruit-process-title::after {
   content: "";
@@ -2652,6 +2660,56 @@ select.form-control {
   width: 80px;
   height: 2px;
   background-color: #ffffff;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-texts {
+  font-weight: 500;
+  max-width: 616px;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-steps {
+  margin-top: 30px;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-steps .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-steps .process-steps-data {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-100%, 0);
+  transition: all 200ms linear;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  background-color: #ffffff;
+  width: 820px;
+  height: 630px;
+  border-radius: 10px;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-steps .process-steps-data .x {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-steps .process-steps-data .x div {
+  width: 30px;
+  height: 4px;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-steps .process-steps-data .data-steps {
+  background-color: #bf9372;
+  border: 0;
+  color: #ffffff;
+  margin-left: -30px;
+  margin-top: 20px;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-steps .process-steps-data .data-steps-content {
+  color: #333333;
+  margin-top: -30px;
+  padding: 0 130px;
+}
+.recruit-page .recruit-process .recruit-process-content .recruit-process-steps-active {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
 }
 
 /*# sourceMappingURL=output.css.map */
