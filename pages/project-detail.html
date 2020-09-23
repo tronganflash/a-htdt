@@ -75,17 +75,6 @@
         </div>
       </div>
 
-      <script>
-        let activeListItem = false;
-        document.querySelectorAll(".menu-bars").forEach((bar) => {
-          bar.addEventListener("click", () => {
-            activeListItem = !activeListItem;
-            document.querySelector(
-              ".menu-list"
-            ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
-          });
-        });
-      </script>
       <!-- end:menu-list -->
     </div>
     <div class="menu-sub">
@@ -673,18 +662,9 @@
     </div>
     <!-- end:footer -->
 
+    <script src="/dist/js/menu.js"></script>
     <!-- Project Popular -->
-    <script>
-      document.querySelectorAll(".project-pop-item").forEach((element) => {
-        element.addEventListener("mouseover", () => {
-          document.querySelector(".project-pop-list").style.animation =
-            "scaleAnimation 300ms linear";
-          document.querySelector(
-            ".project-pop-list"
-          ).style.backgroundImage = `url(${element.getAttribute("data-bg")})`;
-        });
-      });
-    </script>
+    <script src="/dist/js/project-popular.js"></script>
 
     <!-- Swiper -->
     <script src="/dist/packages/swiper-5.4.5/build/js/swiper.js"></script>
@@ -738,9 +718,6 @@
       });
     </script>
     <!-- Swiper -->
-
-    <!-- Swiper JS -->
-    <script src="/dist/packages/swiper-5.4.5/build/js/swiper.js"></script>
 
     <!-- Initialize Swiper -->
     <script>

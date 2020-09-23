@@ -1778,6 +1778,9 @@ select.form-control {
   overflow-x: hidden;
   box-shadow: 0 1px 2px rgba(191, 147, 114, 0.2);
 }
+.menu-active {
+  transform: translateY(0) !important;
+}
 .menu-flex {
   display: flex;
   align-items: center;
@@ -1829,7 +1832,7 @@ select.form-control {
   padding-right: 80px;
   background: #ffffff url("/dist/images/core-bg.svg");
   box-shadow: 0 -1px 2px #bf9372;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform 300ms linear;
 }
 .menu-list .menu-details {

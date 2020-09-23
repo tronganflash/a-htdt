@@ -70,18 +70,6 @@
           <a href="/pages/contact.html">Liên hệ</a>
         </div>
       </div>
-
-      <script>
-        let activeListItem = false;
-        document.querySelectorAll(".menu-bars").forEach((bar) => {
-          bar.addEventListener("click", () => {
-            activeListItem = !activeListItem;
-            document.querySelector(
-              ".menu-list"
-            ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
-          });
-        });
-      </script>
       <!-- end:menu-list -->
     </div>
     <div class="menu-sub">
@@ -307,5 +295,7 @@
       </p>
     </div>
     <!-- end:footer -->
+
+    <script src="/dist/js/menu.js"></script>
   </body>
 </html>
