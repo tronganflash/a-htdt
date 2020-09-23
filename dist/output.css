@@ -1103,6 +1103,22 @@ code {
   color: #aaa !important;
 }
 
+.overlay {
+  position: fixed;
+  transition: all 300ms linear;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  top: -100%;
+  left: 0;
+  background-color: rgba(51, 51, 51, 0.9);
+  z-index: 1000;
+}
+.overlay-active {
+  opacity: 1;
+  top: 0;
+}
+
 .btn {
   padding: 11px 37px;
   display: inline-block;
