@@ -1,0 +1,484 @@
+<!-- 
+
+  Author: anflash.com
+  Version: 1.0
+  Pages: Home
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Tuyển Dụng</title>
+</head>
+
+<body>
+    <!-- menu -->
+    <div class="menu">
+        <div class="menu-flex">
+            <!-- brand / logo -->
+            <div class="menu-brand">
+                <a href="/">
+                    <img src="/dist/images/logo.svg" alt="Logo" />
+                </a>
+            </div>
+            <!-- end: brand / logo -->
+
+            <!-- detail -->
+            <div class="menu-details">
+                <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+                <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+                <div class="menu-bars">
+                    <img src="/dist/images/bars.svg" alt="bars" />
+                </div>
+            </div>
+            <!-- end:detail -->
+        </div>
+
+        <!-- menu-list -->
+        <div class="menu-list">
+            <div class="menu-details">
+                <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
+                <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
+                <div class="menu-bars">
+                    <img src="./dist/images/bars.svg" alt="bars" />
+                </div>
+            </div>
+
+            <div class="menu-list-item menu-list-active">
+                <a href="/">Trang chủ</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="/">Giới thiệu</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="/pages/project.html">Dự án</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="/pages/news.html">Tin tức</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="#">Cơ hội nghề nghiệp</a>
+            </div>
+
+            <div class="menu-list-item">
+                <a href="/pages/contact.html">Liên hệ</a>
+            </div>
+        </div>
+
+        <script>
+            let activeListItem = false;
+            document.querySelectorAll(".menu-bars").forEach((bar) => {
+                bar.addEventListener("click", () => {
+                    activeListItem = !activeListItem;
+
+                    document.querySelector(
+                        ".menu-list"
+                    ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
+                });
+            });
+        </script>
+        <!-- end:menu-list -->
+    </div>
+    <!-- end:menu -->
+
+    <div class="recruitment">
+        <!-- thong tin tuyen dung -->
+        <div class="section4">
+            <h1 class="header">CHÍNH SÁCH PHÚC LỢI</h1>
+            <table class="table">
+                <tr>
+                    <th class="dark-blue">STT</th>
+                    <th class="dark-blue">CÁC VỊ TRÍ CẦN TUYỂN
+                        <div class="border"></div>
+                    </th>
+                    <th class="dark-blue">CÔNG TY
+                        <div class="border"></div>
+                    </th>
+                    <th class="primary">THỜI HẠN NỘP ĐƠN
+                        <div class="border"></div>
+                    </th>
+                </tr>
+                <tr class="primary">
+                    <td>01</td>
+                    <td class="dropdown dropdown-active" dropdown-target="details-1" onclick="ToggleDetails(event)">KỸ
+                        SƯ CÂY XANH
+                        <div class="border"></div>
+                    </td>
+                    <td>
+                        <div class="border"></div>
+                    </td>
+                    <td>Từ 20/09 đến 20/10/2020
+                        <div class="border"></div>
+                    </td>
+                </tr>
+                <tr class="details details-active" id="details-1">
+                    <td colspan="4">
+                        <div>
+                            <h4>Mô tả công việc</h4>
+                            <p>1. Xây dựng kế hoạch bảo dưỡng, chăm sóc cây trồng</p>
+                            <p>- Lên kế hoạch phun thuốc, bón phân, tưới nước cho các dự án</p>
+                            <p>- Lên kế hoạch gieo trồng đối với cây trồng theo yêu cầu của công ty</p>
+                            <p>- Theo dõi sự thay đổi của cây trồng để đưa ra biện pháp chăm sóc phù hợp</p>
+                            <p>- Đưa ra các sáng kiến nhằm liên tục nâng cao năng suất/ chất lượng công việc</p>
+                            <p>- Lên kế hoạch mua, định mức vật tư, nhân công chăm sóc hàng tháng cho các dự án</p>
+                            <p>2. Quản lý chất lượng và phát triển vườn ươm, cây trồng, cảnh quan khu dân cư.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td class="dropdown" dropdown-target="details-2" onclick="ToggleDetails(event)">CHUYÊN VIÊN PHÁP
+                        LÝ
+                        <div class="border"></div>
+                    </td>
+                    <td>Hạ Tầng Đô Thị Corpration
+                        <div class="border"></div>
+                    </td>
+                    <td>Từ 20/09 đến 20/10/2020
+                        <div class="border"></div>
+                    </td>
+                </tr>
+                <tr colspan="4" class="details" id="details-2">
+                    <td>
+                        <div>
+                            <h4>Mô tả công việc</h4>
+                            <p>1. Xây dựng kế hoạch bảo dưỡng, chăm sóc cây trồng</p>
+                            <p>- Lên kế hoạch phun thuốc, bón phân, tưới nước cho các dự án</p>
+                            <p>- Lên kế hoạch gieo trồng đối với cây trồng theo yêu cầu của công ty</p>
+                            <p>- Theo dõi sự thay đổi của cây trồng để đưa ra biện pháp chăm sóc phù hợp</p>
+                            <p>- Đưa ra các sáng kiến nhằm liên tục nâng cao năng suất/ chất lượng công việc</p>
+                            <p>- Lên kế hoạch mua, định mức vật tư, nhân công chăm sóc hàng tháng cho các dự án</p>
+                            <p>2. Quản lý chất lượng và phát triển vườn ươm, cây trồng, cảnh quan khu dân cư.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td class="dropdown" dropdown-target="details-3" onclick="ToggleDetails(event)">GM
+                        <div class="border"></div>
+                    </td>
+                    <td>Đào Ngọc<div class="border"></div>
+                    </td>
+                    <td>Từ 20/09 đến 20/10/2020<div class="border"></div>
+                    </td>
+                </tr>
+                <tr class="details" id="details-3">
+                    <td colspan="4">
+                        <div>
+                            <h4>Mô tả công việc</h4>
+                            <p>1. Xây dựng kế hoạch bảo dưỡng, chăm sóc cây trồng</p>
+                            <p>- Lên kế hoạch phun thuốc, bón phân, tưới nước cho các dự án</p>
+                            <p>- Lên kế hoạch gieo trồng đối với cây trồng theo yêu cầu của công ty</p>
+                            <p>- Theo dõi sự thay đổi của cây trồng để đưa ra biện pháp chăm sóc phù hợp</p>
+                            <p>- Đưa ra các sáng kiến nhằm liên tục nâng cao năng suất/ chất lượng công việc</p>
+                            <p>- Lên kế hoạch mua, định mức vật tư, nhân công chăm sóc hàng tháng cho các dự án</p>
+                            <p>2. Quản lý chất lượng và phát triển vườn ươm, cây trồng, cảnh quan khu dân cư.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td class="dropdown" dropdown-target="details-4" onclick="ToggleDetails(event)">NHÂN VIÊN HỆ
+                        THỐNG
+                        THÔNG TIN<div class="border"></div>
+                    </td>
+                    <td>Đảo Ngọc<div class="border"></div>
+                    </td>
+                    <td>Từ 20/09 đến 20/10/2020<div class="border"></div>
+                    </td>
+                </tr>
+                <tr class="details" id="details-4">
+                    <td colspan="4">
+                        <div>
+                            <h4>Mô tả công việc</h4>
+                            <p>1. Xây dựng kế hoạch bảo dưỡng, chăm sóc cây trồng</p>
+                            <p>- Lên kế hoạch phun thuốc, bón phân, tưới nước cho các dự án</p>
+                            <p>- Lên kế hoạch gieo trồng đối với cây trồng theo yêu cầu của công ty</p>
+                            <p>- Theo dõi sự thay đổi của cây trồng để đưa ra biện pháp chăm sóc phù hợp</p>
+                            <p>- Đưa ra các sáng kiến nhằm liên tục nâng cao năng suất/ chất lượng công việc</p>
+                            <p>- Lên kế hoạch mua, định mức vật tư, nhân công chăm sóc hàng tháng cho các dự án</p>
+                            <p>2. Quản lý chất lượng và phát triển vườn ươm, cây trồng, cảnh quan khu dân cư.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td class="dropdown" dropdown-target="details-5" onclick="ToggleDetails(event)">CHUYÊN VIÊN QUAN
+                        HỆ
+                        CÔNG CHÚNG<div class="border"></div>
+                    </td>
+                    <td>Hạ Tầng Đô Thị Corpration<div class="border"></div>
+                    </td>
+                    <td>Từ 20/09 đến 20/10/2020<div class="border"></div>
+                    </td>
+                </tr>
+                <tr class="details" id="details-5">
+                    <td colspan="4">
+                        <div>
+                            <h4>Mô tả công việc</h4>
+                            <p>1. Xây dựng kế hoạch bảo dưỡng, chăm sóc cây trồng</p>
+                            <p>- Lên kế hoạch phun thuốc, bón phân, tưới nước cho các dự án</p>
+                            <p>- Lên kế hoạch gieo trồng đối với cây trồng theo yêu cầu của công ty</p>
+                            <p>- Theo dõi sự thay đổi của cây trồng để đưa ra biện pháp chăm sóc phù hợp</p>
+                            <p>- Đưa ra các sáng kiến nhằm liên tục nâng cao năng suất/ chất lượng công việc</p>
+                            <p>- Lên kế hoạch mua, định mức vật tư, nhân công chăm sóc hàng tháng cho các dự án</p>
+                            <p>2. Quản lý chất lượng và phát triển vườn ươm, cây trồng, cảnh quan khu dân cư.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td class="dropdown" dropdown-target="details-6" onclick="ToggleDetails(event)">KỸ SƯ CÂY XANH
+                        <div class="border">
+                        </div>
+                    </td>
+                    <td>Hạ Tầng Đô Thị Corpration<div class="border"></div>
+                    </td>
+                    <td>Từ 20/09 đến 20/10/2020<div class="border"></div>
+                    </td>
+                </tr>
+                <tr class="details" id="details-6">
+                    <td colspan="4">
+                        <div>
+                            <h4>Mô tả công việc</h4>
+                            <p>1. Xây dựng kế hoạch bảo dưỡng, chăm sóc cây trồng</p>
+                            <p>- Lên kế hoạch phun thuốc, bón phân, tưới nước cho các dự án</p>
+                            <p>- Lên kế hoạch gieo trồng đối với cây trồng theo yêu cầu của công ty</p>
+                            <p>- Theo dõi sự thay đổi của cây trồng để đưa ra biện pháp chăm sóc phù hợp</p>
+                            <p>- Đưa ra các sáng kiến nhằm liên tục nâng cao năng suất/ chất lượng công việc</p>
+                            <p>- Lên kế hoạch mua, định mức vật tư, nhân công chăm sóc hàng tháng cho các dự án</p>
+                            <p>2. Quản lý chất lượng và phát triển vườn ươm, cây trồng, cảnh quan khu dân cư.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td class="dropdown" dropdown-target="details-7" onclick="ToggleDetails(event)">KỸ SƯ CÂY XANH
+                        <div class="border">
+                        </div>
+                    </td>
+                    <td>Hạ Tầng Đô Thị Corpration<div class="border"></div>
+                    </td>
+                    <td>Từ 20/09 đến 20/10/2020<div class="border"></div>
+                    </td>
+                </tr>
+                <tr class="details" id="details-7">
+                    <td colspan="4">
+                        <div>
+                            <h4>Mô tả công việc</h4>
+                            <p>1. Xây dựng kế hoạch bảo dưỡng, chăm sóc cây trồng</p>
+                            <p>- Lên kế hoạch phun thuốc, bón phân, tưới nước cho các dự án</p>
+                            <p>- Lên kế hoạch gieo trồng đối với cây trồng theo yêu cầu của công ty</p>
+                            <p>- Theo dõi sự thay đổi của cây trồng để đưa ra biện pháp chăm sóc phù hợp</p>
+                            <p>- Đưa ra các sáng kiến nhằm liên tục nâng cao năng suất/ chất lượng công việc</p>
+                            <p>- Lên kế hoạch mua, định mức vật tư, nhân công chăm sóc hàng tháng cho các dự án</p>
+                            <p>2. Quản lý chất lượng và phát triển vườn ươm, cây trồng, cảnh quan khu dân cư.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- end thong tin tuyen dung -->
+
+        <!-- chinh sach phuc loi -->
+        <div class="section5">
+            <div class="col">
+                <div class="row1">
+                    <h1 class="header">CHÍNH SÁCH PHÚC LỢI</h1>
+                    <div class="recruitment-contact">
+                        <label for="">Email:</label>
+                        <span>tuyendung@hatangdothi.vn</span>
+                        <label for="">Điện thoại</label>
+                        <p>0345 101 425 (Ms. Linh)</p>
+                        <p>090 696 0100 (Mr. Nhì)</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <form action="#" class="form">
+                        <div class="control">
+                            <h2>NỘP HỒ SƠ TRỰC TUYẾN</h2>
+                        </div>
+                        <div class="control">
+                            <input name="name" type="text" placeholder="Họ & Tên">
+                        </div>
+                        <div class="control">
+                            <input name="phonenumber" class="mr-2" type="text" placeholder="Điện thoại">
+                            <input name="email" class="ml-2" type="text" placeholder="Email">
+                        </div>
+                        <div class="control">
+                            <select name="position" id="">
+                                <option value="default">Vị trí ứng tuyển</option>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                        <div class="control border">
+                            <button style="width: 25%;">Đính kèm CV</button>
+                        </div>
+                        <div class="control">
+                            <button disabled style="width: 25%; user-select: none;" class="mr-2">Captcha code</button>
+                            <button class="ml-2" style="width: 25%; background-color: #252531; color: white;">ỨNG
+                                TUYỂN</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end chinh sach phuc loi -->
+    </div>
+    <!-- end:recruit -->
+
+    <div class="container">
+        <form action="#" class="contact-form">
+            <h2 class="contact-form-title">LIÊN HỆ</h2>
+            <p class="contact-form-description">
+                Quý khách hàng có nhu cầu quan tâm đến dự án, hãy liên hệ với chúng
+                tôi, Chúng tôi sẽ phản hồi những thắc mắc và tư vấn Quý khách một
+                cách nhanh và chính xác nhất.
+            </p>
+
+            <!-- Input -->
+            <div class="form-control row">
+                <div class="col-4 pl-0">
+                    <input class="form-control" type="text" name="name" placeholder="Họ & Tên" />
+                </div>
+                <div class="col-4">
+                    <input class="form-control" type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="col-4 pr-0">
+                    <input class="form-control" type="text" name="phonenumber" placeholder="Điện Thoại" />
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <select class="form-control" name="project" id="project">
+                    <option selected disabled value="default">
+                        Quan tâm đến dự án
+                    </option>
+                    <option value="0">Option 0</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="text-underline">
+            <hr class="text-underline-line" />
+            <h2 class="text-underline-text">GỬI YÊU CẦU</h2>
+            <hr class="text-underline-line" />
+        </div>
+    </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-col1">
+            <img class="footer-logo" src="./dist/images/logo-foot.svg" alt="" />
+        </div>
+        <div class="footer-col2">
+            <div class="footer-col2-row1">
+                <div class="footer-header">
+                    <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN</h2>
+                    <h1>HẠ TẦNG ĐÔ THỊ CORPORATION</h1>
+                </div>
+            </div>
+            <div class="footer-col2-row2">
+                <div class="footer-location">
+                    <h3>TRỤ SỞ CHÍNH HÀ NỘI</h3>
+                    <div class="footer-location-row">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p>
+                            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                            Thanh Xuân.
+                        </p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>Điện thoại: 999 9999 999.</p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <p>Email: info@hatangdothi.vn</p>
+                    </div>
+                </div>
+                <div class="footer-location">
+                    <h3>TRỤ SỞ HỒ CHÍ MINH</h3>
+                    <div class="footer-location-row">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p>
+                            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                            Thanh Xuân.
+                        </p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>Điện thoại: 999 9999 999.</p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <p>Email: info@hatangdothi.vn</p>
+                    </div>
+                </div>
+                <div class="footer-location">
+                    <h3>TRỤ SỞ PHÚ QUỐC</h3>
+                    <div class="footer-location-row">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p>
+                            Tòa nhà Sao Mai, số 19 Lê Văn Lương, Phường Nhân Chính, Quận
+                            Thanh Xuân.
+                        </p>
+                    </div>
+                    <div class="footer-location-row">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>Điện thoại: 999 9999 999.</p>
+                    </div>
+                    <div class="footer-location-row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-social-media">
+        <hr />
+        <a style="color: white" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a style="color: white" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        <a style="color: white" href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+        <hr />
+    </div>
+    <div class="copyright">
+        <p>
+            © 2020, Bản quyền thuộc về HẠ TẦNG ĐÔ THỊ CORPORATION. Made with  by TQ
+            Design.
+        </p>
+    </div>
+    <!-- end:footer -->
+
+    <!-- Script -->
+    <script>
+        function ToggleDetails(e) {
+            let details = document.getElementById(e.target.getAttribute("dropdown-target"));
+            if (details.classList.contains("details-active")) {
+                details.classList.remove("details-active");
+                e.target.parentNode.classList.remove("primary");
+                e.target.classList.remove("dropdown-active");
+            } else {
+                details.classList.add("details-active");
+                e.target.parentNode.classList.add("primary");
+                e.target.classList.add("dropdown-active");
+            }
+        }
+    </script>
+</body>
+
+</html>
