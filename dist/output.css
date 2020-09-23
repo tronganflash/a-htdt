@@ -2719,7 +2719,7 @@ select.form-control {
   justify-content: flex-end;
   background: #252531;
   background-image: url(/dist/images/recruitment-section1-1.png);
-  background-image: linear-gradient(90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url(/dist/images/recruitment-section1-1.png);
+  background-image: linear-gradient(-90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url(/dist/images/recruitment-section1-1.png);
 }
 .recruit-page .recruit-term .recruit-term-content {
   position: relative;
