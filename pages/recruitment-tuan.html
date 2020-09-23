@@ -17,78 +17,7 @@
 </head>
 
 <body>
-    <!-- menu -->
-    <div class="menu">
-        <div class="menu-flex">
-            <!-- brand / logo -->
-            <div class="menu-brand">
-                <a href="/">
-                    <img src="/dist/images/logo.svg" alt="Logo" />
-                </a>
-            </div>
-            <!-- end: brand / logo -->
 
-            <!-- detail -->
-            <div class="menu-details">
-                <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
-                <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
-                <div class="menu-bars">
-                    <img src="/dist/images/bars.svg" alt="bars" />
-                </div>
-            </div>
-            <!-- end:detail -->
-        </div>
-
-        <!-- menu-list -->
-        <div class="menu-list">
-            <div class="menu-details">
-                <a class="menu-details-items mr-5" href="#">info@hatangdothi.vn</a>
-                <a class="menu-details-items mr-5" href="#">(+84) 976 163 690</a>
-                <div class="menu-bars">
-                    <img src="./dist/images/bars.svg" alt="bars" />
-                </div>
-            </div>
-
-            <div class="menu-list-item menu-list-active">
-                <a href="/">Trang chủ</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="/">Giới thiệu</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="/pages/project.html">Dự án</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="/pages/news.html">Tin tức</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="#">Cơ hội nghề nghiệp</a>
-            </div>
-
-            <div class="menu-list-item">
-                <a href="/pages/contact.html">Liên hệ</a>
-            </div>
-        </div>
-
-        <script>
-            let activeListItem = false;
-            document.querySelectorAll(".menu-bars").forEach((bar) => {
-                bar.addEventListener("click", () => {
-                    activeListItem = !activeListItem;
-
-                    document.querySelector(
-                        ".menu-list"
-                    ).style.transform = `translateX(${activeListItem ? 0 : "100%"})`;
-                });
-            });
-        </script>
-        <!-- end:menu-list -->
-    </div>
-    <!-- end:menu -->
 
     <div class="recruitment">
         <!-- thong tin tuyen dung -->

@@ -2943,5 +2943,192 @@ select.form-control {
 .recruit-page .recruit-term .recruit-term-content .recruit-term-texts ul {
   list-style-type: square;
 }
+.recruit-page .section4 {
+  position: relative;
+  width: 100%;
+  background-image: url("/dist/images/core-bg.svg");
+  background-position: center;
+  background-size: cover;
+  padding: 4% 12%;
+}
+.recruit-page .section4 > .header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #bf9372;
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+.recruit-page .section4 > .header::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 86px;
+  background-color: #bf9372;
+}
+.recruit-page .section4 > table {
+  width: 100%;
+  outline: 1px solid #eeeeee;
+  border-collapse: separate;
+  border-spacing: 0px 8px;
+}
+.recruit-page .section4 > table .dark-blue {
+  background-color: #252531;
+  color: white;
+}
+.recruit-page .section4 > table .dark-blue .border {
+  background-color: #bf9372;
+}
+.recruit-page .section4 > table .primary {
+  background-color: #bf9372;
+  color: white;
+}
+.recruit-page .section4 > table .primary .border {
+  background-color: white;
+}
+.recruit-page .section4 > table .border {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  background-color: black;
+  height: 70%;
+}
+.recruit-page .section4 > table th {
+  position: relative;
+  text-align: left;
+  padding-left: 32px;
+}
+.recruit-page .section4 > table td {
+  position: relative;
+  padding-left: 32px;
+  padding-top: 4px;
+}
+.recruit-page .section4 > table tr {
+  cursor: pointer;
+  outline: 1px solid #eeeeee;
+  height: 40px;
+}
+.recruit-page .section4 > table tr td:nth-child(1) {
+  width: 77px;
+}
+.recruit-page .section4 > table .dropdown::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg) translateY(-50%);
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+}
+.recruit-page .section4 > table .dropdown-active::before {
+  transform: rotate(45deg) translateY(-90%);
+  -webkit-transform: rotate(45deg) translateY(-90%);
+}
+.recruit-page .section4 > table .details {
+  cursor: auto;
+  display: none;
+}
+.recruit-page .section4 > table .details div {
+  height: 0px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.recruit-page .section4 > table .details-active {
+  display: inline;
+  outline: none;
+}
+.recruit-page .section4 > table .details-active div {
+  width: 77px;
+  height: auto;
+  white-space: nowrap;
+  overflow: visible;
+}
+.recruit-page .section5 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 92px - 36px);
+  background-image: linear-gradient(90deg, #020024 0%, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section5-1.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 0 12%;
+}
+.recruit-page .section5 .header {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  color: #bf9372;
+  font-size: 42px;
+}
+.recruit-page .section5 .header::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  height: 4px;
+  width: 86px;
+  background-color: #bf9372;
+}
+.recruit-page .section5 .recruitment-contact {
+  color: #7c7c7c;
+}
+.recruit-page .section5 > .col {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0.5;
+}
+.recruit-page .section5 > .col > .row1 {
+  display: flex;
+  flex-direction: column;
+  flex: 0.25;
+  padding: 8% 0;
+}
+.recruit-page .section5 > .col > .row2 {
+  display: flex;
+  flex-direction: column;
+  flex: 0.75;
+  padding: 8% 0;
+}
+.recruit-page .section5 .form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #bf9372;
+}
+.recruit-page .section5 .form .border {
+  border: 1px solid white;
+}
+.recruit-page .section5 .form .control {
+  position: relative;
+  display: flex;
+  width: 90%;
+  height: 40px;
+  margin: 12px auto;
+  border-radius: 8px;
+}
+.recruit-page .section5 .form .control input,
+.recruit-page .section5 .form .control button,
+.recruit-page .section5 .form .control select {
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  height: 100%;
+  background-color: white;
+}
+.recruit-page .section5 .form .control input,
+.recruit-page .section5 .form .control select {
+  flex: 1;
+  padding: 0 16px;
+}
 
 /*# sourceMappingURL=output.css.map */
