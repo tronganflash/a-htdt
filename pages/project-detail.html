@@ -73,13 +73,21 @@
     <!-- end:menu-list -->
   </div>
   <div class="menu-sub">
-    <a class="menu-sub-active">THÔNG DIỆP</a>
-    <a>TẦM NHÌN - SỨ MỆNH</a>
-    <a>GIÁ TRỊ CỐT LÕI</a>
-    <a>VĂN HÓA CÔNG TY</a>
-    <a>BAN LÃNH ĐẠO</a>
-    <a>CÔNG TY THÀNH VIÊN</a>
+    <a onclick="Scroll(1)" class="menu-sub-active">TỔNG QUAN</a>
+    <a onclick="Scroll(2)">VỊ TRÍ</a>
+    <a onclick="Scroll(3)">TIỆN ÍCH</a>
+    <a onclick="Scroll(4)">SẢN PHẨM</a>
+    <a onclick="Scroll(5)">THƯ VIỆN</a>
+    <a onclick="Scroll(6)">LIÊN HỆ</a>
   </div>
+  <script>
+    function Scroll(i) {
+      window.scroll({
+        top: (screen.height - 234) * i,
+        behavior: 'smooth'
+      })
+    }
+  </script>
   <!-- end:menu -->
 
   <div class="project-detail">
