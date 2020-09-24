@@ -3,10 +3,11 @@
   background-image: url("/dist/images/core-bg.svg");
   background-repeat: repeat;
   background-size: 200%;
-  padding: 100px 130px;
+  padding: 40px 130px;
   max-width: 976px;
   margin: 0 auto;
-  height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
+  height: calc(100vh - #{$navbarHeight});
+  overflow-y: visible;
   &-head {
     text-align: center;
     .recruit-sub-title {
