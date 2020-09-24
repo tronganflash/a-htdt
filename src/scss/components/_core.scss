@@ -2,7 +2,8 @@
   padding: 85px 0 40px;
   background-image: url("/dist/images/core-bg.svg");
   background-repeat: no-repeat repeat;
-  background-size: 100%;
+  background-size: cover;
+  height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
 
   &-head {
     text-align: center;

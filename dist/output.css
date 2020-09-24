@@ -1139,7 +1139,8 @@ code {
   padding: 85px 0 40px;
   background-image: url("/dist/images/core-bg.svg");
   background-repeat: no-repeat repeat;
-  background-size: 100%;
+  background-size: cover;
+  height: calc(100vh - 92px - 36px);
 }
 .core-head {
   text-align: center;
@@ -1611,7 +1612,7 @@ select.form-control {
 }
 
 .news {
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/dist/images/home-news-bg.jpg");
   background-repeat: repeat repeat;
   background-size: 100%;
   padding: 70px;
