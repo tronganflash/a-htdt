@@ -1,6 +1,6 @@
 .project-detail {
   .project-production {
-    margin: 70px 0;
+    height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
     &-title,
     &-subtitle {
       text-align: center;
@@ -14,6 +14,7 @@
   }
 
   .media {
+    height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
     &-left,
     &-right {
       &-title {
@@ -25,7 +26,7 @@
 
       .row {
         .media-card {
-          position: relative;
+          position: relative; 
 
           &:hover {
             .media-card-img {

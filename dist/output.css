@@ -1729,6 +1729,7 @@ select.form-control {
   padding: 100px 130px;
   max-width: 976px;
   margin: 0 auto;
+  height: calc(100vh - 92px - 36px);
   /* Custom swiper */
 }
 .recruit-head {
@@ -2288,7 +2289,7 @@ select.form-control {
 .introduction .section3 > .row1 {
   position: relative;
   display: flex;
-  flex: 1;
+  max-height: 50%;
 }
 .introduction .section3 > .row1 > .col1 {
   flex: 0 0 50%;
@@ -2315,7 +2316,7 @@ select.form-control {
 .introduction .section3 > .row2 {
   position: relative;
   display: flex;
-  flex: 1;
+  flex: 0 0 50%;
 }
 .introduction .section3 > .row2 > .col1 {
   display: flex;
@@ -2435,7 +2436,7 @@ select.form-control {
   justify-content: center;
 }
 .introduction > .section6 > .row2 .tag:nth-child(1) > div:nth-child(1) {
-  background-image: url("/dist/images/introduction-section6-1.png");
+  background-image: url("/dist/images/introduction-section6-1.jpg");
 }
 .introduction > .section6 > .row3 {
   position: relative;
@@ -2548,7 +2549,7 @@ select.form-control {
 }
 
 .project-detail .project-production {
-  margin: 70px 0;
+  height: calc(100vh - 92px - 36px);
 }
 .project-detail .project-production-title, .project-detail .project-production-subtitle {
   text-align: center;
@@ -2557,6 +2558,9 @@ select.form-control {
 }
 .project-detail .project-production > .row {
   margin-top: 80px;
+}
+.project-detail .media {
+  height: calc(100vh - 92px - 36px);
 }
 .project-detail .media-left-title, .project-detail .media-right-title {
   color: #bf9372;
@@ -2858,10 +2862,10 @@ select.form-control {
   align-items: center;
   justify-content: flex-start;
   background: #252531;
-  background-image: url("/dist/images/recruitment-section1-1.png");
-  /* fallback */
-  background-image: linear-gradient(90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section1-1.png");
+  background-image: linear-gradient(90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section2-1.jpg");
   /* W3C */
+  background-position: center;
+  background-size: cover;
 }
 .recruit-page .recruit-process .recruit-process-content {
   position: relative;
@@ -2942,8 +2946,9 @@ select.form-control {
   align-items: center;
   justify-content: flex-end;
   background: #252531;
-  background-image: url(/dist/images/recruitment-section1-1.png);
-  background-image: linear-gradient(-90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url(/dist/images/recruitment-section1-1.png);
+  background-image: linear-gradient(-90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section3-1.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .recruit-page .recruit-term .recruit-term-content {
   position: relative;

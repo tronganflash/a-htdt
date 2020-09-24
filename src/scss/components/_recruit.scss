@@ -6,7 +6,7 @@
   padding: 100px 130px;
   max-width: 976px;
   margin: 0 auto;
-
+  height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
   &-head {
     text-align: center;
     .recruit-sub-title {

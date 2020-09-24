@@ -73,26 +73,19 @@
     <!-- end:menu-list -->
   </div>
   <div class="menu-sub">
-    <a onclick="Scroll(1)" class="menu-sub-active">TỔNG QUAN</a>
-    <a onclick="Scroll(2)">VỊ TRÍ</a>
-    <a onclick="Scroll(3)">TIỆN ÍCH</a>
-    <a onclick="Scroll(4)">SẢN PHẨM</a>
-    <a onclick="Scroll(5)">THƯ VIỆN</a>
-    <a onclick="Scroll(6)">LIÊN HỆ</a>
+    <a onclick="FullpageScroll(1)" class="menu-sub-active">TỔNG QUAN</a>
+    <a onclick="FullpageScroll(2)">VỊ TRÍ</a>
+    <a onclick="FullpageScroll(3)">TIỆN ÍCH</a>
+    <a onclick="FullpageScroll(4)">SẢN PHẨM</a>
+    <a onclick="FullpageScroll(5)">THƯ VIỆN</a>
+    <a onclick="FullpageScroll(6)">LIÊN HỆ</a>
   </div>
-  <script>
-    function Scroll(i) {
-      window.scroll({
-        top: (screen.height - 234) * i,
-        behavior: 'smooth'
-      })
-    }
-  </script>
+  <script src="/dist/js/fullpage-scroll.js"></script>
   <!-- end:menu -->
 
   <div class="project-detail">
     <!-- sliders -->
-    <div class="sliders">
+    <div class="sliders fullpage">
       <div data-index="2" class="sliders-content">
         <h1 class="sliders-title">Dự án</h1>
         <h2 class="sliders-sub-title">AMON BEACH RESORT</h2>
@@ -107,7 +100,7 @@
     <!-- end:sliders -->
 
     <!-- flag -->
-    <div class="flag row">
+    <div class="flag row fullpage">
       <div class="col-6 flag-left">
         <div class="row flag-row-head">
           <div class="col-3 flag-left-brand">
@@ -159,7 +152,7 @@
     <!-- end:flag -->
 
     <!-- flag -->
-    <div class="flag row">
+    <div class="flag row fullpage">
       <div class="col-6 flag-right pr-0">
         <img src="/dist/images/project-detail-2.jpg" alt="" />
       </div>
@@ -211,7 +204,7 @@
     <!-- end:flag -->
 
     <!-- recruit -->
-    <div class="recruit">
+    <div class="recruit fullpage">
       <div class="recruit-head">
         <h1 class="recruit-title text-primary" style="font-size: 24px">
           thiên đường nhiệt đới - nơi giải trí không ngủ
@@ -266,7 +259,7 @@
     <!-- end:recruit -->
 
     <!-- project-production -->
-    <div class="project-production">
+    <div class="project-production fullpage">
       <h1 class="project-production-title">SIM DE MAISON</h1>
       <h2 class="project-production-subtitle">
         Condotel & Shophouse - XỨNG TẦM ĐẲNG CẤP
@@ -346,7 +339,7 @@
     <!-- end: project-production -->
 
     <!--  -->
-    <div class="container row media">
+    <div class="container row media fullpage">
       <div class="col-md-6 media-left">
         <h1 class="media-left-title">HÌNH ẢNh</h1>
 
@@ -431,7 +424,7 @@
                 </div>
                 <div class="col-md-6 media-card">
                   <div class="media-card-img">
-                    <img style="height: 215px" src="/dist/images/introduction-img.svg" alt="" />
+                    <img style="height: 215px" src="/dist/images/introduction-img.jpg" alt="" />
 
                     <div class="media-card-view">
                       <div>
@@ -452,7 +445,7 @@
 
     <!-- end -->
 
-    <div class="footer-container">
+    <div class="footer-container fullpage">
       <!-- contact -->
       <div class="container">
         <form action="#" class="contact-form">
