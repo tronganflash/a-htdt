@@ -1,19 +1,22 @@
 .swiper-container-fade {
-  &.swiper-container-free-mode {
+    &.swiper-container-free-mode {
+        .swiper-slide {
+            height: auto !important;
+            transition-timing-function: ease-out;
+        }
+    }
     .swiper-slide {
-      transition-timing-function: ease-out;
+        height: auto !important;
+        pointer-events: none;
+        transition-property: opacity;
+        .swiper-slide {
+            pointer-events: none;
+        }
     }
-  }
-  .swiper-slide {
-    pointer-events: none;
-    transition-property: opacity;
-    .swiper-slide {
-      pointer-events: none;
+    .swiper-slide-active {
+        &,
+        & .swiper-slide-active {
+            pointer-events: auto;
+        }
     }
-  }
-  .swiper-slide-active {
-    &, & .swiper-slide-active {
-      pointer-events: auto;
-    }
-  }
 }

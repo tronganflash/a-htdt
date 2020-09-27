@@ -4,6 +4,23 @@
   background-size: 100%;
   padding: 70px;
 
+  &-main{
+    display: flex;
+    & .col1{
+      flex: 1;
+      padding: 1%;
+    }
+    & .col2{
+      flex: 1;
+      padding: 1%;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    &-main{
+      flex-direction: column;
+    }
+  }
+
   &-head {
     display: flex;
     align-items: center;
@@ -42,5 +59,10 @@
   &-active {
     color: $primary !important;
     font-weight: bold;
+  }
+}
+@media only screen and (max-width: 768px){
+  .news{
+    padding: 0;
   }
 }

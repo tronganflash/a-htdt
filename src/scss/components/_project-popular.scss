@@ -1,133 +1,152 @@
 .project-pop {
-  background-image: url("/dist/images/core-bg.svg");
-  background-repeat: repeat repeat;
-  background-size: 100%;
-  padding-top: 90px;
+    background-image: url("/dist/images/core-bg.svg");
+    background-repeat: repeat repeat;
+    background-size: 100%;
+    padding-top: 90px;
 
-  &-title {
-    margin: 0;
-    text-align: center;
-    padding-bottom: 90px;
-    text-transform: uppercase;
-    font-size: 42px;
-  }
-
-  &-sub-title {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: $primary;
-  }
-
-  &-list {
-    background-image: url("/dist/images/slider-bg-2.jpg");
-    background-repeat: no-repeat;
-    background-size: bottom;
-    overflow: hidden;
-
-    &:hover {
-    }
-
-    .project-pop-item {
-      position: relative;
-      padding: 0;
-      height: 680px;
-      width: 100%;
-      border-width: 0 2px 0 0 !important;
-      border-color: rgba($color: $light, $alpha: 0.5);
-      border-style: solid;
-
-      transition: background 300ms linear;
-
-      &:last-child {
-        border-width: 0;
-      }
-
-      // hover
-      &:hover {
-        background-color: rgba($color: $dark, $alpha: 0.3);
-
-        .project-pop-item-content {
-          &::before {
-            height: 100%;
-          }
-        }
-
-        .project-pop-item-detail {
-          visibility: visible;
-          transform: translate(0, 0);
-        }
-      }
-
-      .project-pop-item-content {
-        position: relative;
-        padding: 50px;
-        text-align: left;
-
-        &::before {
-          content: "";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 0%;
-          transition: all 300ms linear;
-          z-index: 0;
-
-          background-color: $primary;
-        }
-
-        .project-pop-item-subtitle {
-          display: block;
-          text-transform: uppercase;
-          z-index: 10;
-          color: $light;
-          transform-style: preserve-3d;
-          transform: translate3d(0, 0, 10px);
-        }
-
-        .project-pop-item-title {
-          text-transform: uppercase;
-          z-index: 10;
-          color: $light;
-          font-size: 20px;
-          transform-style: preserve-3d;
-          transform: translate3d(0, 0, 10px);
-        }
-      }
-
-      .project-pop-item-detail {
-        position: absolute;
-        bottom: 30px;
-        right: 50px;
+    &-title {
+        margin: 0;
+        text-align: center;
+        padding-bottom: 90px;
         text-transform: uppercase;
-
-        transition: transform 300ms linear;
-        visibility: hidden;
-        transform: translate(-50%, 0);
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          right: 0;
-          width: 50px;
-          height: 2px;
-          background-color: $light;
-          transform: translateY(-50%);
-        }
-
-        a {
-          display: block;
-          text-decoration: none;
-          color: $light;
-          background-color: transparent;
-          transform-style: preserve-3d;
-          transform: translate3d(0, 0, 10%);
-          padding-right: 55px;
-        }
-      }
+        font-size: 42px;
     }
-  }
+
+    &-sub-title {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: $primary;
+    }
+
+    &-list {
+        display: flex;
+        background-image: url("/dist/images/slider-bg-2.jpg");
+        background-repeat: no-repeat;
+        background-size: bottom;
+        overflow: hidden;
+
+        &:hover {
+        }
+
+        .project-pop-item {
+            position: relative;
+            padding: 0;
+            height: 680px;
+            width: 100%;
+            border-width: 0 2px 0 0 !important;
+            border-color: rgba($color: $light, $alpha: 0.5);
+            border-style: solid;
+
+            transition: background 300ms linear;
+
+            &:last-child {
+                border-width: 0;
+            }
+
+            // hover
+            &:hover {
+                background-color: rgba($color: $dark, $alpha: 0.3);
+
+                .project-pop-item-content {
+                    &::before {
+                        height: 100%;
+                    }
+                }
+
+                .project-pop-item-detail {
+                    visibility: visible;
+                    transform: translate(0, 0);
+                }
+            }
+
+            .project-pop-item-content {
+                position: relative;
+                padding: 50px;
+                text-align: left;
+
+                &::before {
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 0%;
+                    transition: all 300ms linear;
+                    z-index: 0;
+
+                    background-color: $primary;
+                }
+
+                .project-pop-item-subtitle {
+                    display: block;
+                    text-transform: uppercase;
+                    z-index: 10;
+                    color: $light;
+                    transform-style: preserve-3d;
+                    transform: translate3d(0, 0, 10px);
+                }
+
+                .project-pop-item-title {
+                    text-transform: uppercase;
+                    z-index: 10;
+                    color: $light;
+                    font-size: 20px;
+                    transform-style: preserve-3d;
+                    transform: translate3d(0, 0, 10px);
+                }
+            }
+
+            .project-pop-item-detail {
+                position: absolute;
+                bottom: 30px;
+                right: 50px;
+                text-transform: uppercase;
+
+                transition: transform 300ms linear;
+                visibility: hidden;
+                transform: translate(-50%, 0);
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: 50px;
+                    height: 2px;
+                    background-color: $light;
+                    transform: translateY(-50%);
+                }
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $light;
+                    background-color: transparent;
+                    transform-style: preserve-3d;
+                    transform: translate3d(0, 0, 10%);
+                    padding-right: 55px;
+                }
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .project-pop-item {
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 4px;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        &-list {
+            flex-direction: column;
+        }
+    }
 }

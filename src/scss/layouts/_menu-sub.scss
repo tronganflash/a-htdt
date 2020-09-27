@@ -26,6 +26,12 @@
     color: $dark;
     text-transform: uppercase;
   }
+  @media only screen and (max-width: 1024px){
+    a{
+      font-size: 12px;
+      margin: 10px;
+    }
+  }
 
   a:hover {
     color: $primary;

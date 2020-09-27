@@ -1,6 +1,14 @@
 .footer-container{
+    &-menu{
+       max-height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
+    }
     display: flex;
     flex-direction: column;
     position: relative;
-    height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
+    height: calc(100vh - #{$navbarHeight});
+}
+@media only screen and (max-width: 1440px){
+    .footer-container{
+        height: auto;
+    }
 }

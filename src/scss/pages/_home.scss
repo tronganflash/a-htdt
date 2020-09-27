@@ -77,6 +77,12 @@
       }
     }
 
+    @media only screen and (max-width: 1024px){
+      &-head{
+        display: none;
+      }
+    }
+
     &-main {
       &-item {
         position: relative;

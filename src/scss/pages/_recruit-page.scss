@@ -55,7 +55,7 @@
     .recruit-process-content {
       position: relative;
       max-width: 616px;
-      margin: (1920px - 1440px)/2;
+      margin: 12%;
       color: $light;
       .recruit-process-title {
         position: relative;
@@ -133,6 +133,9 @@
         }
       }
     }
+    @media only screen and (max-width: 1024px){
+
+    }
   }
 
   .recruit-term {
@@ -154,7 +157,7 @@
     .recruit-term-content {
       position: relative;
       max-width: 616px;
-      margin: (1920px - 1440px)/2;
+      margin: 12%;
       color: $light;
 
       .recruit-term-title {
@@ -193,6 +196,7 @@
     background-position: center;
     background-size: cover;
     padding: 4% 12%;
+    overflow-x: scroll;
     & > .header {
       position: relative;
       width: 100%;
@@ -214,7 +218,8 @@
     }
     & > table {
       width: 100%;
-      outline: 1px solid #eeeeee;
+      border: 1px solid #eeeeee;
+      border-right: none;
       border-collapse: separate;
       border-spacing: 0px 8px;
       & .dark-blue {
@@ -335,11 +340,11 @@
     & .recruitment-contact {
       color: #7c7c7c;
     }
-    & > .col {
+    & > .col1 {
       display: flex;
       flex-direction: column;
       position: relative;
-      flex: 0.5;
+      flex: 1;
       & > .row1 {
         display: flex;
         flex-direction: column;
@@ -351,6 +356,17 @@
         flex-direction: column;
         flex: 0.75;
         padding: 8% 0;
+      }
+    }
+    & > .col2{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      flex: 1;
+    }
+    @media only screen and (max-width: 1024px){
+      & > .col2{
+        display: none;
       }
     }
     & .form {
@@ -368,6 +384,7 @@
         height: 40px;
         margin: 12px auto;
         border-radius: 8px;
+        white-space: nowrap;
         & input,
         button,
         select {
@@ -376,6 +393,7 @@
           border: none;
           height: 100%;
           background-color: white;
+          width: 50px;
         }
         & input,
         select {
@@ -383,6 +401,11 @@
           padding: 0 16px;
         }
       }
+    }
+  }
+  @media only screen and (max-width: 768px){
+    & .introduce, & .recruit-process, & .recruit-term, & .section4, & .section5{
+        height: auto;
     }
   }
 }
