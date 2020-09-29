@@ -1,16 +1,24 @@
-.news-related {
-    position: relative;
-    flex: 0.25;
-    padding: 0 1%;
-    img {
-      width: 100%;
+.news-related-container {
+    display: flex;
+    .news-related {
+        position: relative;
+        flex: 1;
+        padding: 0 1%;
+        img {
+            width: 100%;
+        }
+        &-description {
+            padding-top: 4%;
+        }
+        &:hover {
+            transition-duration: 0.25s;
+            color: #b7886a;
+        }
     }
-    &-description {
-      padding-top: 4%;
+}
+@media only screen and (max-width: 768px) {
+    .news-related-container {
+        flex-direction: column;
+        padding: 0 4%;
     }
-    &:hover {
-      transition-duration: 0.25s;
-      color: #b7886a;
-    }
-  }
-  
+}

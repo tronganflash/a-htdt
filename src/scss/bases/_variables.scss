@@ -6,28 +6,29 @@ $medium: 768px;
 $small: 576px; // < -> extra
 
 $navbarHeight: 92px;
+$navbarHeightMobile: 56px;
 $menuHeight: 36px;
 
 //--- colors ---
-$dark: #333333!default;
-$light: #ffffff!default;
-$primary: #bf9372!default;
-$success: #5cbf76!default;
-$info: #5cbfdb!default;
-$warn: #ffba00!default;
-$danger: #e65555!default;
-$secondary: #aaa!default;
-$darkBlue: #252531!default;
+$dark: #333333 !default;
+$light: #ffffff !default;
+$primary: #bf9372 !default;
+$success: #5cbf76 !default;
+$info: #5cbfdb !default;
+$warn: #ffba00 !default;
+$danger: #e65555 !default;
+$secondary: #aaa !default;
+$darkBlue: #252531 !default;
 
 $list-colors: (
-  "dark" $dark,
-  "light" $light,
-  "primary" $primary,
-  "success" $success,
-  "info" $info,
-  "warn" $warn,
-  "danger" $danger,
-  "secondary" $secondary
+    "dark" $dark,
+    "light" $light,
+    "primary" $primary,
+    "success" $success,
+    "info" $info,
+    "warn" $warn,
+    "danger" $danger,
+    "secondary" $secondary
 );
 
 $column_size: 8.3333%;

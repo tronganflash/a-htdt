@@ -50,6 +50,7 @@
                 background-color: rgba($color: $dark, $alpha: 0.3);
 
                 .project-pop-item-content {
+                    opacity: 0.8;
                     &::before {
                         height: 100%;
                     }
@@ -65,6 +66,14 @@
                 position: relative;
                 padding: 50px;
                 text-align: left;
+
+                @media only screen and (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0 4%;
+                    height: 100%;
+                }
 
                 &::before {
                     content: "";
@@ -133,6 +142,7 @@
         @media only screen and (max-width: 768px) {
             .project-pop-item {
                 position: relative;
+                height: 25vh;
                 &::after {
                     content: "";
                     width: 100%;

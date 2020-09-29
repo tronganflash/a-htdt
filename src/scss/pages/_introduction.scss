@@ -1,60 +1,75 @@
-.introduction{
-    & .banner{
+.introduction {
+    & .banner {
         height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
         background-image: url(/dist/images/introduction-section2-bg.svg);
         background-position: center;
-        & > img{
+        & > img {
             width: 100%;
         }
     }
-    & .section2{
+    & .section2 {
         position: relative;
         display: flex;
         width: 100%;
         height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
         padding: 8% 12%;
-        background-image: url('/dist/images/introduction-section2-bg.svg');
+        background-image: url("/dist/images/introduction-section2-bg.svg");
         background-position: center;
-        & > .col1{
+        @media only screen and (max-width: 768px) {
+            padding: 0;
+        }
+        & > .col1 {
             position: relative;
-            flex: .5;
+            flex: 0.5;
             height: 100%;
             background-image: url("/dist/images/introduction-director.jpg");
             background-position: center;
             background-size: cover;
+            @media only screen and (max-width: 768px) {
+                flex: 0 0 0px;
+            }
         }
-        & > .col2{
+        & > .col2 {
             flex: 1;
             padding-left: 8%;
-            & > h2{
+            @media only screen and (max-width: 768px) {
+                padding: 0 2%;
+            }
+            & > h2 {
                 color: $primary;
             }
         }
     }
-    & .section3{
+    & .section3 {
         position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
         height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
-        & > .row1{
+        @media only screen and (max-width: 768px) {
+            & {
+                height: auto;
+            }
+        }
+        & > .row1 {
             position: relative;
             display: flex;
             max-height: 50%;
-            & > .col1{
+            & > .col1 {
+                height: 100%;
                 flex: 0 0 50%;
-                background-image: url('/dist/images/introduction-section3-1.jpg');
+                background-image: url("/dist/images/introduction-section3-1.jpg");
                 background-position: center;
                 background-size: cover;
             }
-            & > .col2{
+            & > .col2 {
                 display: flex;
                 flex-direction: column;
                 flex: 1;
                 align-items: center;
                 justify-content: center;
                 padding: 8%;
-                & > h1::after{
+                & > h1::after {
                     content: "";
                     display: block;
                     background: $primary;
@@ -62,19 +77,24 @@
                     width: 4%;
                     position: absolute;
                 }
+                @media only screen and (max-width: 768px) {
+                    & > h1::after {
+                        display: none;
+                    }
+                }
             }
         }
-        & > .row2{
+        & > .row2 {
             position: relative;
             display: flex;
             flex: 0 0 50%;
-            & > .col1{
+            & > .col1 {
                 display: flex;
                 flex-direction: column;
                 flex: 1;
                 align-items: center;
                 justify-content: center;
-                & > h1::after{
+                & > h1::after {
                     content: "";
                     display: block;
                     background: $primary;
@@ -82,114 +102,131 @@
                     width: 4%;
                     position: absolute;
                 }
+                @media only screen and (max-width: 768px) {
+                    & > h1::after {
+                        display: none;
+                    }
+                }
             }
-            & > .col2{
+            & > .col2 {
                 flex: 0 0 50%;
-                background-image: url('/dist/images/introduction-section3-2.jpg');
+                background-image: url("/dist/images/introduction-section3-2.jpg");
                 background-position: center;
                 background-size: cover;
             }
         }
+        @media only screen and (max-width: 768px) {
+            & > .row1,
+            & > .row2 {
+                flex-direction: column;
+            }
+        }
     }
-    & > .section5{
+    & > .section5 {
         position: relative;
         display: flex;
         width: 100%;
         height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
-        & > .col:nth-child(1){
+        & > .col:nth-child(1) {
             flex: 1;
             height: 100%;
-            background-image: url('/dist/images/introduction-section5-1.jpg');
+            background-image: url("/dist/images/introduction-section5-1.jpg");
             background-position: center;
             background-size: cover;
         }
-        & > .col:nth-child(2){
+        & > .col:nth-child(2) {
             flex: 1;
-            background-image: url('/dist/images/introduction-section5-2.jpg');
+            background-image: url("/dist/images/introduction-section5-2.jpg");
             background-position: center;
             background-size: cover;
         }
-        & > .col:nth-child(3){
+        & > .col:nth-child(3) {
             flex: 1;
-            background-image: url('/dist/images/introduction-section5-3.jpg');
+            background-image: url("/dist/images/introduction-section5-3.jpg");
             background-position: center;
             background-size: cover;
         }
-        & > .col:nth-child(4){
+        & > .col:nth-child(4) {
             flex: 1;
-            background-image: url('/dist/images/introduction-section5-1.jpg');
+            background-image: url("/dist/images/introduction-section5-1.jpg");
             background-position: center;
             background-size: cover;
         }
-        & > .col:nth-child(5){
+        & > .col:nth-child(5) {
             flex: 1;
-            background-image: url('/dist/images/introduction-section5-5.jpg');
+            background-image: url("/dist/images/introduction-section5-5.jpg");
             background-position: center;
             background-size: cover;
         }
-        & > .col:nth-child(6){
+        & > .col:nth-child(6) {
             flex: 1;
-            background-image: url('/dist/images/introduction-section5-6.jpg');
+            background-image: url("/dist/images/introduction-section5-6.jpg");
             background-position: center;
             background-size: cover;
         }
     }
-    & > .section6{
+    & > .section6 {
         position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
         height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
-        background-image: url('/dist/images/core-bg.svg');
-        & > .row1{
+        background-image: url("/dist/images/core-bg.svg");
+        @media only screen and (max-width: 768px) {
+            & {
+                height: auto;
+            }
+        }
+        & > .row1 {
             display: flex;
             flex: 0 0 20%;
             align-items: center;
-            & > h1{
+            & > h1 {
                 width: 100%;
                 text-align: center;
             }
         }
-        & .tag{
+        & .tag {
             position: relative;
             display: flex;
-            flex: .4;
+            flex: 0.4;
             background-color: white;
-            margin: .5% .5%;
-            & > div:nth-child(1){
+            margin: 0.5% 0.5%;
+            & > div:nth-child(1) {
                 width: 40%;
                 height: 100%;
                 background-position: center;
                 background-size: cover;
             }
-            & > div:nth-child(2){
+            & > div:nth-child(2) {
                 display: flex;
                 flex: 1;
                 flex-direction: column;
                 align-items: center;
                 padding: 8% 4%;
-                & h3{
+                & h3 {
                     color: $primary;
                 }
-                & h3, & h2{
+                & h3,
+                & h2 {
                     margin: 0;
                 }
-                & > p{
+                & > p {
                     text-align: left;
                 }
             }
         }
-        & > .row2{
+        & > .row2 {
             position: relative;
             display: flex;
             flex: 1;
             justify-content: center;
             align-items: center;
-            & .tag:nth-child(1){
-                & > div:nth-child(1){
+            & .tag:nth-child(1) {
+                & > div:nth-child(1) {
                     flex: 1;
                     height: auto;
-                    background-image: url('/dist/images/introduction-section6-1.jpg');
+                    background-image: url("/dist/images/introduction-section6-1.jpg");
                     background-position: center;
                     background-size: cover;
                 }
@@ -199,53 +236,60 @@
                 margin: auto 0;
             }
         }
-        & > .row3{
+        & > .row3 {
             position: relative;
             display: flex;
             flex: 1;
             justify-content: center;
-            & .tag:nth-child(1){
-                & > div:nth-child(1){
-                    background-image: url('/dist/images/introduction-section6-2.jpg');
+            & .tag:nth-child(1) {
+                & > div:nth-child(1) {
+                    background-image: url("/dist/images/introduction-section6-2.jpg");
                 }
             }
-            & .tag:nth-child(2){
-                & > div:nth-child(1){
-                    background-image: url('/dist/images/introduction-section6-3.jpg');
+            & .tag:nth-child(2) {
+                & > div:nth-child(1) {
+                    background-image: url("/dist/images/introduction-section6-3.jpg");
                 }
             }
         }
-        @media only screen and (max-width: 768px){
-            & .tag{
+        @media only screen and (max-width: 768px) {
+            & .tag {
                 flex: 1;
                 width: 100%;
-                height: 200px;
-                & > div:nth-child(1){
+                height: 50vh;
+                margin: 0;
+                & > div:nth-child(1) {
                     flex: 1;
                     height: 100%;
+                    overflow-y: auto;
                 }
             }
-            & > .row3{
+            & > .row3 {
                 flex-direction: column;
             }
         }
     }
-    & > .section7{
+    & > .section7 {
         position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
         height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
         background-color: white;
-        & .tag{
+        & .tag {
             position: relative;
             display: flex;
-            flex: .4;
+            flex: 0.4;
             height: 60%;
             background-color: white;
             align-items: center;
             justify-content: center;
-            & > div:nth-child(1){
+            @media only screen and (max-width: 768px) {
+                & {
+                    width: 33vw;
+                }
+            }
+            & > div:nth-child(1) {
                 display: flex;
                 position: relative;
                 width: 40%;
@@ -254,50 +298,61 @@
                 justify-content: center;
                 border: 1px solid #eeeeee;
                 padding: 5%;
-                & > img{
+                & > img {
                     width: 100%;
                 }
             }
-            & > div:nth-child(2){
+            & > div:nth-child(2) {
                 display: flex;
                 flex: 1;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 padding: 0 4%;
-                & > p{
+                & > p {
                     text-align: left;
                 }
             }
-            @media only screen and (max-width: 768px){
-                & > div:nth-child(2){
-                    & > p{
+            @media only screen and (max-width: 768px) {
+                & > div:nth-child(2) {
+                    & > p {
                         display: none;
                     }
                 }
             }
-            @media only screen and (max-width: 600px){
-                & > div:nth-child(2){
+            @media only screen and (max-width: 600px) {
+                & > div:nth-child(2) {
                     display: none;
                 }
             }
         }
-        & > .row1{
-            flex: .25;
-            &:nth-child(1){
+        & > .row1 {
+            flex: 0.25;
+            &:nth-child(1) {
                 width: 100%;
                 text-align: center;
             }
         }
-        & > .row2{
+        & > .row2 {
             flex: 1;
             display: grid;
             grid-template-columns: auto auto auto;
             padding: 0 12%;
+            @media only screen and (max-width: 768px) {
+                & {
+                    padding: 0;
+                }
+            }
         }
     }
-    @media only screen and (max-width: 1024px){
-        & .banner, & .section1, & .section2, & .section3, & .section5, & .section6, & .section7{
+    @media only screen and (max-width: 1024px) {
+        & .banner,
+        & .section1,
+        & .section2,
+        & .section3,
+        & .section5,
+        & .section6,
+        & .section7 {
             height: auto;
         }
     }

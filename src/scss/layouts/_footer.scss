@@ -1,118 +1,122 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  flex: 0 0 .5;
-  background-color: #252531;
-  padding: 1% 8% 0% 8%;
-  & > .row1{
     display: flex;
-    & > .col1 {
-      position: relative;
-      display: flex;
-      flex: 0.2;
-      padding: 0 2%;
-      align-items: center;
-    }
-    @media screen and (max-width: 425px){
-      & > .col1{
-        display: none;
-      }
-    }
-    & > .col2 {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      padding: 0 4%;
-      & > .row1 {
-        flex: 0.28;
-      }
-      & > .row2 {
-        display: flex;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-      }
-      @media screen and (max-width: 1024px){
-        & > .row2{
-          flex-direction: column;
-        }
-      }
-    }
-  }
-  &-header {
-    font-family: "UTMBANQUEBOLD";
-    padding: 2%;
-    h2 {
-      margin: 0;
-      color: #ffffff;
-      font-size: 20px;
-    }
-    h1 {
-      font-size: 28px;
-      margin: 0;
-      color: #b7886a;
-    }
-  }
-  &-logo {
+    flex-direction: column;
+    position: relative;
     width: 100%;
-    min-width: 160px;
-  }
-  &-location {
-    flex: 1;
-    color: #ffffff;
-    padding: 0 2%;
-    h3 {
-      color: #b7886a;
+    height: 100%;
+    flex: 0 0 0.5;
+    background-color: #252531;
+    padding: 1% 8% 0% 8%;
+    & > .row1 {
+        display: flex;
+        & > .col1 {
+            position: relative;
+            display: flex;
+            flex: 0.2;
+            padding: 0 2%;
+            align-items: center;
+        }
+        @media screen and (max-width: 425px) {
+            & > .col1 {
+                display: none;
+            }
+        }
+        & > .col2 {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 0 4%;
+            & > .row1 {
+                flex: 0.28;
+            }
+            & > .row2 {
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+            }
+            @media screen and (max-width: 1024px) {
+                & > .row2 {
+                    flex-direction: column;
+                }
+            }
+        }
     }
-    &-row {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-      i {
-        margin: 0 4%;
-      }
+    &-header {
+        font-family: "UTMBANQUEBOLD";
+        padding: 2%;
+        h2 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #b7886a;
+        }
     }
-  }
-  &-social-media {
+    &-logo {
+        width: 100%;
+        min-width: 160px;
+    }
+    &-location {
+        flex: 1;
+        color: #ffffff;
+        padding: 0 2%;
+        h3 {
+            color: #b7886a;
+        }
+        &-row {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            i {
+                margin: 0 4%;
+            }
+        }
+    }
+    &-social-media {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        background-color: #252531;
+        hr {
+            background-color: #ffffff;
+            flex: 1;
+        }
+        i {
+            min-width: 48px;
+            min-height: 48px;
+            text-align: center;
+            vertical-align: center;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            padding: 12px;
+            padding-top: 16px;
+            font-size: 16px;
+            margin: 8px;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .footer {
+        padding: 0;
+        height: auto;
+    }
+}
+.copyright {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     background-color: #252531;
-    hr {
-      background-color: #ffffff;
-      flex: 1;
+    font-size: 14px;
+    @media only screen and (max-width: 768px) {
+        padding: 0 4%;
+        text-align: center;
     }
-    i {
-      min-width: 48px;
-      min-height: 48px;
-      text-align: center;
-      vertical-align: center;
-      border-radius: 50%;
-      border: 1px solid #ffffff;
-      padding: 12px;
-      padding-top: 16px;
-      font-size: 16px;
-      margin: 8px;
-    }
-  }
-}
-@media only screen and (max-width: 1024px){
-  .footer{
-    padding: 0;
-    height: auto;
-  }
-}
-.copyright {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  background-color: #252531;
-  font-size: 14px;
 }

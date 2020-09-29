@@ -1,44 +1,51 @@
 .menu-sub {
-  position: sticky;
-  top: $navbarHeight;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: sticky;
+    top: $navbarHeight;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  width: 100%;
-  text-align: center;
-  height: $menuHeight;
-  background-color: #f8f8f8;
-  z-index: 100;
-
-
-  a {
-    cursor: pointer;
-    margin: 0;
+    width: 100%;
     text-align: center;
-    white-space: nowrap;
-    transition-duration: 0.25s;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 20px;
-    text-decoration: none;
-    color: $dark;
-    text-transform: uppercase;
-  }
-  @media only screen and (max-width: 1024px){
-    a{
-      font-size: 12px;
-      margin: 10px;
+    height: $menuHeight;
+    background-color: #f8f8f8;
+    z-index: 100;
+
+    overflow-x: auto;
+
+    a {
+        cursor: pointer;
+        margin: 0;
+        text-align: center;
+        white-space: nowrap;
+        transition-duration: 0.25s;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 20px;
+        text-decoration: none;
+        color: $dark;
+        text-transform: uppercase;
     }
-  }
+    @media only screen and (max-width: 1024px) {
+        a {
+            font-size: 12px;
+            margin: 10px;
+        }
+    }
 
-  a:hover {
-    color: $primary;
-  }
+    a:hover {
+        color: $primary;
+    }
 
-  &-active {
-    color: $primary!important;
-    font-weight: bold!important;
-  }
+    &-active {
+        color: $primary !important;
+        font-weight: bold !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .menu-sub {
+        top: calc(#{$navbarHeight} - 36px);
+        justify-content: flex-start;
+    }
 }

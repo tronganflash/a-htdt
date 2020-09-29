@@ -1,156 +1,185 @@
 .menu {
-  position: sticky;
-  top: 0;
-  left: 0;
-  padding: 22px 100px;
-  z-index: 9999;
-  background-color: $light;
-  overflow-x: hidden;
-  box-shadow: 0 1px 2px rgba($color: $primary, $alpha: 0.2);
-
-  &-active {
-    transform: translateY(0)!important;
-  }
-
-  &-flex {
-    display: flex;
-    align-items: center;
-    z-index: 9999;
-    transform-style: preserve-3d;
-    transform: translate3d(0, 0, 100px);
-
-    max-width: 1720px;
-    margin: 0 auto;
-    .menu-brand {
-      img {
-        width: 276px;
-        height: 44px;
-      }
-    }
-
-    .menu-details {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      &-items {
-        font-family: "UTM Banque";
-        font-weight: 400;
-        color: $dark;
-        text-transform: uppercase;
-        text-decoration: none;
-
-        &:focus {
-          color: $primary;
-        }
-      }
-
-      @media only screen and (max-width: 1024px){
-        &-items{
-          display: none;
-          background-color: black;
-        }
-      }
-
-      .menu-bars {
-        display: inline-block;
-        img {
-          width: 50px;
-          height: 30px;
-          object-fit: contain;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  &-list {
-    position: fixed;
+    position: sticky;
     top: 0;
-    right: 0;
-    max-width: 650px;
-    width: 75%;
-    height: 100vh;
-    z-index: 0;
-    opacity: 1;
-    padding-top: 25px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background: $light url("/dist/images/core-bg.svg");
-    box-shadow: 0 -1px 2px $primary;
-    transform: translateY(-100%);
-
-    transition: transform 300ms linear;
-    *{
-      white-space: nowrap;
-    }
-
-    .menu-details {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      margin-bottom: 140px;
-      text-align: right;
-
-      &-items {
-        font-family: "UTM Banque";
-        color: $dark;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 15px !important;
-
-        &:focus {
-          color: $primary;
-        }
-      }
-
-      .menu-bars {
-        display: inline-block;
-        img {
-          width: 50px;
-          height: 30px;
-          object-fit: contain;
-          cursor: pointer;
-        }
-      }
-    }
-
-    &-item {
-      display: block;
-      margin-bottom: 45px;
-      a {
-        margin-left: 80px;
-        text-decoration: none;
-        text-emphasis: none;
-        color: $dark;
-        font-size: 24px;
-        text-transform: uppercase;
-      }
-    }
+    left: 0;
+    padding: 22px 100px;
+    z-index: 9999;
+    background-color: $light;
+    overflow-x: hidden;
+    box-shadow: 0 1px 2px rgba($color: $primary, $alpha: 0.2);
 
     &-active {
-      background-image: url("/dist/images/menu-active.svg");
-      background-repeat: no-repeat;
-      border-bottom: 2px solid $primary;
+        transform: translateY(0) !important;
+    }
 
-      a {
-        color: $primary;
-        font-weight: bold;
-        margin-left: 90px;
-      }
+    &-flex {
+        display: flex;
+        align-items: center;
+        z-index: 9999;
+        transform-style: preserve-3d;
+        transform: translate3d(0, 0, 100px);
+
+        max-width: 1720px;
+        margin: 0 auto;
+        .menu-brand {
+            & img {
+                width: 276px;
+                height: 44px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .menu-brand {
+                & img {
+                    width: 60%;
+                }
+            }
+        }
+
+        .menu-details {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            &-items {
+                font-family: "UTM Banque";
+                font-weight: 400;
+                color: $dark;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &:focus {
+                    color: $primary;
+                }
+            }
+
+            @media only screen and (max-width: 1024px) {
+                &-items {
+                    display: none;
+                    background-color: black;
+                }
+            }
+
+            .menu-bars {
+                display: inline-block;
+                img {
+                    width: 50px;
+                    height: 30px;
+                    object-fit: contain;
+                    cursor: pointer;
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                .menu-bars {
+                    display: inline-block;
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+        }
     }
-  }
-  @media screen and (max-width: 768px){
-    &-list{
-      width: 100%;
-      padding: 2%;
-      *{
-        font-size: 5px;
-      }
+
+    &-list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        max-width: 650px;
+        width: 75%;
+        height: 100vh;
+        z-index: 0;
+        opacity: 1;
+        padding-top: 25px;
+        padding-left: 80px;
+        padding-right: 80px;
+        background: $light url("/dist/images/core-bg.svg");
+        box-shadow: 0 -1px 2px $primary;
+        transform: translateY(-100%);
+
+        transition: transform 300ms linear;
+        * {
+            white-space: nowrap;
+        }
+
+        .menu-details {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-bottom: 140px;
+            text-align: right;
+
+            &-items {
+                font-family: "UTM Banque";
+                color: $dark;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 15px;
+
+                &:focus {
+                    color: $primary;
+                }
+            }
+
+            .menu-bars {
+                display: inline-block;
+                img {
+                    width: 50px;
+                    height: 30px;
+                    object-fit: contain;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-item {
+            display: block;
+            margin-bottom: 45px;
+            a {
+                margin-left: 80px;
+                text-decoration: none;
+                text-emphasis: none;
+                color: $dark;
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+        }
+
+        &-active {
+            background-image: url("/dist/images/menu-active.svg");
+            background-repeat: no-repeat;
+            border-bottom: 2px solid $primary;
+
+            a {
+                color: $primary;
+                font-weight: bold;
+                margin-left: 90px;
+            }
+        }
     }
-  }
+    @media screen and (max-width: 768px) {
+        &-list {
+            width: 100%;
+            padding: 2%;
+            * {
+                font-size: 5px;
+            }
+            &-item {
+                & a {
+                    font-size: 16px !important;
+                }
+            }
+        }
+        &-details {
+            position: relative;
+            &-items {
+                font-size: 10px !important;
+            }
+            & .x {
+                transform: scale(0.5);
+            }
+        }
+    }
 }
-@media screen and (max-width: 768px){
-  .menu{
-    padding: 22px 4%;
-  }
+@media screen and (max-width: 768px) {
+    .menu {
+        padding: 4px 4%;
+    }
 }
