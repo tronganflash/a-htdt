@@ -25,7 +25,7 @@
                 z-index: 0;
                 width: 310px;
                 height: 350px;
-                background-image: url("/dist/images/introduction-svg.svg");
+                background-image: url("/html/dist/images/introduction-svg.svg");
                 background-size: contain;
             }
         }
@@ -86,8 +86,8 @@
         &-head {
             max-width: 1148px;
             margin: 0 auto;
-            padding: 100px 0;
             align-items: center;
+            padding: 9.78vh 0;
 
             &-title {
                 font-size: 42px;
@@ -98,19 +98,26 @@
 
         @media only screen and (max-width: 1024px) {
             &-head {
-                display: none;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 10px;
             }
         }
 
         &-main {
             position: relative;
             display: flex;
+            height: 66.4vh;
+            overflow: hidden;
+
             &-item {
+                flex: 1;
                 position: relative;
                 padding: 0;
                 text-align: center;
                 text-transform: uppercase;
-
+                background-position: center;
+                background-size: cover;
                 &:hover,
                 &-active {
                     .field-img {
@@ -126,6 +133,7 @@
                 }
 
                 .field-img {
+                    flex: 1;
                     background-color: rgba($color: #252531, $alpha: 1);
                     // background-color: rgba($color: #ecded4, $alpha: 1);
                     img {

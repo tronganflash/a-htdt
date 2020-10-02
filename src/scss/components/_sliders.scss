@@ -69,9 +69,38 @@
     }
 
     .sliders-images {
+        position: relative;
         width: 100%;
         height: 890px;
         z-index: 0;
+
+        & > .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            z-index: 100;
+            padding: 20px;
+            background-color: white;
+            border-radius: 50%;
+            height: 16px;
+            width: 16px;
+            color: inherit;
+            text-decoration: none;
+            transition-duration: .25s;
+            &:hover{
+                background-color: $dark;
+                color: white;
+            }
+        }
+        & > .icon:nth-child(1){
+            transform: translateY(125%);
+        }
+        & > .icon:nth-child(1){
+            transform: translateY(-125%);
+        }
 
         .sliders-overlay {
             width: 100%;

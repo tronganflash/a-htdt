@@ -1,8 +1,9 @@
 .introduction {
     & .banner {
         height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
-        background-image: url(/dist/images/introduction-section2-bg.svg);
+        background-image: url('/html/dist/images/introduction-section2-bg.svg');
         background-position: center;
+        overflow: hidden;
         & > img {
             width: 100%;
         }
@@ -13,7 +14,7 @@
         width: 100%;
         height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
         padding: 8% 12%;
-        background-image: url("/dist/images/introduction-section2-bg.svg");
+        background-image: url("/html/dist/images/introduction-section2-bg.svg");
         background-position: center;
         @media only screen and (max-width: 768px) {
             padding: 0;
@@ -22,7 +23,7 @@
             position: relative;
             flex: 0.5;
             height: 100%;
-            background-image: url("/dist/images/introduction-director.jpg");
+            background-image: url("/html/dist/images/introduction-director.jpg");
             background-position: center;
             background-size: cover;
             @media only screen and (max-width: 768px) {
@@ -58,7 +59,7 @@
             & > .col1 {
                 height: 100%;
                 flex: 0 0 50%;
-                background-image: url("/dist/images/introduction-section3-1.jpg");
+                background-image: url("/html/dist/images/introduction-section3-1.jpg");
                 background-position: center;
                 background-size: cover;
             }
@@ -110,7 +111,7 @@
             }
             & > .col2 {
                 flex: 0 0 50%;
-                background-image: url("/dist/images/introduction-section3-2.jpg");
+                background-image: url("/html/dist/images/introduction-section3-2.jpg");
                 background-position: center;
                 background-size: cover;
             }
@@ -130,37 +131,37 @@
         & > .col:nth-child(1) {
             flex: 1;
             height: 100%;
-            background-image: url("/dist/images/introduction-section5-1.jpg");
+            background-image: url("/html/dist/images/introduction-section5-1.jpg");
             background-position: center;
             background-size: cover;
         }
         & > .col:nth-child(2) {
             flex: 1;
-            background-image: url("/dist/images/introduction-section5-2.jpg");
+            background-image: url("/html/dist/images/introduction-section5-2.jpg");
             background-position: center;
             background-size: cover;
         }
         & > .col:nth-child(3) {
             flex: 1;
-            background-image: url("/dist/images/introduction-section5-3.jpg");
+            background-image: url("/html/dist/images/introduction-section5-3.jpg");
             background-position: center;
             background-size: cover;
         }
         & > .col:nth-child(4) {
             flex: 1;
-            background-image: url("/dist/images/introduction-section5-1.jpg");
+            background-image: url("/html/dist/images/introduction-section5-1.jpg");
             background-position: center;
             background-size: cover;
         }
         & > .col:nth-child(5) {
             flex: 1;
-            background-image: url("/dist/images/introduction-section5-5.jpg");
+            background-image: url("/html/dist/images/introduction-section5-5.jpg");
             background-position: center;
             background-size: cover;
         }
         & > .col:nth-child(6) {
             flex: 1;
-            background-image: url("/dist/images/introduction-section5-6.jpg");
+            background-image: url("/html/dist/images/introduction-section5-6.jpg");
             background-position: center;
             background-size: cover;
         }
@@ -170,8 +171,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
-        background-image: url("/dist/images/core-bg.svg");
+        background-image: url("/html/dist/images/core-bg.svg");
         @media only screen and (max-width: 768px) {
             & {
                 height: auto;
@@ -226,7 +226,7 @@
                 & > div:nth-child(1) {
                     flex: 1;
                     height: auto;
-                    background-image: url("/dist/images/introduction-section6-1.jpg");
+                    background-image: url("/html/dist/images/introduction-section6-1.jpg");
                     background-position: center;
                     background-size: cover;
                 }
@@ -243,12 +243,12 @@
             justify-content: center;
             & .tag:nth-child(1) {
                 & > div:nth-child(1) {
-                    background-image: url("/dist/images/introduction-section6-2.jpg");
+                    background-image: url("/html/dist/images/introduction-section6-2.jpg");
                 }
             }
             & .tag:nth-child(2) {
                 & > div:nth-child(1) {
-                    background-image: url("/dist/images/introduction-section6-3.jpg");
+                    background-image: url("/html/dist/images/introduction-section6-3.jpg");
                 }
             }
         }

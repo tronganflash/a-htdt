@@ -17,7 +17,8 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+ monospace;
 }
 
 /* Responsive Mobile */
@@ -1341,8 +1342,8 @@ code {
 }
 
 .core {
-  padding: 85px 0 40px;
-  background-image: url("/dist/images/core-bg.svg");
+  padding: 85px 0 40
+  background-image: url("/html/dist/images/core-bg.svg");
   background-repeat: no-repeat repeat;
   background-size: 100%;
 }
@@ -1730,7 +1731,7 @@ select.form-control {
 }
 
 .project-pop {
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/html/dist/images/core-bg.svg");
   background-repeat: repeat repeat;
   background-size: 100%;
   padding-top: 90px;
@@ -1753,7 +1754,7 @@ select.form-control {
 }
 
 .project-pop-list {
-  background-image: url("/dist/images/slider-bg-2.jpg");
+  background-image: url("/html/dist/images/slider-bg-2.jpg");
   background-repeat: no-repeat;
   background-size: bottom;
   overflow: hidden;
@@ -1891,7 +1892,7 @@ select.form-control {
 }
 
 .news {
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/html/dist/images/core-bg.svg");
   background-repeat: repeat repeat;
   background-size: 100%;
   padding: 70px;
@@ -2020,8 +2021,8 @@ select.form-control {
 }
 
 .recruit {
-  position: relative;
-  background-image: url("/dist/images/core-bg.svg");
+  position: relative
+  background-image: url("/html/dist/images/core-bg.svg");
   background-repeat: repeat;
   background-size: 200%;
   padding: 100px 130px;
@@ -2166,7 +2167,7 @@ select.form-control {
   padding-top: 25px;
   padding-left: 80px;
   padding-right: 80px;
-  background: #ffffff url("/dist/images/core-bg.svg");
+  background: #ffffff url("/html/dist/images/core-bg.svg");
   box-shadow: 0 -1px 2px #bf9372;
   transform: translateY(-100%);
   transition: transform 300ms linear;
@@ -2218,7 +2219,7 @@ select.form-control {
 }
 
 .menu-list-active {
-  background-image: url("/dist/images/menu-active.svg");
+  background-image: url("/html/dist/images/menu-active.svg");
   background-repeat: no-repeat;
   border-bottom: 2px solid #bf9372;
 }
@@ -2405,7 +2406,7 @@ select.form-control {
   z-index: 0;
   width: 310px;
   height: 350px;
-  background-image: url("/dist/images/introduction-svg.svg");
+  background-image: url("/html/dist/images/introduction-svg.svg");
   background-size: contain;
 }
 
@@ -2539,7 +2540,7 @@ select.form-control {
 }
 
 .contact {
-  background: #ffffff url("/dist/images/core-bg.svg");
+  background: #ffffff url("/html/dist/images/core-bg.svg");
 }
 
 .contact-title {
@@ -2610,8 +2611,8 @@ select.form-control {
 }
 
 .introduction .banner {
-  height: calc(100vh - 92px - 36px);
-  background-image: url("/dist/images/introduction-banner.jpg");
+  height: calc(100vh36px);
+  background-image: url("/html/dist/images/introduction-banner.jpg");
   background-position: center;
 }
 
@@ -2621,7 +2622,7 @@ select.form-control {
   width: 100%;
   height: calc(100vh - 92px - 36px);
   padding: 8% 12%;
-  background-image: url("/dist/images/introduction-section2-bg.svg");
+  background-image: url("/html/dist/images/introduction-section2-bg.svg");
   background-position: center;
 }
 
@@ -2629,7 +2630,7 @@ select.form-control {
   position: relative;
   flex: .5;
   height: 100%;
-  background-image: url("/dist/images/introduction-director.jpg");
+  background-image: url("/html/dist/images/introduction-director.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2659,7 +2660,7 @@ select.form-control {
 
 .introduction .section3 > .row1 > .col1 {
   flex: 0 0 50%;
-  background-image: url("/dist/images/introduction-section3-1.jpg");
+  background-image: url("/html/dist/images/introduction-section3-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2707,7 +2708,7 @@ select.form-control {
 
 .introduction .section3 > .row2 > .col2 {
   flex: 0 0 50%;
-  background-image: url("/dist/images/introduction-section3-2.jpg");
+  background-image: url("/html/dist/images/introduction-section3-2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2722,42 +2723,42 @@ select.form-control {
 .introduction > .section5 > .col:nth-child(1) {
   flex: 1;
   height: 100%;
-  background-image: url("/dist/images/introduction-section5-1.jpg");
+  background-image: url("/html/dist/images/introduction-section5-1.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .introduction > .section5 > .col:nth-child(2) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-2.jpg");
+  background-image: url("/html/dist/images/introduction-section5-2.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .introduction > .section5 > .col:nth-child(3) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-3.jpg");
+  background-image: url("/html/dist/images/introduction-section5-3.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .introduction > .section5 > .col:nth-child(4) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-1.jpg");
+  background-image: url("/html/dist/images/introduction-section5-1.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .introduction > .section5 > .col:nth-child(5) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-5.jpg");
+  background-image: url("/html/dist/images/introduction-section5-5.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .introduction > .section5 > .col:nth-child(6) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-6.jpg");
+  background-image: url("/html/dist/images/introduction-section5-6.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2767,8 +2768,8 @@ select.form-control {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 92px - 36px);
-  background-image: url("/dist/images/core-bg.svg");
+  height: calc(100vh36px);
+  background-image: url("/html/dist/images/core-bg.svg");
 }
 
 .introduction > .section6 > .row1 {
@@ -2825,8 +2826,8 @@ select.form-control {
   justify-content: center;
 }
 
-.introduction > .section6 > .row2 .tag:nth-child(1) > div:nth-child(1) {
-  background-image: url("/dist/images/introduction-section6-1.png");
+.introduction > .secow2 .tag:nth-child(1) > div:nth-child(1) {
+  background-image: url("/html/dist/images/introduction-section6-1.png");
 }
 
 .introduction > .section6 > .row3 {
@@ -2837,12 +2838,12 @@ select.form-control {
   padding: 1%;
 }
 
-.introduction > .section6 > .row3 .tag:nth-child(1) > div:nth-child(1) {
-  background-image: url("/dist/images/introduction-section6-2.jpg");
+.introduction > .secow3 .tag:nth-child(1) > div:nth-child(1) {
+  background-image: url("/html/dist/images/introduction-section6-2.jpg");
 }
 
-.introduction > .section6 > .row3 .tag:nth-child(2) > div:nth-child(1) {
-  background-image: url("/dist/images/introduction-section6-3.jpg");
+.introduction > .secow3 .tag:nth-child(2) > div:nth-child(1) {
+  background-image: url("/html/dist/images/introduction-section6-3.jpg");
 }
 
 .introduction > .section7 {
@@ -2943,7 +2944,7 @@ select.form-control {
   z-index: 0;
   width: 250px;
   height: 350px;
-  background-image: url("/dist/images/introduction-svg.svg");
+  background-image: url("/html/dist/images/introduction-svg.svg");
   background-size: contain;
 }
 
@@ -2954,7 +2955,7 @@ select.form-control {
   z-index: 0;
   width: 250px;
   height: 350px;
-  background-image: url("/dist/images/introduction-svg.svg");
+  background-image: url("/html/dist/images/introduction-svg.svg");
   background-size: contain;
 }
 
@@ -3061,7 +3062,7 @@ select.form-control {
 .recruitment .section4 {
   position: relative;
   width: 100%;
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/html/dist/images/core-bg.svg");
   background-position: center;
   background-size: cover;
   padding: 4% 12%;
@@ -3189,7 +3190,7 @@ select.form-control {
   display: flex;
   width: 100%;
   height: calc(100vh - 92px - 36px);
-  background-image: linear-gradient(90deg, #020024 0%, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section5-1.jpg");
+  background-image: linear-gradient(90deg, #020024 0%, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/html/dist/images/recruitment-section5-1.jpg");
   background-position: center;
   background-size: cover;
   color: white;
@@ -3319,10 +3320,10 @@ select.form-control {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: #252531;
-  background-image: url("/dist/images/recruitment-section1-1.png");
+  background: #25253
+  background-image: url("/html/dist/images/recruitment-section1-1.png");
   /* fallback */
-  background-image: linear-gradient(90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section1-1.png");
+  background-image: linear-gradient(90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/html/dist/images/recruitment-section1-1.png");
   /* W3C */
 }
 
@@ -3458,7 +3459,7 @@ select.form-control {
 .recruit-page .section4 {
   position: relative;
   width: 100%;
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/html/dist/images/core-bg.svg");
   background-position: center;
   background-size: cover;
   padding: 4% 12%;
@@ -3587,7 +3588,7 @@ select.form-control {
   display: flex;
   width: 100%;
   height: calc(100vh - 92px - 36px);
-  background-image: linear-gradient(90deg, #020024 0%, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section5-1.jpg");
+  background-image: linear-gradient(90deg, #020024 0%, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/html/dist/images/recruitment-section5-1.jpg");
   background-position: center;
   background-size: cover;
   color: white;

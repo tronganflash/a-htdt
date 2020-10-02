@@ -43,6 +43,21 @@ function hiddenAll() {
   });
 }
 
+// Auto slide through sliders
+var currentSliderIndex = 1;
+var sliders = document.getElementsByClassName('sliders-image-item');
+var dots = document.getElementsByClassName('sliders-dot');
+setInterval(() => {
+  hiddenAll();
+  setActive(true, slidersContent[currentSliderIndex]);
+  setActive(true, slidersImages[currentSliderIndex]);
+  dotActive(true, dots[currentSliderIndex]);
+  currentSliderIndex++;
+  if (currentSliderIndex >= sliders.length) {
+    currentSliderIndex = 0;
+  }
+}, 5000);
+
 window.addEventListener("DOMContentLoaded", () => {
   // default active
   slidersDot.forEach((el) => {

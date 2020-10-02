@@ -49,7 +49,7 @@
                 rgba(37, 37, 49, 1) 0%,
                 rgba(255, 255, 255, 0) 100%
             ),
-            url("/dist/images/recruitment-section2-1.jpg"); /* W3C */
+            url("/html/dist/images/recruitment-section2-1.jpg"); /* W3C */
         background-position: center;
         background-size: cover;
 
@@ -150,7 +150,7 @@
                 #252531 0%,
                 rgba(255, 255, 255, 0) 100%
             ),
-            url("/dist/images/recruitment-section3-1.jpg");
+            url("/html/dist/images/recruitment-section3-1.jpg");
         background-position: center;
         background-size: cover;
 
@@ -192,7 +192,7 @@
     & .section4 {
         position: relative;
         width: 100%;
-        background-image: url("/dist/images/core-bg.svg");
+        background-image: url("/html/dist/images/core-bg.svg");
         background-position: center;
         background-size: cover;
         padding: 4% 12%;
@@ -326,14 +326,13 @@
         position: relative;
         display: flex;
         width: 100%;
-        height: calc(100vh - #{$navbarHeight} - #{$menuHeight});
         background-image: linear-gradient(
                 90deg,
                 rgba(2, 0, 36, 1) 0%,
                 rgba(37, 37, 49, 1) 0%,
                 rgba(255, 255, 255, 0) 100%
             ),
-            url("/dist/images/recruitment-section5-1.jpg");
+            url("/html/dist/images/recruitment-section5-1.jpg");
         background-position: center;
         background-size: cover;
         color: white;

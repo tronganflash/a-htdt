@@ -4,6 +4,7 @@
         @media only screen and (max-width: 768px) {
             & {
                 height: auto;
+                padding: 0 4%;
             }
         }
         &-title,
@@ -180,7 +181,7 @@
             flex: 1;
             width: 100%;
             height: 100%;
-            background-image: url("/dist/images/project-detail-1.jpg");
+            background-image: url("/html/dist/images/project-detail-1.jpg");
             background-position: center;
             background-size: cover;
             & img {
@@ -260,7 +261,7 @@
         & > .col1 {
             flex: 1;
             height: 100%;
-            background-image: url("/dist/images/project-detail-2.jpg");
+            background-image: url("/html/dist/images/project-detail-2.jpg");
             background-position: center;
             background-size: cover;
             & img {

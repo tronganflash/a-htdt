@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import "../../dist/font/utm-banque/utm-banque.css";
+@import "/html/dist/font/utm-banque/utm-banque.css";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html, body {
   margin: 0;
@@ -1140,19 +1140,22 @@ code {
 
 .link {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
 .core {
-  padding: 85px 0 40px;
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/html/dist/images/core-bg.svg");
   background-repeat: no-repeat repeat;
   background-size: cover;
-  height: calc(100vh - 92px - 36px);
+  height: auto;
+  padding: 9.2vh 0;
 }
 .core-head {
   text-align: center;
+  padding-bottom: 5.2vh;
 }
 .core-head .core-sub-title {
   color: #bf9372;
@@ -1161,13 +1164,64 @@ code {
 .core-head .core-title {
   font-size: 37px;
   font-weight: bold;
-  margin-bottom: 55px;
+  margin: 0;
 }
 .core-values {
+  background-image: url("/html/dist/images/core-bg.svg");
+  background-size: cover;
+  background-position: center;
   background-color: #ffffff;
 }
+.core-values > .container {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  height: 66.63vh;
+  background-color: white;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .core-values > .container {
+    width: 100%;
+    height: auto;
+  }
+}
+.core-values > .container > .row1 {
+  display: flex;
+}
+.core-values > .container > .row1 > .core-values-item {
+  width: 25vw;
+  height: 35.3vh;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .core-values > .container > .row1 {
+    flex-direction: column;
+  }
+  .core-values > .container > .row1 > .core-values-item {
+    width: 100%;
+    height: auto;
+  }
+}
+.core-values > .container > .row2 {
+  display: flex;
+}
+.core-values > .container > .row2 > .core-values-item {
+  width: 25vw;
+  height: 35.3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .core-values > .container > .row2 {
+    flex-direction: column;
+  }
+  .core-values > .container > .row2 > .core-values-item {
+    width: 100%;
+    height: auto;
+  }
+}
 .core-values-item {
-  padding: 60px 40px;
+  flex: 1;
+  padding: 2.1875vw;
   transition: 300ms linear;
 }
 .core-values-item:hover {
@@ -1196,8 +1250,18 @@ code {
   transition: all 300ms linear;
 }
 .core-values-item .core-values-description {
-  font-size: 16px;
+  font-size: 15px;
   transition: all 300ms linear;
+}
+@media only screen and (max-width: 1366px) {
+  .core-values-item .core-values-description {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .core-values-item .core-values-description {
+    font-size: 16px;
+  }
 }
 .core-values-item:nth-child(1) {
   border-width: 0 0 2px 0;
@@ -1213,6 +1277,7 @@ code {
   border-width: 0 0 2px 0;
   border-style: solid;
   border-color: rgba(191, 147, 114, 0.2);
+  border-right: 2px solid rgba(191, 147, 114, 0.2);
 }
 .core-values-item:nth-child(4), .core-values-item:nth-child(5), .core-values-item:nth-child(6) {
   border-width: 0 2px 0 0;
@@ -1396,9 +1461,37 @@ select.form-control {
   font-size: 24px;
 }
 .sliders .sliders-images {
+  position: relative;
   width: 100%;
   height: 890px;
   z-index: 0;
+}
+.sliders .sliders-images > .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  z-index: 100;
+  padding: 20px;
+  background-color: white;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  color: inherit;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.sliders .sliders-images > .icon:hover {
+  background-color: #333333;
+  color: white;
+}
+.sliders .sliders-images > .icon:nth-child(1) {
+  transform: translateY(125%);
+}
+.sliders .sliders-images > .icon:nth-child(1) {
+  transform: translateY(-125%);
 }
 .sliders .sliders-images .sliders-overlay {
   width: 100%;
@@ -1516,31 +1609,42 @@ select.form-control {
   }
 }
 .project-pop {
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/html/dist/images/core-bg.svg");
   background-repeat: repeat repeat;
   background-size: 100%;
-  padding-top: 90px;
 }
 .project-pop-title {
   margin: 0;
   text-align: center;
-  padding-bottom: 90px;
   text-transform: uppercase;
   font-size: 42px;
+  padding: 9.78vh 0;
+}
+@media only screen and (max-width: 768px) {
+  .project-pop-title {
+    font-size: 28px;
+  }
 }
 .project-pop-sub-title {
   display: block;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 10px;
   color: #bf9372;
+  margin-bottom: 8px;
+  padding-top: 9.78vh;
 }
 .project-pop-list {
   display: flex;
-  background-image: url("/dist/images/slider-bg-2.jpg");
+  background-image: url("/html/dist/images/slider-bg-2.jpg");
   background-repeat: no-repeat;
   background-size: bottom;
   overflow: hidden;
+  height: 66.4vh;
+}
+@media only screen and (max-width: 768px) {
+  .project-pop-list {
+    height: 100%;
+  }
 }
 .project-pop-list .project-pop-item {
   position: relative;
@@ -1669,7 +1773,7 @@ select.form-control {
 }
 .contact-form-description {
   text-align: center;
-  max-width: 50%;
+  max-width: 75%;
   margin: 0 auto 16px;
 }
 @media only screen and (max-width: 768px) {
@@ -1679,20 +1783,22 @@ select.form-control {
 }
 
 .news-related-container {
+  position: relative;
   display: flex;
 }
-.news-related-container .news-related {
+
+.news-related {
   position: relative;
   flex: 1;
   padding: 0 1%;
 }
-.news-related-container .news-related img {
+.news-related img {
   width: 100%;
 }
-.news-related-container .news-related-description {
+.news-related-description {
   padding-top: 4%;
 }
-.news-related-container .news-related:hover {
+.news-related:hover {
   transition-duration: 0.25s;
   color: #b7886a;
 }
@@ -1704,7 +1810,7 @@ select.form-control {
   }
 }
 .news {
-  background-image: url("/dist/images/home-news-bg.jpg");
+  background-image: url("/html/dist/images/home-news-bg.jpg");
   background-repeat: repeat repeat;
   background-size: 100%;
   padding: 70px;
@@ -1878,15 +1984,31 @@ select.form-control {
 
 .recruit {
   position: relative;
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/html/dist/images/core-bg.svg");
   background-repeat: repeat;
   background-size: 200%;
   padding: 40px 130px;
   max-width: 976px;
   margin: 0 auto;
-  height: calc(100vh - 92px);
   overflow-y: visible;
   /* Custom swiper */
+}
+.recruit > .background {
+  position: absolute;
+  bottom: 20px;
+  background-image: url("/html/dist/images/introduction-svg.svg");
+  background-position: center;
+  background-size: cover;
+  width: 12vw;
+  height: 12vw;
+}
+.recruit > .background:nth-child(1) {
+  left: 0;
+  transform: translateX(-150%);
+}
+.recruit > .background:nth-child(2) {
+  right: 0;
+  transform: translateX(150%);
 }
 .recruit-head {
   text-align: center;
@@ -1925,9 +2047,19 @@ select.form-control {
   right: -60% !important;
   left: inherit;
 }
+.recruit .swiper-container {
+  overflow: visible !important;
+}
+.recruit .swiper-pagination-bullets {
+  position: absolute;
+  bottom: -20px !important;
+  left: 50%;
+  z-index: 100;
+}
 .recruit .swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
+  position: relative !important;
+  width: 80px !important;
+  height: 4px !important;
   text-align: center;
   line-height: 20px;
   font-size: 12px;
@@ -1935,9 +2067,7 @@ select.form-control {
   opacity: 1;
   background: white;
   border-radius: 0;
-  height: 10px;
-  padding: 1.5px 30px !important;
-  border-radius: 15px;
+  transform: scale(1) !important;
 }
 .recruit .swiper-pagination-bullet-active {
   color: #fff;
@@ -1955,10 +2085,11 @@ select.form-control {
   top: 0;
   left: 0;
   padding: 22px 100px;
-  z-index: 9999;
+  z-index: 9998;
   background-color: #ffffff;
   overflow-x: hidden;
   box-shadow: 0 1px 2px rgba(191, 147, 114, 0.2);
+  transition-duration: 0.5s;
 }
 .menu-active {
   transform: translateY(0) !important;
@@ -2024,14 +2155,13 @@ select.form-control {
   top: 0;
   right: 0;
   max-width: 650px;
-  width: 75%;
   height: 100vh;
-  z-index: 0;
+  z-index: 9999;
   opacity: 1;
   padding-top: 25px;
   padding-left: 80px;
   padding-right: 80px;
-  background: #ffffff url("/dist/images/core-bg.svg");
+  background-color: #ECDFD5;
   box-shadow: 0 -1px 2px #bf9372;
   transform: translateY(-100%);
   transition: transform 300ms linear;
@@ -2043,7 +2173,7 @@ select.form-control {
   display: flex;
   align-items: center;
   margin-left: auto;
-  margin-bottom: 140px;
+  margin-bottom: 10%;
   text-align: right;
 }
 .menu-list .menu-details-items {
@@ -2078,7 +2208,7 @@ select.form-control {
   text-transform: uppercase;
 }
 .menu-list-active {
-  background-image: url("/dist/images/menu-active.svg");
+  background-image: url("/html/dist/images/menu-active.svg");
   background-repeat: no-repeat;
   border-bottom: 2px solid #bf9372;
 }
@@ -2127,6 +2257,7 @@ select.form-control {
   background-color: #f8f8f8;
   z-index: 100;
   overflow-x: auto;
+  transition-duration: 0.5s;
 }
 .menu-sub a {
   cursor: pointer;
@@ -2198,7 +2329,7 @@ select.form-control {
 .footer > .row1 > .col2 > .row2 {
   display: flex;
   flex: 1;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 @media screen and (max-width: 1024px) {
@@ -2327,7 +2458,7 @@ select.form-control {
   z-index: 0;
   width: 310px;
   height: 350px;
-  background-image: url("/dist/images/introduction-svg.svg");
+  background-image: url("/html/dist/images/introduction-svg.svg");
   background-size: contain;
 }
 .home .introduction-right {
@@ -2379,26 +2510,33 @@ select.form-control {
 .home .field-head {
   max-width: 1148px;
   margin: 0 auto;
-  padding: 100px 0;
   align-items: center;
+  padding: 9.78vh 0;
 }
 .home .field-head-title {
   font-size: 42px;
 }
 @media only screen and (max-width: 1024px) {
   .home .field-head {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
   }
 }
 .home .field-main {
   position: relative;
   display: flex;
+  height: 66.4vh;
+  overflow: hidden;
 }
 .home .field-main-item {
+  flex: 1;
   position: relative;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
+  background-position: center;
+  background-size: cover;
 }
 .home .field-main-item:hover .field-img img, .home .field-main-item-active .field-img img {
   opacity: 0.3;
@@ -2408,6 +2546,7 @@ select.form-control {
   transform: translate(-50%, -50%);
 }
 .home .field-main-item .field-img {
+  flex: 1;
   background-color: #252531;
 }
 .home .field-main-item .field-img img {
@@ -2489,7 +2628,7 @@ select.form-control {
   }
 }
 .contact {
-  background: #ffffff url("/dist/images/core-bg.svg");
+  background: #ffffff url("/html/dist/images/core-bg.svg");
 }
 @media only screen and (max-width: 768px) {
   .contact {
@@ -2556,8 +2695,9 @@ select.form-control {
 
 .introduction .banner {
   height: calc(100vh - 92px - 36px);
-  background-image: url(/dist/images/introduction-section2-bg.svg);
+  background-image: url("/html/dist/images/introduction-section2-bg.svg");
   background-position: center;
+  overflow: hidden;
 }
 .introduction .banner > img {
   width: 100%;
@@ -2568,7 +2708,7 @@ select.form-control {
   width: 100%;
   height: calc(100vh - 92px - 36px);
   padding: 8% 12%;
-  background-image: url("/dist/images/introduction-section2-bg.svg");
+  background-image: url("/html/dist/images/introduction-section2-bg.svg");
   background-position: center;
 }
 @media only screen and (max-width: 768px) {
@@ -2580,7 +2720,7 @@ select.form-control {
   position: relative;
   flex: 0.5;
   height: 100%;
-  background-image: url("/dist/images/introduction-director.jpg");
+  background-image: url("/html/dist/images/introduction-director.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2621,7 +2761,7 @@ select.form-control {
 .introduction .section3 > .row1 > .col1 {
   height: 100%;
   flex: 0 0 50%;
-  background-image: url("/dist/images/introduction-section3-1.jpg");
+  background-image: url("/html/dist/images/introduction-section3-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2673,7 +2813,7 @@ select.form-control {
 }
 .introduction .section3 > .row2 > .col2 {
   flex: 0 0 50%;
-  background-image: url("/dist/images/introduction-section3-2.jpg");
+  background-image: url("/html/dist/images/introduction-section3-2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2691,37 +2831,37 @@ select.form-control {
 .introduction > .section5 > .col:nth-child(1) {
   flex: 1;
   height: 100%;
-  background-image: url("/dist/images/introduction-section5-1.jpg");
+  background-image: url("/html/dist/images/introduction-section5-1.jpg");
   background-position: center;
   background-size: cover;
 }
 .introduction > .section5 > .col:nth-child(2) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-2.jpg");
+  background-image: url("/html/dist/images/introduction-section5-2.jpg");
   background-position: center;
   background-size: cover;
 }
 .introduction > .section5 > .col:nth-child(3) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-3.jpg");
+  background-image: url("/html/dist/images/introduction-section5-3.jpg");
   background-position: center;
   background-size: cover;
 }
 .introduction > .section5 > .col:nth-child(4) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-1.jpg");
+  background-image: url("/html/dist/images/introduction-section5-1.jpg");
   background-position: center;
   background-size: cover;
 }
 .introduction > .section5 > .col:nth-child(5) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-5.jpg");
+  background-image: url("/html/dist/images/introduction-section5-5.jpg");
   background-position: center;
   background-size: cover;
 }
 .introduction > .section5 > .col:nth-child(6) {
   flex: 1;
-  background-image: url("/dist/images/introduction-section5-6.jpg");
+  background-image: url("/html/dist/images/introduction-section5-6.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2730,8 +2870,7 @@ select.form-control {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 92px - 36px);
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/html/dist/images/core-bg.svg");
 }
 @media only screen and (max-width: 768px) {
   .introduction > .section6 {
@@ -2786,7 +2925,7 @@ select.form-control {
 .introduction > .section6 > .row2 .tag:nth-child(1) > div:nth-child(1) {
   flex: 1;
   height: auto;
-  background-image: url("/dist/images/introduction-section6-1.jpg");
+  background-image: url("/html/dist/images/introduction-section6-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -2801,10 +2940,10 @@ select.form-control {
   justify-content: center;
 }
 .introduction > .section6 > .row3 .tag:nth-child(1) > div:nth-child(1) {
-  background-image: url("/dist/images/introduction-section6-2.jpg");
+  background-image: url("/html/dist/images/introduction-section6-2.jpg");
 }
 .introduction > .section6 > .row3 .tag:nth-child(2) > div:nth-child(1) {
-  background-image: url("/dist/images/introduction-section6-3.jpg");
+  background-image: url("/html/dist/images/introduction-section6-3.jpg");
 }
 @media only screen and (max-width: 768px) {
   .introduction > .section6 .tag {
@@ -2906,9 +3045,6 @@ select.form-control {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.project-page .project-completed-slider .swiper-wrapper {
-  overflow-x: scroll;
-}
 .project-page .project-completed-slider .swiper-wrapper .swiper-slide-title {
   color: #bf9372;
   font-size: 28px;
@@ -2936,7 +3072,7 @@ select.form-control {
   z-index: 0;
   width: 250px;
   height: 350px;
-  background-image: url("/dist/images/introduction-svg.svg");
+  background-image: url("/html/dist/images/introduction-svg.svg");
   background-size: contain;
 }
 .project-page .project-completed-slider .project-completed-bg-2 {
@@ -2946,11 +3082,18 @@ select.form-control {
   z-index: 0;
   width: 250px;
   height: 350px;
-  background-image: url("/dist/images/introduction-svg.svg");
+  background-image: url("/html/dist/images/introduction-svg.svg");
   background-size: contain;
 }
 .project-page .project-completed-mobile {
+  padding: 5px 4%;
   display: none;
+}
+.project-page .project-completed-mobile > .item {
+  position: relative;
+}
+.project-page .project-completed-mobile h1 {
+  font-size: 20px;
 }
 @media only screen and (max-width: 768px) {
   .project-page .project-completed * {
@@ -2971,6 +3114,7 @@ select.form-control {
 @media only screen and (max-width: 768px) {
   .project-detail .project-production {
     height: auto;
+    padding: 0 4%;
   }
 }
 .project-detail .project-production-title, .project-detail .project-production-subtitle {
@@ -3133,7 +3277,7 @@ select.form-control {
   flex: 1;
   width: 100%;
   height: 100%;
-  background-image: url("/dist/images/project-detail-1.jpg");
+  background-image: url("/html/dist/images/project-detail-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -3212,7 +3356,7 @@ select.form-control {
 .project-detail .flag1 > .col1 {
   flex: 1;
   height: 100%;
-  background-image: url("/dist/images/project-detail-2.jpg");
+  background-image: url("/html/dist/images/project-detail-2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -3275,7 +3419,7 @@ select.form-control {
   align-items: center;
   justify-content: flex-start;
   background: #252531;
-  background-image: linear-gradient(90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section2-1.jpg");
+  background-image: linear-gradient(90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/html/dist/images/recruitment-section2-1.jpg");
   /* W3C */
   background-position: center;
   background-size: cover;
@@ -3359,7 +3503,7 @@ select.form-control {
   align-items: center;
   justify-content: flex-end;
   background: #252531;
-  background-image: linear-gradient(-90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section3-1.jpg");
+  background-image: linear-gradient(-90deg, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/html/dist/images/recruitment-section3-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -3395,7 +3539,7 @@ select.form-control {
 .recruit-page .section4 {
   position: relative;
   width: 100%;
-  background-image: url("/dist/images/core-bg.svg");
+  background-image: url("/html/dist/images/core-bg.svg");
   background-position: center;
   background-size: cover;
   padding: 4% 12%;
@@ -3531,8 +3675,7 @@ select.form-control {
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(100vh - 92px - 36px);
-  background-image: linear-gradient(90deg, #020024 0%, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/dist/images/recruitment-section5-1.jpg");
+  background-image: linear-gradient(90deg, #020024 0%, #252531 0%, rgba(255, 255, 255, 0) 100%), url("/html/dist/images/recruitment-section5-1.jpg");
   background-position: center;
   background-size: cover;
   color: white;

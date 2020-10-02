@@ -1,19 +1,20 @@
 .news-related-container {
+    position: relative;
     display: flex;
-    .news-related {
-        position: relative;
-        flex: 1;
-        padding: 0 1%;
-        img {
-            width: 100%;
-        }
-        &-description {
-            padding-top: 4%;
-        }
-        &:hover {
-            transition-duration: 0.25s;
-            color: #b7886a;
-        }
+}
+.news-related {
+    position: relative;
+    flex: 1;
+    padding: 0 1%;
+    img {
+        width: 100%;
+    }
+    &-description {
+        padding-top: 4%;
+    }
+    &:hover {
+        transition-duration: 0.25s;
+        color: #b7886a;
     }
 }
 @media only screen and (max-width: 768px) {

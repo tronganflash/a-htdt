@@ -1,31 +1,38 @@
 .project-pop {
-    background-image: url("/dist/images/core-bg.svg");
+    background-image: url("/html/dist/images/core-bg.svg");
     background-repeat: repeat repeat;
     background-size: 100%;
-    padding-top: 90px;
 
     &-title {
         margin: 0;
         text-align: center;
-        padding-bottom: 90px;
         text-transform: uppercase;
         font-size: 42px;
+        padding: 9.78vh 0;
+        @media only screen and (max-width: 768px) {
+            font-size: 28px;
+        }
     }
 
     &-sub-title {
         display: block;
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: 10px;
         color: $primary;
+        margin-bottom: 8px;
+        padding-top: 9.78vh;
     }
 
     &-list {
         display: flex;
-        background-image: url("/dist/images/slider-bg-2.jpg");
+        background-image: url("/html/dist/images/slider-bg-2.jpg");
         background-repeat: no-repeat;
         background-size: bottom;
         overflow: hidden;
+        height: 66.4vh;
+        @media only screen and (max-width: 768px){
+            height: 100%;
+        }
 
         &:hover {
         }

@@ -5,7 +5,6 @@
             padding-bottom: 50px;
 
             .swiper-wrapper {
-                overflow-x: scroll;
                 .swiper-slide {
                     &-title {
                         color: $primary;
@@ -42,7 +41,7 @@
                 z-index: 0;
                 width: 250px;
                 height: 350px;
-                background-image: url("/dist/images/introduction-svg.svg");
+                background-image: url("/html/dist/images/introduction-svg.svg");
                 background-size: contain;
             }
 
@@ -53,13 +52,20 @@
                 z-index: 0;
                 width: 250px;
                 height: 350px;
-                background-image: url("/dist/images/introduction-svg.svg");
+                background-image: url("/html/dist/images/introduction-svg.svg");
                 background-size: contain;
             }
         }
     }
     .project-completed-mobile {
+        padding: 5px 4%;
         display: none;
+        & > .item {
+            position: relative;
+        }
+        & h1 {
+            font-size: 20px;
+        }
     }
     @media only screen and (max-width: 768px) {
         .project-completed {
@@ -68,10 +74,10 @@
             }
         }
         .project-completed-mobile {
-            display: block; 
+            display: block;
             & a {
                 text-decoration: none;
-                color: $primary ;
+                color: $primary;
             }
         }
     }
